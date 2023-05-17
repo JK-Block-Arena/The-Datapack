@@ -1,0 +1,22 @@
+{
+  "parent": "pvp:track/death0",
+  "display": {
+    "icon": {
+      "item": "minecraft:lime_glazed_terracotta"
+    },
+    "title": {
+      "text": "永不言弃 · 初心"
+    },
+    "description": [
+      {"text": "第 1 次死亡。\n","color":"white"},
+	  {"text": "你死了。","color":"gray","italic":true}
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerDeathReal":{"min":1}},"condition":"entity_scores","entity":"this"}]}}
+  }
+}

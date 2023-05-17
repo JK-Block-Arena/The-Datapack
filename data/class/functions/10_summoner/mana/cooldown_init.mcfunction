@@ -1,0 +1,1 @@
+scoreboard players set @s 10_mana 10000

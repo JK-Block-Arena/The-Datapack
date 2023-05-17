@@ -1,0 +1,18 @@
+{
+    "criteria": {"any": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+            "damage": {
+                "type": {
+                    "direct_entity": {
+                        "type": "minecraft:arrow",
+                        "nbt": "{Color:16189962}"
+                    }
+                }
+            }
+        }
+    }},
+    "rewards": {
+        "function": "modules:mino1/sub/9_1_arrow"
+    }
+}

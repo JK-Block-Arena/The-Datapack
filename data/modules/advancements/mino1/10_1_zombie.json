@@ -1,0 +1,17 @@
+{
+    "criteria": {"any": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+            "damage": {
+                "type": {
+                    "direct_entity": {
+                        "type": "minecraft:zombie"
+                    }
+                }
+            }
+        }
+    }},
+    "rewards": {
+        "function": "modules:mino1/sub/10_1_zombie"
+    }
+}

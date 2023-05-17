@@ -1,0 +1,21 @@
+{
+  "parent": "pvp:track/round6",
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_block"
+    },
+    "title": {
+      "text": "循环行者 · 归一"
+    },
+    "description": [
+      {"text": "完成 200 次循环。","color":"white"}
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "50": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerRound":{"min":200}},"condition":"entity_scores","entity":"this"}]}}
+  }
+}

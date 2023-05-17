@@ -1,0 +1,4 @@
+{
+    "parent": "pvp:class/a_4",
+    "criteria": {"command": {"trigger": "minecraft:location"}}
+}

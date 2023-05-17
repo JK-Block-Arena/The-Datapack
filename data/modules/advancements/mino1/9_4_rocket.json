@@ -1,0 +1,17 @@
+{
+    "criteria": {"any": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+            "damage": {
+                "type": {
+                    "direct_entity": {
+                        "type": "minecraft:firework_rocket"
+                    }
+                }
+            }
+        }
+    }},
+    "rewards": {
+        "function": "modules:mino1/sub/9_4_rocket"
+    }
+}

@@ -1,0 +1,1 @@
+execute if score $mutation mem matches 5 run function modules:mutation/special/5_tick4

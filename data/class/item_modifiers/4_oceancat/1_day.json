@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"海雷核心\",\"italic\": false,\"color\":\"white\"}',Lore:['[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"}, \" 召唤一个隐形的辉煌裂片。\"]','{\"text\":\"它会在敌方玩家接近时自动激活，\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"在附近连续落下 6 道闪电。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"40 秒 (白昼)\",\"italic\": false,\"color\":\"white\"},{\"text\":\" / 25 秒 (夜晚)\",\"italic\": false,\"color\":\"dark_gray\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+}

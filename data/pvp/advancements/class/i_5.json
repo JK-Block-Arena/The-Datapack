@@ -1,0 +1,21 @@
+{
+    "parent": "pvp:class/i_4",
+    "display": {
+      "icon": {
+        "item": "minecraft:black_glazed_terracotta"
+      },
+      "title": {
+        "text": "千机 · 登峰造极"
+      },
+      "description": [
+        {"text": "使用千机完成 500 次击杀。","color":"white"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerClassKill9":{"min":500}},"condition":"entity_scores","entity":"this"}]}}
+    }
+}

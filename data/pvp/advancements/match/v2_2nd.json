@@ -1,0 +1,22 @@
+{
+    "parent": "pvp:match/v2_1st",
+    "display": {
+      "icon": {
+        "item": "minecraft:gold_ingot"
+      },
+      "title": {
+        "text": "2v2v2v2----TOP2"
+      },
+      "description": [
+        {"text": "你在友谊赛2v2v2v2模式中取得了第二名的好成绩！\n","color":"white"},
+        {"text": "作为永远的成就收藏awa","color":"gray","italic": true}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "raw": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"extra_V2_2nd":{"min":1}},"condition":"entity_scores","entity":"this"}]}}
+    }
+}

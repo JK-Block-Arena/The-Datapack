@@ -1,0 +1,21 @@
+{
+    "parent": "pvp:class/g_6",
+    "display": {
+      "icon": {
+        "item": "minecraft:gold_block"
+      },
+      "title": {
+        "text": "牧师 · 萌新"
+      },
+      "description": [
+        {"text": "使用牧师完成 2000 次击杀。","color":"white"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerClassKill7":{"min":2000}},"condition":"entity_scores","entity":"this"}]}}
+    }
+}

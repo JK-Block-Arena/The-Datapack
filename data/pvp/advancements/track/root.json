@@ -1,0 +1,15 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:writable_book"
+      },
+      "title": {"text":"记录"},
+      "description": [""],
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false,
+      "background": "minecraft:textures/block/chiseled_quartz_block.png"
+    },
+    "criteria": {"command": {"trigger": "minecraft:location"}}
+  }

@@ -1,0 +1,35 @@
+{
+  "parent": "pvp:track/combo3",
+  "display": {
+    "icon": {
+      "item": "minecraft:purple_glazed_terracotta"
+    },
+    "title": {
+      "text": "杀戮狂魔 · 宗师"
+    },
+    "description": [
+      {"text": "完成 15 次五连杀。","color":"white"}
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":1}},"condition":"entity_scores","entity":"this"}]}},
+    "02": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":2}},"condition":"entity_scores","entity":"this"}]}},
+    "03": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":3}},"condition":"entity_scores","entity":"this"}]}},
+    "04": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":4}},"condition":"entity_scores","entity":"this"}]}},
+    "05": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":5}},"condition":"entity_scores","entity":"this"}]}},
+    "06": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":6}},"condition":"entity_scores","entity":"this"}]}},
+    "07": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":7}},"condition":"entity_scores","entity":"this"}]}},
+    "08": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":8}},"condition":"entity_scores","entity":"this"}]}},
+    "09": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":9}},"condition":"entity_scores","entity":"this"}]}},
+    "10": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":10}},"condition":"entity_scores","entity":"this"}]}},
+    "11": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":11}},"condition":"entity_scores","entity":"this"}]}},
+    "12": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":12}},"condition":"entity_scores","entity":"this"}]}},
+    "13": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":13}},"condition":"entity_scores","entity":"this"}]}},
+    "14": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":14}},"condition":"entity_scores","entity":"this"}]}},
+    "15": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo5":{"min":15}},"condition":"entity_scores","entity":"this"}]}}
+  }
+}

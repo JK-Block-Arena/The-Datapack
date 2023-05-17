@@ -1,0 +1,12 @@
+item modify entity @s[tag=!detail] hotbar.0 class:10_summoner/0
+item modify entity @s[tag=detail] hotbar.0 class:10_summoner/0_detail
+item modify entity @s[tag=!detail] hotbar.1 class:10_summoner/1
+item modify entity @s[tag=detail] hotbar.1 class:10_summoner/1_detail
+item modify entity @s[tag=!detail] hotbar.2 class:10_summoner/2
+item modify entity @s[tag=detail] hotbar.2 class:10_summoner/2_detail
+item modify entity @s[tag=!detail] hotbar.3 class:10_summoner/3
+item modify entity @s[tag=detail] hotbar.3 class:10_summoner/3_detail
+item modify entity @s[tag=!detail] hotbar.4 class:10_summoner/4
+item modify entity @s[tag=detail] hotbar.4 class:10_summoner/4_detail
+item modify entity @s[tag=!detail] hotbar.5 class:10_summoner/5
+item modify entity @s[tag=detail] hotbar.5 class:10_summoner/5_detail

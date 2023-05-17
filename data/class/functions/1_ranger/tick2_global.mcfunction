@@ -1,0 +1,1 @@
+function class:1_ranger/special/tick2_global

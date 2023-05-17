@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"薄荷糖\",\"italic\": false,\"color\":\"white\"}',Lore:['[{\"text\":\"饭后甜点！\",\"color\":\"gray\",\"italic\": false}]','[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"}, \" 食用，等待3秒。\"]','[{\"text\":\"清除负面效果，获得增益效果。\",\"color\":\"gray\",\"italic\": false}]','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"28 秒 \",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+}

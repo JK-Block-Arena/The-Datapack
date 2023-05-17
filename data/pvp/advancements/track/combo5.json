@@ -1,0 +1,21 @@
+{
+  "parent": "pvp:track/combo4",
+  "display": {
+    "icon": {
+      "item": "minecraft:black_glazed_terracotta"
+    },
+    "title": {
+      "text": "杀戮狂魔 · 冠绝"
+    },
+    "description": [
+      {"text": "完成 30 次六连杀。","color":"white"}
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "50": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo6":{"min":30}},"condition":"entity_scores","entity":"this"}]}}
+  }
+}

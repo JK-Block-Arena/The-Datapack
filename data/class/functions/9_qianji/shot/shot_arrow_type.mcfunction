@@ -1,0 +1,19 @@
+scoreboard players set @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:crossbow",tag:{ChargedProjectiles:[{id:"minecraft:tipped_arrow",tag:{CustomModelData:901,CustomPotionColor:16189962}}]}}]}] 9_temp 0
+scoreboard players set @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:crossbow",tag:{ChargedProjectiles:[{id:"minecraft:tipped_arrow",tag:{CustomModelData:902,CustomPotionColor:976630}}]}}]}] 9_temp 1
+scoreboard players set @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:crossbow",tag:{ChargedProjectiles:[{id:"minecraft:tipped_arrow",tag:{CustomModelData:903,CustomPotionColor:13957380}}]}}]}] 9_temp 2
+scoreboard players set @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:crossbow",tag:{ChargedProjectiles:[{id:"minecraft:firework_rocket",tag:{CustomModelData:904}}]}}]}] 9_temp 3
+
+item replace entity @s[scores={9_temp=0,statPlayerLevel=1},nbt=!{Inventory:[{Slot:-106b,tag:{CustomModelData:910}}]}] weapon.offhand with crossbow{CustomModelData:910,Unbreakable:1b,Enchantments:[{id:"quick_charge",lvl:5}],display:{Name:'{"text":"重弩 [已填充极速箭]","italic": false,"color":"white"}',Lore:['[{"text":"箭装载后可以迅速射出","color":"gray","italic": false}]']},Charged:1b,ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:901,CustomPotionColor:16189962}}],HideFlags:63}
+item replace entity @s[scores={9_temp=0,statPlayerLevel=2..3},nbt=!{Inventory:[{Slot:-106b,tag:{CustomModelData:910}}]}] weapon.offhand with crossbow{CustomModelData:910,Unbreakable:1b,Enchantments:[{id:"quick_charge",lvl:4}],display:{Name:'{"text":"重弩 [已填充极速箭]","italic": false,"color":"white"}',Lore:['[{"text":"箭装载后可以迅速射出","color":"gray","italic": false}]']},Charged:1b,ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:901,CustomPotionColor:16189962}}],HideFlags:63}
+item replace entity @s[scores={9_temp=0,statPlayerLevel=4},nbt=!{Inventory:[{Slot:-106b,tag:{CustomModelData:910}}]}] weapon.offhand with crossbow{CustomModelData:910,Unbreakable:1b,Enchantments:[{id:"quick_charge",lvl:3}],display:{Name:'{"text":"重弩 [已填充极速箭]","italic": false,"color":"white"}',Lore:['[{"text":"箭装载后可以迅速射出","color":"gray","italic": false}]']},Charged:1b,ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:901,CustomPotionColor:16189962}}],HideFlags:63}
+item replace entity @s[scores={9_temp=1},nbt=!{Inventory:[{Slot:-106b,tag:{CustomModelData:111}}]}] weapon.offhand with crossbow{CustomModelData:911,Unbreakable:1b,Enchantments:[{id:"piercing",lvl:2},{id:"quick_charge",lvl:2}],display:{Name:'{"text":"重弩 [已填充穿云箭]","italic": false,"color":"white"}',Lore:['[{"text":"箭装载后可以迅速射出","color":"gray","italic": false}]']},Charged:1b,ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:901,CustomPotionColor:976630}}],HideFlags:63}
+item replace entity @s[scores={9_temp=2},nbt=!{Inventory:[{Slot:-106b,tag:{CustomModelData:112}}]}] weapon.offhand with crossbow{CustomModelData:912,Unbreakable:1b,Enchantments:[{id:"multishot",lvl:1},{id:"quick_charge",lvl:2}],display:{Name:'{"text":"重弩 [已填充三连箭]","italic": false,"color":"white"}',Lore:['[{"text":"箭装载后可以迅速射出","color":"gray","italic": false}]']},Charged:1b,ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:901,CustomPotionColor:13957380}},{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:901,CustomPotionColor:13957380}},{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:901,CustomPotionColor:13957380}}],HideFlags:63}
+
+execute as @s[scores={9_temp=3}] run function class:9_qianji/shot/fire_work
+
+# 减少仓储
+scoreboard players remove @s[tag=!9_arrow,scores={9_temp=0}] 9_st1 1
+scoreboard players remove @s[tag=!9_arrow,scores={9_temp=1}] 9_st2 1
+scoreboard players remove @s[tag=!9_arrow,scores={9_temp=2}] 9_st3 1
+scoreboard players remove @s[tag=!9_arrow,scores={9_temp=3}] 9_st4 1
+tag @s add 9_arrow

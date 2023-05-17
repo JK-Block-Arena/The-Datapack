@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"必杀弓\",\"italic\": false}',Lore:['[{\"text\":\"我tm射爆！\",\"color\":\"gray\",\"italic\": false}]','{\"text\":\"刚能射箭的程度即可击杀。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"⚜ 储存  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"∞\",\"italic\": false,\"color\":\"white\"},{\"text\":\"      ❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"∞\",\"italic\": false,\"color\":\"white\"}]']},HideFlags:63}"
+}

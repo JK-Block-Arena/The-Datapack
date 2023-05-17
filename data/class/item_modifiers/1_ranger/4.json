@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"折跃箭\",\"italic\": false}',Lore:['{\"text\":\"将你传送到箭矢的落点。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"15 秒\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+}

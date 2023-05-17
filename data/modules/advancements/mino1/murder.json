@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "hurt": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "player": {
+                        "gamemode": "adventure"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "modules:mino1/sub/murder"
+    }
+}

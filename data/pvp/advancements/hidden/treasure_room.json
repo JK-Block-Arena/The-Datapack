@@ -1,0 +1,22 @@
+{
+    "parent": "pvp:hidden/campfire",
+    "display": {
+      "icon": {
+        "item": "minecraft:gold_block"
+      },
+      "title": {
+        "text": "寻宝               "
+      },
+      "description": [
+        {"text": "你找到了古堡的宝藏。\n","color":"white"},
+        {"text": "隔栏相望，密门何处启？","color":"gray","italic": true}
+      ],
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "raw": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"hidden_room":{"min":1}},"condition":"entity_scores","entity":"this"}]}}
+    }
+}

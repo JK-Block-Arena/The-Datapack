@@ -1,0 +1,16 @@
+scoreboard objectives remove Monthly_statPlayerRound
+scoreboard objectives remove Monthly_statPlayerKill
+scoreboard objectives remove Monthly_statPlayerClassKill1
+scoreboard objectives remove Monthly_statPlayerClassKill2
+scoreboard objectives remove Monthly_statPlayerClassKill3
+scoreboard objectives remove Monthly_statPlayerClassKill4
+scoreboard objectives remove Monthly_statPlayerClassKill5
+scoreboard objectives remove Monthly_statPlayerClassKill6
+scoreboard objectives remove Monthly_statPlayerClassKill7
+scoreboard objectives remove Monthly_statPlayerClassKill8
+scoreboard objectives remove Monthly_statPlayerClassKill9
+scoreboard objectives remove Monthly_statPlayerClassKill10
+scoreboard objectives remove Monthly_statPlayerClassKill99
+scoreboard objectives remove play_time_t
+function modules:stat/init
+tellraw @s "已重置本月击杀数据！"

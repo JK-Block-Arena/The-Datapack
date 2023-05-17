@@ -1,0 +1,1 @@
+execute as @e[tag=10_flag] at @s run function class:10_summoner/flag/damage

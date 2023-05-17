@@ -1,0 +1,1 @@
+execute as @s[scores={8_wave_storage=1..},nbt={Inventory:[{Slot:-106b,tag:{CustomModelData:803}}]}] run function class:8_jiazi/wave/trigger

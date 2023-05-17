@@ -1,0 +1,32 @@
+{
+    "criteria": {
+        "left": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "equipment": {"mainhand":{"items": ["minecraft:trident"]}}
+                        }
+                    }
+                }
+            }
+        },
+        "right": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "equipment": {"offhand":{"items": ["minecraft:trident"]}}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements":[["left","right"]],
+    "rewards": {
+        "function": "class:4_oceancat/trident/melee"
+    }
+}

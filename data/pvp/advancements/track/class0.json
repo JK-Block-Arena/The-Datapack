@@ -1,0 +1,17 @@
+{
+  "parent": "pvp:track/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_helmet"
+    },
+    "title": {"text": "职业"},
+    "description": "",
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "01": {"trigger":"minecraft:location"}
+  }
+}

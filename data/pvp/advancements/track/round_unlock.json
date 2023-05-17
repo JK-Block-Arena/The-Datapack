@@ -1,0 +1,4 @@
+{
+    "parent": "pvp:track/round4",
+    "criteria": {"command": {"trigger": "minecraft:location"}}
+}

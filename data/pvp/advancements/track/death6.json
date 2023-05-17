@@ -1,0 +1,22 @@
+{
+  "parent": "pvp:track/death5",
+  "display": {
+    "icon": {
+      "item": "minecraft:gilded_blackstone"
+    },
+    "title": {
+      "text": "永不言弃 · 通达"
+    },
+    "description": [
+      {"text": "达成 2000 次死亡。\n","color":"white"},
+	  {"text": "竞技场还是不错的嘛。","color":"gray","italic":true}
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "50": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerDeathReal":{"min":2000}},"condition":"entity_scores","entity":"this"}]}}
+  }
+}

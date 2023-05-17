@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"卫道士战斧\",\"italic\": false,\"color\":\"white\"}',Lore:['[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"}, \" 使你短暂无敌但无法移动。\"]','\"\"','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"12 点\",\"italic\": false,\"color\":\"white\"},{\"text\":\"     ❇ 攻速  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"很慢\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+}

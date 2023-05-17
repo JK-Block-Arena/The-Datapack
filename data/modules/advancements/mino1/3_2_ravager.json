@@ -1,0 +1,17 @@
+{
+    "criteria": {"any": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+            "damage": {
+                "type": {
+                    "direct_entity": {
+                        "type": "minecraft:ravager"
+                    }
+                }
+            }
+        }
+    }},
+    "rewards": {
+        "function": "modules:mino1/sub/3_2_ravager"
+    }
+}

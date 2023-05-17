@@ -1,0 +1,22 @@
+{
+    "parent": "pvp:extra/bell",
+    "display": {
+      "icon": {
+        "item": "minecraft:water_bucket"
+      },
+      "title": {
+        "text": "菲 律 宾 炸 鱼 队"
+      },
+      "description": [
+        {"text": "你跳水实在太快，对手望你莫及。\n","color":"white"},
+        {"text": "在折跃灵泉突变中10秒内跳了6次水。","color":"gray","italic": true}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "raw": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"hidden_diver":{"min":1}},"condition":"entity_scores","entity":"this"}]}}
+    }
+}

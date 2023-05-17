@@ -1,0 +1,1 @@
+execute as @e[tag=3_magic] at @s run function class:3_illager/magic/hit_tick

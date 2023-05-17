@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"卫道士之斧\",\"italic\": false,\"color\":\"white\"}',Lore:['[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"}, \" 进行冲刺，增加在地面移动时的\"]','{\"text\":\"速度，并降低所受伤害。\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"冲刺剩余次数与冷却会在经验槽显示。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"12 点\",\"italic\": false,\"color\":\"white\"},{\"text\":\"     ❇ 攻速  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"很慢\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+}

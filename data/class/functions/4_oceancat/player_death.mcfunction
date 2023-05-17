@@ -1,0 +1,1 @@
+function class:4_oceancat/trident/player_death

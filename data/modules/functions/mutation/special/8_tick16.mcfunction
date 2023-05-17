@@ -1,0 +1,1 @@
+execute as @a[team=!creator,scores={state=2..3,tip_0_tutorial=7..}] at @s unless entity @s[scores={class=99}] run function modules:mutation/special/2_trigger

@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"text\":\"画地为牢\",\"italic\": false,\"color\":\"white\"}',Lore:['{\"text\":\"以自己为圆心半径 1~4 格环形召唤尖刺。\",\"color\":\"gray\",\"italic\":false}','\"\"','[{\"text\":\"⚜ 储存  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"1 次\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"6 点/次     \",\"italic\": false,\"color\":\"white\"},{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"20 秒\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+}

@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "hurt":{
+            "trigger": "using_item"
+        }
+    },
+    "rewards": {
+        "function": "modules:regen/adv_using_item"
+    }
+}

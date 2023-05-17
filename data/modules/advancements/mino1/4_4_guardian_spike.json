@@ -1,0 +1,17 @@
+{
+    "criteria": {"any": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+            "damage": {
+                "type": {
+                    "direct_entity": {
+                        "type": "minecraft:guardian"
+                    }
+                }
+            }
+        }
+    }},
+    "rewards": {
+        "function": "modules:mino1/sub/4_4_guardian_spike"
+    }
+}

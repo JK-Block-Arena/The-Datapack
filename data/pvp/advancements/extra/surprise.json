@@ -1,0 +1,22 @@
+{
+    "parent": "pvp:extra/root",
+    "display": {
+      "icon": {
+        "item": "minecraft:pig_spawn_egg"
+      },
+      "title": {
+        "text": "第一个彩蛋！"
+      },
+      "description": [
+        {"text": "你发现了彩蛋！\n","color":"white"},
+        {"text": "一般而言是第一个吧，如果不是那就算了qwq。","color":"gray","italic": true}
+      ],
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "raw": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"extra_first":{"min":1}},"condition":"entity_scores","entity":"this"}]}}
+    }
+}

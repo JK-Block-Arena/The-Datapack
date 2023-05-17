@@ -1,0 +1,22 @@
+{
+    "parent": "pvp:extra/surprise",
+    "display": {
+      "icon": {
+        "item": "minecraft:elytra"
+      },
+      "title": {
+        "text": "Sky?Space!"
+      },
+      "description": [
+        {"text": "你越过了卡门线！\n","color":"white"},
+        {"text": "你化身冯·卡门，重新划分了高度的界限。","color":"gray","italic": true}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "raw": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"extra_sky":{"min":1}},"condition":"entity_scores","entity":"this"}]}}
+    }
+}

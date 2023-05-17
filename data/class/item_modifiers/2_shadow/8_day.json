@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"技能：暗影形态\",\"italic\": false,\"color\":\"aqua\"}',Lore:['[{\"text\":\"短按 \",\"italic\": false,\"color\":\"gray\"},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.sneak\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"},\" 进入或脱离暗影形态。\"]','{\"text\":\"攻击他人会自动脱离暗影形态。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"暗影形态：\",\"color\":\"white\",\"italic\": false},{\"text\":\"隐身、加速，无法静息治疗。\",\"color\":\"gray\"}]','{\"text\":\"注意，你手持的物品并不会隐形！\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"18 秒 (白昼)\",\"italic\": false,\"color\":\"white\"},{\"text\":\" / 9 秒 (夜晚)\",\"italic\": false,\"color\":\"dark_gray\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+}

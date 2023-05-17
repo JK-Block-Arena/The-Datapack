@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"掠夺者飞弹\",\"italic\": false,\"color\":\"white\"}',Lore:['[{\"text\":\"若你不在水中，可以短按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.sneak\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"}, \" 进行蓄力跳跃，\"]','{\"text\":\"并免疫本次摔落伤害（在无初速度时能跳 12 格高）。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"20 秒\",\"italic\": false,\"color\":\"white\"},{\"text\":\"     ⚜ 储存  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"2 枚\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
+}

@@ -1,0 +1,21 @@
+{
+    "parent": "pvp:class/d_6",
+    "display": {
+      "icon": {
+        "item": "minecraft:gold_block"
+      },
+      "title": {
+        "text": "海嗣 · 萌新"
+      },
+      "description": [
+        {"text": "使用海嗣完成 2000 次击杀。","color":"white"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerClassKill4":{"min":2000}},"condition":"entity_scores","entity":"this"}]}}
+    }
+}

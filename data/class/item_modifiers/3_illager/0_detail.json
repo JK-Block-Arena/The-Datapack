@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"卫道士战斧\",\"italic\": false,\"color\":\"white\"}',Lore:['[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"}, \" 使你在 2 秒内免疫所有伤害与击退，\"]','{\"text\":\"但无法移动、跳跃或使用掠夺者飞弹。\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"技能剩余时间与冷却会在经验槽显示。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"12 点\",\"italic\": false,\"color\":\"white\"},{\"text\":\"     ❇ 攻速  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"每秒 0.8 次\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"6 秒\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
+}

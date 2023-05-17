@@ -1,0 +1,9 @@
+{
+    "values": [
+        "minecraft:water",
+        "minecraft:lava",
+        "minecraft:barrier",
+        "minecraft:seagrass",
+        "minecraft:tall_seagrass"
+    ]
+}

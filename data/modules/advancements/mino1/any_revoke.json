@@ -1,0 +1,14 @@
+{
+    "criteria": {"any": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+            "type": {
+                "bypasses_invulnerability": false
+            },
+            "player": {"effects":{"resistance":{"amplifier":{"min":4}}}}
+        }
+    }},
+    "rewards": {
+        "function": "modules:mino1/sub/any_revoke"
+    }
+}

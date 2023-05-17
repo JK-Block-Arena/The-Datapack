@@ -1,0 +1,28 @@
+{
+  "parent": "pvp:track/combo2",
+  "display": {
+    "icon": {
+      "item": "minecraft:red_glazed_terracotta"
+    },
+    "title": {
+      "text": "杀戮狂魔 · 精熟"
+    },
+    "description": [
+      {"text": "完成 8 次四连杀。","color":"white"}
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo4":{"min":1}},"condition":"entity_scores","entity":"this"}]}},
+    "02": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo4":{"min":2}},"condition":"entity_scores","entity":"this"}]}},
+    "03": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo4":{"min":3}},"condition":"entity_scores","entity":"this"}]}},
+    "04": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo4":{"min":4}},"condition":"entity_scores","entity":"this"}]}},
+    "05": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo4":{"min":5}},"condition":"entity_scores","entity":"this"}]}},
+    "06": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo4":{"min":6}},"condition":"entity_scores","entity":"this"}]}},
+    "07": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo4":{"min":7}},"condition":"entity_scores","entity":"this"}]}},
+    "08": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo4":{"min":8}},"condition":"entity_scores","entity":"this"}]}}
+  }
+}

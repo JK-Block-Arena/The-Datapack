@@ -1,0 +1,21 @@
+{
+  "parent": "pvp:track/class4",
+  "display": {
+    "icon": {
+      "item": "minecraft:black_glazed_terracotta"
+    },
+    "title": {
+      "text": "众武之魂 · 冠绝"
+    },
+    "description": [
+      {"text": "完成 4 个登峰造极进度。","color":"white"}
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"pck5":{"min":4}},"condition":"entity_scores","entity":"this"}]}}
+  }
+}

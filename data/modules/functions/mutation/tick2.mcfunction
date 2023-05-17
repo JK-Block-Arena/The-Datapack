@@ -1,0 +1,1 @@
+execute if score $mutation_bossbar mem matches 1 run function modules:mutation/tick2_bossbar

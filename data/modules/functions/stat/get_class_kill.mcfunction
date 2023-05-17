@@ -1,0 +1,21 @@
+scoreboard players operation @s[scores={class=1}] temp = @s statPlayerClassKill1
+scoreboard players operation @s[scores={class=2}] temp = @s statPlayerClassKill2
+scoreboard players operation @s[scores={class=3}] temp = @s statPlayerClassKill3
+scoreboard players operation @s[scores={class=4}] temp = @s statPlayerClassKill4
+scoreboard players operation @s[scores={class=5}] temp = @s statPlayerClassKill5
+scoreboard players operation @s[scores={class=6}] temp = @s statPlayerClassKill6
+scoreboard players operation @s[scores={class=7}] temp = @s statPlayerClassKill7
+scoreboard players operation @s[scores={class=8}] temp = @s statPlayerClassKill8
+scoreboard players operation @s[scores={class=9}] temp = @s statPlayerClassKill9
+scoreboard players operation @s[scores={class=10}] temp = @s statPlayerClassKill10
+
+scoreboard players operation @s[scores={class=1}] temp = @s Monthly_statPlayerClassKill1
+scoreboard players operation @s[scores={class=2}] temp = @s Monthly_statPlayerClassKill2
+scoreboard players operation @s[scores={class=3}] temp = @s Monthly_statPlayerClassKill3
+scoreboard players operation @s[scores={class=4}] temp = @s Monthly_statPlayerClassKill4
+scoreboard players operation @s[scores={class=5}] temp = @s Monthly_statPlayerClassKill5
+scoreboard players operation @s[scores={class=6}] temp = @s Monthly_statPlayerClassKill6
+scoreboard players operation @s[scores={class=7}] temp = @s Monthly_statPlayerClassKill7
+scoreboard players operation @s[scores={class=8}] temp = @s Monthly_statPlayerClassKill8
+scoreboard players operation @s[scores={class=9}] temp = @s Monthly_statPlayerClassKill9
+scoreboard players operation @s[scores={class=10}] temp = @s Monthly_statPlayerClassKill10

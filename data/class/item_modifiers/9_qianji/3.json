@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"烟花火箭\",\"italic\": false}',Lore:['{\"text\":\"填充后沿直线射出，造成范围伤害。\",\"color\":\"gray\",\"italic\": false}','[{\"text\":\"或飞行时直接使用，为鞘翅助力。\",\"color\":\"gray\",\"italic\": false}]','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"15 秒\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+}

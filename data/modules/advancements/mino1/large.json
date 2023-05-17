@@ -1,0 +1,13 @@
+{
+    "criteria": {"any": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+            "damage": {
+                "taken": {"min": 8}
+            }
+        }
+    }},
+    "rewards": {
+        "function": "modules:mino1/sub/large"
+    }
+}

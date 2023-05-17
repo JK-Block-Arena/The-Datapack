@@ -1,0 +1,21 @@
+{
+  "parent": "pvp:track/combo6",
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_block"
+    },
+    "title": {
+      "text": "杀戮狂魔 · 归一"
+    },
+    "description": [
+      {"text": "完成 50 次传奇连杀。","color":"white"}
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo_much":{"min":50}},"condition":"entity_scores","entity":"this"}]}}
+  }
+}

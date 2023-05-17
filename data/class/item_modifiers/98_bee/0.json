@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"蜂蜜采集器（迫真）\",\"italic\": false,\"color\":\"white\"}',Lore:['{\"text\":\"小蜜蜂采蜜捏。\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"经验条显示冷却，冷却完毕后攻击玩家将召唤 2 只小蜜蜂。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"2.3 点\",\"italic\": false,\"color\":\"white\"},{\"text\":\"     ❇ 攻速  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"较快\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+}

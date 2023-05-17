@@ -1,0 +1,4 @@
+{
+    "parent": "pvp:hidden/world_border",
+    "criteria": {"command": {"trigger": "minecraft:location"}}
+}

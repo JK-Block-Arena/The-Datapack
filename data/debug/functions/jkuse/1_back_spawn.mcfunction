@@ -1,0 +1,1 @@
+execute as @s run function pvp:state/lobby/enter

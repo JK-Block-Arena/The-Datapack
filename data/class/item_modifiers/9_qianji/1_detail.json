@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"穿云箭\",\"italic\": false}',Lore:['[{\"text\":\"为弩附加\",\"color\":\"gray\",\"italic\": false},{\"text\":\"穿透\",\"underlined\": true},\"附魔。\"]','{\"text\":\"它可以穿透同路径下的 3 个实体或破盾。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"8 秒\",\"italic\": false,\"color\":\"white\"},{\"text\":\"      ⚜ 储存  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"2 支\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"6 - 11 点\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
+}

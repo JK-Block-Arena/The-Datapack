@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"text\":\"穿刺后移开关（关）\",\"italic\": false,\"color\":\"white\"}',Lore:['{\"text\":\"控制是否启用穿刺后移的技能。\",\"color\":\"gray\",\"italic\":false}','\"\"','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+}

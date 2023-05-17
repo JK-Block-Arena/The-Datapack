@@ -1,0 +1,4 @@
+{
+    "parent": "pvp:track/death4",
+    "criteria": {"command": {"trigger": "minecraft:location"}}
+}

@@ -1,0 +1,17 @@
+{
+    "values": [
+        "minecraft:player",
+        "minecraft:villager",
+        "minecraft:ravager",
+        "minecraft:vindicator",
+        "minecraft:guardian",
+        "minecraft:evoker_fangs",
+        "minecraft:cave_spider",
+        "minecraft:blaze",
+        "minecraft:iron_golem",
+        "minecraft:pig",
+        "minecraft:creeper",
+        "minecraft:vex",
+        "#modules:undead"
+    ]
+}

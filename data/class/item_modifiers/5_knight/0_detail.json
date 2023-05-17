@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"灿焰长剑\",\"italic\": false,\"color\":\"white\"}',Lore:['[{\"text\":\"\",\"color\":\"gray\",\"italic\": false},{\"text\":\"点燃\",\"underlined\":true},{\"text\":\"被击中的生物 3 秒。\"},{\"text\":\"（每隔 1 秒受到 1 点伤害，\",\"color\":\"dark_gray\"}]','{\"text\":\"相似效果的伤害量不叠加）\",\"color\":\"dark_gray\",\"italic\": false}','\"\"','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"6 + 3（火焰）\",\"italic\": false,\"color\":\"white\"},{\"text\":\"     ❇ 攻速  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"每秒 1.6 次\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
+}

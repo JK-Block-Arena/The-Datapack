@@ -1,0 +1,14 @@
+{
+    "values": [
+        "marker",
+        "armor_stand",
+        "item",
+        "item_frame",
+        "glow_item_frame",
+        "bee",
+        "snow_golem",
+        "fox",
+        "cat",
+        "polar_bear"
+    ]
+}
