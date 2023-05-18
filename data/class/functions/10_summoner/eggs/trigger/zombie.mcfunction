@@ -26,7 +26,6 @@ tag @e remove new_minion
 
 # 减少存储
 scoreboard players remove @s 10_zombie_st 1
-scoreboard players remove @s 10_mana 3000
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

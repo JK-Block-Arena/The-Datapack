@@ -14,6 +14,5 @@ function class:8_jiazi/wave/cooldown_init
 function class:9_qianji/cooldown/reset
 function class:9_qianji/elytra/cooldown_init
 function class:10_summoner/eggs/cooldown_init
-function class:10_summoner/mana/cooldown_init
 
 function class:99_oneshot/cooldown_init

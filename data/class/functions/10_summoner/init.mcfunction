@@ -1,8 +1,5 @@
 scoreboard objectives add 10_tip dummy
 
-scoreboard objectives remove 10_mana
-scoreboard objectives add 10_mana dummy "魔力值"
-
 scoreboard objectives remove 10_flag_st
 scoreboard objectives add 10_flag_st dummy "招魂幡存储"
 scoreboard objectives remove 10_flag_cd

@@ -6,7 +6,7 @@ scoreboard players operation @s 10_zombie_cd -= @s cd_speed
 
 # 冷却完成
 scoreboard players add @s[scores={10_zombie_cd=..0}] 10_zombie_st 1
-scoreboard players set @s[scores={10_zombie_cd=..0}] 10_zombie_cd 15000
+scoreboard players set @s[scores={10_zombie_cd=..0}] 10_zombie_cd 20000
 
 # 检测刷新
 tag @s[scores={10_zombie_cd=..3099,10_zombie_st=0}] add refresh_inventory

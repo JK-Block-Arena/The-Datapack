@@ -111,6 +111,8 @@ execute if score @s mino_type_last matches 05020 if score #death_type mem matche
 execute if score @s mino_type_last matches 06010 as @s[tag=mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的桃木剑杀死了"]
 execute if score @s mino_type_last matches 06010 as @s[tag=!mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用桃木剑斩杀了"]
 
+execute if score @s mino_type_last matches 06020 as @s[tag=mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的剑气吹散了"]
+execute if score @s mino_type_last matches 06020 as @s[tag=!mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用剑气斩杀了"]
 # 牧师
 
 execute if score @s mino_type_last matches 07010 as @s[tag=mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的圣书呼死了"]

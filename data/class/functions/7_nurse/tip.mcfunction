@@ -12,4 +12,4 @@ tellraw @s[scores={7_tip=6}] ["",{"text":"\n ⚜  小知识： ","color":"light_
 tellraw @s[scores={7_tip=7}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"让我们把所有buff都加在自己身上化身为最强战士吧（bushi）。\n"]
 tellraw @s[scores={7_tip=8}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"据说牧师是一边跑路一边炼药的，真是辛苦。\n"]
 tellraw @s[scores={7_tip=9}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"牧师的技能文案来源于《守望先锋》。\n"]
-tellraw @s[scores={7_tip=10}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"牧师设计性别是个妹子，而且和有用……啊什么我们没有背景故事这一说，哦那没事了。\n"]
+tellraw @s[scores={7_tip=10}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"牧师设计性别是个妹子，而且和有用...啊什么我们没有背景故事这一说，那没事了。\n"]

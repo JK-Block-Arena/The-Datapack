@@ -26,4 +26,3 @@ scoreboard players remove @s 10_skeleton_st 1
 # 刷新物品&打断回血
 tag @s add brRegenBreak
 tag @s add refresh_inventory
-scoreboard players remove @s 10_mana 2000

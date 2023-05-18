@@ -16,4 +16,3 @@ function class:8_jiazi/wave/cooldown_run
 function class:9_qianji/cooldown/run
 function class:9_qianji/elytra/cooldown_run
 function class:10_summoner/eggs/cooldown_run
-function class:10_summoner/mana/cooldown_run

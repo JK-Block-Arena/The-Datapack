@@ -29,6 +29,7 @@ execute if score @s mino_type_now matches 04060 run tellraw @a ["<伤害来源> 
 execute if score @s mino_type_now matches 05010 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 长剑攻击"}]
 execute if score @s mino_type_now matches 05020 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 新星伤害"}]
 execute if score @s mino_type_now matches 06010 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 木剑攻击"}]
+execute if score @s mino_type_now matches 06020 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 木剑剑气"}]
 execute if score @s mino_type_now matches 07010 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 圣书敲击"}]
 execute if score @s mino_type_now matches 07020 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 药水瞬间伤害"}]
 execute if score @s mino_type_now matches 08010 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 手持夹子攻击"}]

@@ -15,7 +15,6 @@ effect give @e[tag=new_minion] weakness infinite 2 true
 tag @e remove new_minion
 # 减少存储
 scoreboard players remove @s 10_golem_st 1
-scoreboard players remove @s 10_mana 4000
 # 刷新物品&打断回血
 tag @s add brRegenBreak
 tag @s add refresh_inventory

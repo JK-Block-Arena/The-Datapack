@@ -17,7 +17,6 @@ scoreboard players set @e[tag=new_minion] mem 10
 # 清理
 tag @e remove new_minion
 # 减少存储
-scoreboard players remove @s 10_mana 2000
 scoreboard players remove @s 10_flag_st 1
 # 刷新物品&打断回血
 tag @s add brRegenBreak

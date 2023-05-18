@@ -35,7 +35,6 @@ kill @e[tag=mark]
 
 # 减少存储
 scoreboard players remove @s 10_creeper_st 1
-scoreboard players remove @s 10_mana 2500
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

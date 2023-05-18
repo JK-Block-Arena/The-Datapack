@@ -8,3 +8,5 @@ scoreboard objectives remove 6_mint_on
 scoreboard objectives add 6_mint_on dummy "薄荷糖延迟触发冷却"
 scoreboard objectives remove 6_mint_last
 scoreboard objectives add 6_mint_last dummy "薄荷糖清除负面效果计时"
+scoreboard objectives remove 6_drop_attack
+scoreboard objectives add 6_drop_attack dummy "剑气触发"

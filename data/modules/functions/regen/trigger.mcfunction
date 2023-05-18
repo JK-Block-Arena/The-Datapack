@@ -15,6 +15,6 @@ execute if score $mutation mem matches 1 as @s[scores={brRegen=0,state=2}] unles
 execute if score $mutation mem matches 1 as @s[scores={brRegen=0,state=2}] unless score @s class matches 7 run playsound block.respawn_anchor.charge player @s ~ ~ ~ 0.6 0.7
 
 # 回血效果（正常）
-execute unless score $mutation mem matches 1 unless score @s class matches 7 run effect give @s[scores={brRegen=-3..0},nbt=!{ActiveEffects:[{Id:10b,Amplifier:1b}]}] regeneration 1000000 1
-execute unless score $mutation mem matches 1 unless score @s class matches 7 run effect give @s[scores={brRegen=-8..-4},nbt=!{ActiveEffects:[{Id:10b,Amplifier:2b}]}] regeneration 1000000 2
-execute unless score $mutation mem matches 1 unless score @s class matches 7 run effect give @s[scores={brRegen=..-9},nbt=!{ActiveEffects:[{Id:10b,Amplifier:3b}]}] regeneration 1000000 3
+execute unless score $mutation mem matches 1 unless score @s class matches 7 run effect give @s[scores={brRegen=-3..0},nbt=!{ActiveEffects:[{Id:10b,Amplifier:1b}]}] regeneration infinite 1
+execute unless score $mutation mem matches 1 unless score @s class matches 7 run effect give @s[scores={brRegen=-8..-4},nbt=!{ActiveEffects:[{Id:10b,Amplifier:2b}]}] regeneration infinite 2
+execute unless score $mutation mem matches 1 unless score @s class matches 7 run effect give @s[scores={brRegen=..-9},nbt=!{ActiveEffects:[{Id:10b,Amplifier:3b}]}] regeneration infinite 3
