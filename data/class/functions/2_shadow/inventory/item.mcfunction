@@ -39,7 +39,6 @@ item replace entity @s hotbar.7 with air
 scoreboard players set @s count8 -1
 
 # 护甲
-execute if score $info_refresh_inv debug matches 1 as @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:220}}]}] run playsound minecraft:item.armor.equip_iron player @s ~ ~ ~ 1 1
 item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:220}}]}] armor.head with leather_helmet{CustomModelData:220,Unbreakable:1b,display:{color:0,Name:'{"text":"夜行帽","italic": false,"color":"white"}',Lore:['{"text":"暗夜之子的象征。","italic": false,"color":"gray"}','{"text":"在你隐身时会一同隐去。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:0b}
 item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:102b,tag:{CustomModelData:221}}]}] armor.chest with leather_chestplate{CustomModelData:221,Unbreakable:1b,display:{Name:'{"text":"夜行衣","italic": false,"color":"white"}',Lore:['{"text":"便于分辨敌友的轻便服装。","italic": false,"color":"gray"}','{"text":"在你隐身时会一同隐去。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:1b}
 item replace entity @s armor.legs with air

@@ -30,7 +30,6 @@ item replace entity @s hotbar.7 with air
 scoreboard players set @s count8 -1
 
 # 护甲
-execute if score $info_refresh_inv debug matches 1 as @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:9920}}]}] run playsound minecraft:item.armor.equip_iron player @s ~ ~ ~ 1 1
 item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:9920}}]}] armor.head with netherite_helmet{CustomModelData:9920,Unbreakable:1b,display:{Name:'{"text":"防空头盔","italic": false,"color":"aqua"}',Lore:['{"text":"实际上没用...","italic": false,"color":"gray"}']},Enchantments:[{id:"protection",lvl:1}],AttributeModifiers:[],HideFlags:1023,NeedColor:0b}
 item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:102b,tag:{CustomModelData:9921}}]}] armor.chest with leather_chestplate{CustomModelData:9921,Unbreakable:1b,display:{Name:'{"text":"便服","italic": false,"color":"white"}',Lore:['{"text":"方便分辨敌友的服装。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:1b}
 item replace entity @s armor.legs with air

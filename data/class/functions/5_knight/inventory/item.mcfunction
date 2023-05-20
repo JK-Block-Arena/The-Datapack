@@ -35,7 +35,6 @@ item replace entity @s hotbar.8 with air
 scoreboard players set @s count9 -1
 
 # 护甲
-execute if score $info_refresh_inv debug matches 1 as @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:520}}]}] run playsound minecraft:item.armor.equip_iron player @s ~ ~ ~ 1 1
 item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:520}}]}] armor.head with leather_helmet{CustomModelData:520,Unbreakable:1b,display:{Name:'{"text":"染色皮帽","italic": false,"color":"white"}',Lore:['{"text":"便于分辨敌友的小帽子。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:1b}
 item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:102b,tag:{CustomModelData:521}}]}] armor.chest with iron_chestplate{CustomModelData:521,Unbreakable:1b,display:{Name:'{"text":"塑料板甲","italic": false,"color":"white"}',Lore:['{"text":"看似很结实，但其实是塑料制品。","italic": false,"color":"gray"}','""','[{"text":"❤ 生命  ","italic": false,"color":"red"},{"text":"+ 4","italic": false,"color":"white"}]']},AttributeModifiers:[],HideFlags:1023,NeedColor:0b}
 item replace entity @s armor.legs with air

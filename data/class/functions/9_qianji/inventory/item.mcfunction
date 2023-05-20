@@ -36,9 +36,8 @@ item replace entity @s hotbar.7 with air
 scoreboard players set @s count8 -1
 
 # 护甲
-execute if score $info_refresh_inv debug matches 1 as @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:920}}]}] run playsound minecraft:item.armor.equip_iron player @s ~ ~ ~ 1 1
 item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:920}}]}] armor.head with leather_helmet{CustomModelData:920,Unbreakable:1b,display:{Name:'{"text":"染色皮帽","italic": false,"color":"white"}',Lore:['{"text":"便于分辨敌友的小帽子。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:1b}
-item replace entity @s[scores={9_elytra_last=..0},tag=!invisible,nbt=!{Inventory:[{Slot:102b,tag:{CustomModelData:921}}]}] armor.chest with chainmail_chestplate{CustomModelData:921,Unbreakable:1b,display:{Name:'{"text":"飞行背包","italic": false,"color":"white"}',Lore:['{"text":"装有鞘翅，略显沉重。","italic": false,"color":"gray"}','""','[{"text":"❇ 速度  ","italic": false,"color":"aqua"},{"text":"- 5 %","italic": false,"color":"white"}]']},AttributeModifiers:[],HideFlags:1023,NeedColor:0b}
+item replace entity @s[scores={9_elytra_last=..0},tag=!invisible,nbt=!{Inventory:[{Slot:102b,tag:{CustomModelData:921}}]}] armor.chest with chainmail_chestplate{CustomModelData:921,Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1}],display:{Name:'{"text":"飞行背包","italic": false,"color":"white"}',Lore:['{"text":"装有鞘翅，略显沉重。","italic": false,"color":"gray"}','""','[{"text":"❇ 速度  ","italic": false,"color":"aqua"},{"text":"- 5 %","italic": false,"color":"white"}]']},AttributeModifiers:[],HideFlags:1023,NeedColor:0b}
 item replace entity @s[scores={9_elytra_last=1..},tag=!invisible,nbt=!{Inventory:[{Slot:102b,tag:{CustomModelData:909}}]}] armor.chest with elytra{CustomModelData:909,Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1}],display:{Name:'{"text":"鞘翅","italic": false,"color":"white"}',Lore:['{"text":"助你翱翔于天际。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:0b}
 item replace entity @s armor.legs with air
 item replace entity @s armor.feet with air

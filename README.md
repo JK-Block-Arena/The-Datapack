@@ -40,7 +40,7 @@
 ![村庄1 时间22/8/29](https://raw.githubusercontent.com/jk-block-arena/JK-Block-Arena/main/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E9%A3%8E%E6%99%AF%E5%9B%BE/2022-08-29_22_29.png)
 ![村庄2by DenNotFound 时间23/1/16](https://raw.githubusercontent.com/jk-block-arena/JK-Block-Arena/main/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E9%A3%8E%E6%99%AF%E5%9B%BE/2023-01-16_20_10.png)
 - 古堡
-![enter image description here](https://raw.githubusercontent.com/jk-block-arena/JK-Block-Arena/main/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E9%A3%8E%E6%99%AF%E5%9B%BE/2022-10-24_11_01.png)
+![古堡](https://raw.githubusercontent.com/jk-block-arena/JK-Block-Arena/main/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E9%A3%8E%E6%99%AF%E5%9B%BE/2022-10-24_11_01.png)
 - 沙滩
 ![沙滩是原创图噢~特别感谢群员们的努力制作，下一张会做的更好](https://raw.githubusercontent.com/jk-block-arena/JK-Block-Arena/main/服务器内风景图/yin拍摄的沙滩beta→2.0/QQ图片20221011230028.png)
 
@@ -54,7 +54,7 @@
 
 - 丛林
 
-[你可以看到花里胡哨的装饰!](https://raw.githubusercontent.com/jk-block-arena/JK-Block-Arena/main/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E9%A3%8E%E6%99%AF%E5%9B%BE/2022-10-21_22_35.png)
+![你可以看到花里胡哨的装饰!](https://raw.githubusercontent.com/jk-block-arena/JK-Block-Arena/main/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E9%A3%8E%E6%99%AF%E5%9B%BE/2022-10-21_22_35.png)
 
 - 商店
 
