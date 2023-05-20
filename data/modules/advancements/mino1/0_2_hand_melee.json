@@ -1,17 +1,21 @@
 {
-    "criteria": {"any": {
-        "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-            "damage": {
-                "taken": {"max": 1.6},
-                "type": {
-                    "direct_entity": {
-                        "player": {}
+    "criteria": {
+        "any": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "taken": {
+                        "max": 1.6
+                    },
+                    "type": {
+                        "direct_entity": {
+                            "player": {}
+                        }
                     }
                 }
             }
         }
-    }},
+    },
     "rewards": {
         "function": "modules:mino1/sub/0_2_hand_melee"
     }

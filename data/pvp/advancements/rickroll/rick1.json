@@ -1,22 +1,44 @@
 {
-    "parent": "pvp:rickroll/rick0",
-    "display": {
-      "icon": {
-        "item": "minecraft:player_head"
-      },
-      "title": {
-        "text": "R i c k の 头"
-      },
-      "description": [
-        {"text": "你发现了一个奇怪的东西！\n","color":"white"},
-        {"text": "似乎能听见歌声。。","color":"gray","italic": true}
-      ],
-      "frame": "task",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": true
+  "parent": "pvp:rickroll/rick0",
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head"
     },
-    "criteria": {
-      "raw": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"extra_rick_head":{"min":1}},"condition":"entity_scores","entity":"this"}]}}
+    "title": {
+      "text": "R i c k の 头"
+    },
+    "description": [
+      {
+        "text": "你发现了一个奇怪的东西！\n",
+        "color": "white"
+      },
+      {
+        "text": "似乎能听见歌声。。",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "extra_rick_head": {
+                "min": 1
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
     }
+  }
 }

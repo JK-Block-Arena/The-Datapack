@@ -6,7 +6,13 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "equipment": {"mainhand":{"items": ["minecraft:trident"]}}
+                            "equipment": {
+                                "mainhand": {
+                                    "items": [
+                                        "minecraft:trident"
+                                    ]
+                                }
+                            }
                         }
                     }
                 }
@@ -18,14 +24,25 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "equipment": {"offhand":{"items": ["minecraft:trident"]}}
+                            "equipment": {
+                                "offhand": {
+                                    "items": [
+                                        "minecraft:trident"
+                                    ]
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     },
-    "requirements":[["left","right"]],
+    "requirements": [
+        [
+            "left",
+            "right"
+        ]
+    ],
     "rewards": {
         "function": "class:4_oceancat/trident/melee"
     }

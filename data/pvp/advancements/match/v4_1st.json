@@ -1,22 +1,44 @@
 {
-    "parent": "pvp:match/match0",
-    "display": {
-      "icon": {
-        "item": "minecraft:diamond"
-      },
-      "title": {
-        "text": "4v4------TOP1"
-      },
-      "description": [
-        {"text": "你在友谊赛4v4模式中取得了团体第一名的好成绩！\n","color":"white"},
-        {"text": "作为永远的成就收藏awa","color":"gray","italic": true}
-      ],
-      "frame": "challenge",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": true
+  "parent": "pvp:match/match0",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond"
     },
-    "criteria": {
-      "raw": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"extra_V4_1st":{"min":1}},"condition":"entity_scores","entity":"this"}]}}
+    "title": {
+      "text": "4v4------TOP1"
+    },
+    "description": [
+      {
+        "text": "你在友谊赛4v4模式中取得了团体第一名的好成绩！\n",
+        "color": "white"
+      },
+      {
+        "text": "作为永远的成就收藏awa",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "extra_V4_1st": {
+                "min": 1
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
     }
+  }
 }

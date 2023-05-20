@@ -1,11 +1,15 @@
 {
-    "criteria": {
+  "criteria": {
     "bed": {
       "trigger": "minecraft:slept_in_bed",
       "conditions": {}
     }
   },
-  "requirements": [["bed"]],
+  "requirements": [
+    [
+      "bed"
+    ]
+  ],
   "rewards": {
     "function": "pvp:front/bed"
   }

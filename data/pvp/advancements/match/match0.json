@@ -1,17 +1,23 @@
 {
-    "parent": "pvp:extra/root",
-    "display": {
-      "icon": {
-        "item": "minecraft:golden_apple"
-      },
-      "title": {
-        "text": "友谊赛！"
-      },
-      "description":["2022.8举行"],
-      "frame": "task",
-      "show_toast": false,
-      "announce_to_chat": false,
-      "hidden": false
+  "parent": "pvp:extra/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_apple"
     },
-    "criteria": {"command": {"trigger": "minecraft:location"}}
+    "title": {
+      "text": "友谊赛！"
+    },
+    "description": [
+      "2022.8举行"
+    ],
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "command": {
+      "trigger": "minecraft:location"
+    }
+  }
 }

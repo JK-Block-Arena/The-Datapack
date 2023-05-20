@@ -1,15 +1,23 @@
 {
-    "display": {
-      "icon": {
-        "item": "minecraft:experience_bottle"
-      },
-      "title": {"text":"彩蛋"},
-      "description": [""],
-      "frame": "task",
-      "show_toast": false,
-      "announce_to_chat": false,
-      "hidden": true,
-      "background": "minecraft:textures/block/bookshelf.png"
+  "display": {
+    "icon": {
+      "item": "minecraft:experience_bottle"
     },
-    "criteria": {"command": {"trigger": "minecraft:location"}}
+    "title": {
+      "text": "彩蛋"
+    },
+    "description": [
+      ""
+    ],
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/block/bookshelf.png"
+  },
+  "criteria": {
+    "command": {
+      "trigger": "minecraft:location"
+    }
   }
+}

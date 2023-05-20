@@ -1,16 +1,18 @@
 {
-    "criteria": {"any": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-            "damage": {
-                "type": {
-                    "direct_entity": {
-                        "type": "minecraft:trident"
+    "criteria": {
+        "any": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:trident"
+                        }
                     }
                 }
             }
         }
-    }},
+    },
     "rewards": {
         "function": "modules:projectile/sub/4_1_trident"
     }

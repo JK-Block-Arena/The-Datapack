@@ -8,7 +8,10 @@
       "text": "众武之魂 · 通达"
     },
     "description": [
-      {"text": "完成 4 个出神入化进度。","color":"white"}
+      {
+        "text": "完成 4 个出神入化进度。",
+        "color": "white"
+      }
     ],
     "frame": "challenge",
     "show_toast": true,
@@ -16,6 +19,21 @@
     "hidden": true
   },
   "criteria": {
-    "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"pck6":{"min":4}},"condition":"entity_scores","entity":"this"}]}}
+    "01": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "pck6": {
+                "min": 4
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
   }
 }

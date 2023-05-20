@@ -8,7 +8,10 @@
       "text": "众武之魂 · 宗师"
     },
     "description": [
-      {"text": "完成 4 个炉火纯青进度。","color":"white"}
+      {
+        "text": "完成 4 个炉火纯青进度。",
+        "color": "white"
+      }
     ],
     "frame": "challenge",
     "show_toast": true,
@@ -16,6 +19,21 @@
     "hidden": false
   },
   "criteria": {
-    "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"pck4":{"min":4}},"condition":"entity_scores","entity":"this"}]}}
+    "01": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "pck4": {
+                "min": 4
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
   }
 }

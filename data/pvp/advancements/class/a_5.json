@@ -1,21 +1,39 @@
 {
-    "parent": "pvp:class/a_4",
-    "display": {
-      "icon": {
-        "item": "minecraft:black_glazed_terracotta"
-      },
-      "title": {
-        "text": "游侠 · 登峰造极"
-      },
-      "description": [
-        {"text": "使用游侠完成 500 次击杀。","color":"white"}
-      ],
-      "frame": "challenge",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": true
+  "parent": "pvp:class/a_4",
+  "display": {
+    "icon": {
+      "item": "minecraft:black_glazed_terracotta"
     },
-    "criteria": {
-      "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerClassKill1":{"min":500}},"condition":"entity_scores","entity":"this"}]}}
+    "title": {
+      "text": "游侠 · 登峰造极"
+    },
+    "description": [
+      {
+        "text": "使用游侠完成 500 次击杀。",
+        "color": "white"
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "01": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "statPlayerClassKill1": {
+                "min": 500
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
     }
+  }
 }

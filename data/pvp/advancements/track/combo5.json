@@ -8,7 +8,10 @@
       "text": "杀戮狂魔 · 冠绝"
     },
     "description": [
-      {"text": "完成 30 次六连杀。","color":"white"}
+      {
+        "text": "完成 30 次六连杀。",
+        "color": "white"
+      }
     ],
     "frame": "challenge",
     "show_toast": true,
@@ -16,6 +19,21 @@
     "hidden": true
   },
   "criteria": {
-    "50": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerCombo6":{"min":30}},"condition":"entity_scores","entity":"this"}]}}
+    "50": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "statPlayerCombo6": {
+                "min": 30
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
   }
 }

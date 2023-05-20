@@ -6,7 +6,13 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "equipment": {"mainhand":{"items": ["minecraft:wooden_sword"]}}
+                            "equipment": {
+                                "mainhand": {
+                                    "items": [
+                                        "minecraft:wooden_sword"
+                                    ]
+                                }
+                            }
                         }
                     }
                 }
@@ -18,14 +24,25 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "equipment": {"offhand":{"items": ["minecraft:wooden_sword"]}}
+                            "equipment": {
+                                "offhand": {
+                                    "items": [
+                                        "minecraft:wooden_sword"
+                                    ]
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     },
-    "requirements":[["left","right"]],
+    "requirements": [
+        [
+            "left",
+            "right"
+        ]
+    ],
     "rewards": {
         "function": "modules:mino1/sub/6_1_sword"
     }

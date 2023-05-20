@@ -8,8 +8,15 @@
       "text": "大声喊z假装自己睡着了"
     },
     "description": [
-      {"text": "我当场在竞技场睡大觉！\n","color":"white"},
-      {"text": "你怎么睡得着的？\n你这个年龄段，你这个阶段，\n你怎么睡得着觉？","color":"gray","italic": true}
+      {
+        "text": "我当场在竞技场睡大觉！\n",
+        "color": "white"
+      },
+      {
+        "text": "你怎么睡得着的？\n你这个年龄段，你这个阶段，\n你怎么睡得着觉？",
+        "color": "gray",
+        "italic": true
+      }
     ],
     "frame": "task",
     "show_toast": true,
@@ -17,6 +24,21 @@
     "hidden": true
   },
   "criteria": {
-    "raw": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"extra_bed":{"min":1}},"condition":"entity_scores","entity":"this"}]}}
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "extra_bed": {
+                "min": 1
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
   }
 }

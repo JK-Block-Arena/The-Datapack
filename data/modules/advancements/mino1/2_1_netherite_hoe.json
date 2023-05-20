@@ -6,7 +6,13 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "equipment": {"mainhand":{"items": ["minecraft:netherite_hoe"]}}
+                            "equipment": {
+                                "mainhand": {
+                                    "items": [
+                                        "minecraft:netherite_hoe"
+                                    ]
+                                }
+                            }
                         }
                     }
                 }
@@ -18,14 +24,25 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "equipment": {"offhand":{"items": ["minecraft:netherite_hoe"]}}
+                            "equipment": {
+                                "offhand": {
+                                    "items": [
+                                        "minecraft:netherite_hoe"
+                                    ]
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     },
-    "requirements":[["left","right"]],
+    "requirements": [
+        [
+            "left",
+            "right"
+        ]
+    ],
     "rewards": {
         "function": "modules:mino1/sub/2_1_netherite_hoe"
     }

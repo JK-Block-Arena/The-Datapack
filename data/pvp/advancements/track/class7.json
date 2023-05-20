@@ -8,7 +8,10 @@
       "text": "众武之魂 · 归一"
     },
     "description": [
-      {"text": "完成 4 个萌新进度。","color":"white"}
+      {
+        "text": "完成 4 个萌新进度。",
+        "color": "white"
+      }
     ],
     "frame": "challenge",
     "show_toast": true,
@@ -16,6 +19,21 @@
     "hidden": true
   },
   "criteria": {
-    "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"pck_max":{"min":4}},"condition":"entity_scores","entity":"this"}]}}
+    "01": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "pck_max": {
+                "min": 4
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
   }
 }

@@ -4,7 +4,9 @@
     "icon": {
       "item": "minecraft:blaze_powder"
     },
-    "title": {"text": "连杀"},
+    "title": {
+      "text": "连杀"
+    },
     "description": "",
     "frame": "goal",
     "show_toast": false,
@@ -12,6 +14,8 @@
     "hidden": false
   },
   "criteria": {
-    "01": {"trigger":"minecraft:location"}
+    "01": {
+      "trigger": "minecraft:location"
+    }
   }
 }

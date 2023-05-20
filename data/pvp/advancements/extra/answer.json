@@ -1,22 +1,44 @@
 {
-    "parent": "pvp:extra/2players_1arrow",
-    "display": {
-      "icon": {
-        "item": "minecraft:light"
-      },
-      "title": {
-        "text": "一口气全做对"
-      },
-      "description": [
-        {"text": "学~霸~题~\n","color":"white"},
-        {"text": "在大于十个任务的你说我做突变中，成功应对了所有挑战。","color":"gray","italic": true}
-      ],
-      "frame": "challenge",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": true
+  "parent": "pvp:extra/2players_1arrow",
+  "display": {
+    "icon": {
+      "item": "minecraft:light"
     },
-    "criteria": {
-      "raw": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"hidden_answer":{"min":1}},"condition":"entity_scores","entity":"this"}]}}
+    "title": {
+      "text": "一口气全做对"
+    },
+    "description": [
+      {
+        "text": "学~霸~题~\n",
+        "color": "white"
+      },
+      {
+        "text": "在大于十个任务的你说我做突变中，成功应对了所有挑战。",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "hidden_answer": {
+                "min": 1
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
     }
+  }
 }

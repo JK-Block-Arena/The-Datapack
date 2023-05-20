@@ -6,7 +6,13 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "equipment": {"mainhand":{"items": ["minecraft:iron_axe"]}}
+                            "equipment": {
+                                "mainhand": {
+                                    "items": [
+                                        "minecraft:iron_axe"
+                                    ]
+                                }
+                            }
                         }
                     }
                 }
@@ -18,14 +24,25 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "equipment": {"offhand":{"items": ["minecraft:iron_axe"]}}
+                            "equipment": {
+                                "offhand": {
+                                    "items": [
+                                        "minecraft:iron_axe"
+                                    ]
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     },
-    "requirements":[["left","right"]],
+    "requirements": [
+        [
+            "left",
+            "right"
+        ]
+    ],
     "rewards": {
         "function": "modules:mino1/sub/3_1_axe_melee"
     }

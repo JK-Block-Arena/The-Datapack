@@ -8,7 +8,10 @@
       "text": "众武之魂 · 精熟"
     },
     "description": [
-      {"text": "完成 4 个驾轻就熟进度。","color":"white"}
+      {
+        "text": "完成 4 个驾轻就熟进度。",
+        "color": "white"
+      }
     ],
     "frame": "task",
     "show_toast": true,
@@ -16,6 +19,21 @@
     "hidden": false
   },
   "criteria": {
-    "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"pck3":{"min":4}},"condition":"entity_scores","entity":"this"}]}}
+    "01": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "pck3": {
+                "min": 4
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
   }
 }

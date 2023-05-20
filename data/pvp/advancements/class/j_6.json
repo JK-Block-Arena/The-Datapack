@@ -1,21 +1,39 @@
 {
-    "parent": "pvp:class/j_5",
-    "display": {
-      "icon": {
-        "item": "minecraft:gilded_blackstone"
-      },
-      "title": {
-        "text": "召唤师 · 出神入化"
-      },
-      "description": [
-        {"text": "使用召唤师完成 1000 次击杀。","color":"white"}
-      ],
-      "frame": "challenge",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": true
+  "parent": "pvp:class/j_5",
+  "display": {
+    "icon": {
+      "item": "minecraft:gilded_blackstone"
     },
-    "criteria": {
-      "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerClassKill10":{"min":1000}},"condition":"entity_scores","entity":"this"}]}}
+    "title": {
+      "text": "召唤师 · 出神入化"
+    },
+    "description": [
+      {
+        "text": "使用召唤师完成 1000 次击杀。",
+        "color": "white"
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "01": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "statPlayerClassKill10": {
+                "min": 1000
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
     }
+  }
 }

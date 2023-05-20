@@ -1,18 +1,20 @@
 {
-    "criteria": {"any": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-            "damage": {
-                "type": {
-                    "direct_entity": {
-                        "type": "minecraft:arrow",
-                        "nbt": "{Color:16752969}"
-                    }
-                },
-                "blocked": false
+    "criteria": {
+        "any": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:arrow",
+                            "nbt": "{Color:16752969}"
+                        }
+                    },
+                    "blocked": false
+                }
             }
         }
-    }},
+    },
     "rewards": {
         "function": "modules:projectile/sub/1_3_arrow"
     }

@@ -4,7 +4,9 @@
     "icon": {
       "item": "minecraft:clock"
     },
-    "title": {"text": "循环"},
+    "title": {
+      "text": "循环"
+    },
     "description": "",
     "frame": "goal",
     "show_toast": false,
@@ -12,6 +14,8 @@
     "hidden": false
   },
   "criteria": {
-    "01": {"trigger":"minecraft:location"}
+    "01": {
+      "trigger": "minecraft:location"
+    }
   }
 }

@@ -8,7 +8,10 @@
       "text": "众武之魂 · 既成"
     },
     "description": [
-      {"text": "完成 3 个日益精进进度。","color":"white"}
+      {
+        "text": "完成 3 个日益精进进度。",
+        "color": "white"
+      }
     ],
     "frame": "task",
     "show_toast": true,
@@ -16,6 +19,21 @@
     "hidden": false
   },
   "criteria": {
-    "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"pck2":{"min":3}},"condition":"entity_scores","entity":"this"}]}}
+    "01": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "pck2": {
+                "min": 3
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
   }
 }

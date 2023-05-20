@@ -1,16 +1,18 @@
 {
-    "criteria": {"any": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-            "damage": {
-                "type": {
-                    "direct_entity": {
-                        "player": {}
+    "criteria": {
+        "any": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "player": {}
+                        }
                     }
                 }
             }
         }
-    }},
+    },
     "rewards": {
         "function": "class:2_shadow/sneak/on_attack"
     }

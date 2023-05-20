@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "hurt":{
+        "hurt": {
             "trigger": "using_item"
         }
     },

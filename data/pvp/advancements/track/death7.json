@@ -8,8 +8,15 @@
       "text": "永不言弃 · 归一"
     },
     "description": [
-      {"text": "达成 4000 次死亡。\n","color":"white"},
-	  {"text": "“死”神の诞生。","color":"gray","italic":true}
+      {
+        "text": "达成 4000 次死亡。\n",
+        "color": "white"
+      },
+      {
+        "text": "“死”神の诞生。",
+        "color": "gray",
+        "italic": true
+      }
     ],
     "frame": "challenge",
     "show_toast": true,
@@ -17,6 +24,21 @@
     "hidden": true
   },
   "criteria": {
-    "50": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerDeathReal":{"min":4000}},"condition":"entity_scores","entity":"this"}]}}
+    "50": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "statPlayerDeathReal": {
+                "min": 4000
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
   }
 }

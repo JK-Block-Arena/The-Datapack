@@ -1,21 +1,39 @@
 {
-    "parent": "pvp:class/c_4",
-    "display": {
-      "icon": {
-        "item": "minecraft:black_glazed_terracotta"
-      },
-      "title": {
-        "text": "突袭者 · 登峰造极"
-      },
-      "description": [
-        {"text": "使用突袭者完成 500 次击杀。","color":"white"}
-      ],
-      "frame": "challenge",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": true
+  "parent": "pvp:class/c_4",
+  "display": {
+    "icon": {
+      "item": "minecraft:black_glazed_terracotta"
     },
-    "criteria": {
-      "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"statPlayerClassKill3":{"min":500}},"condition":"entity_scores","entity":"this"}]}}
+    "title": {
+      "text": "突袭者 · 登峰造极"
+    },
+    "description": [
+      {
+        "text": "使用突袭者完成 500 次击杀。",
+        "color": "white"
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "01": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "statPlayerClassKill3": {
+                "min": 500
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
     }
+  }
 }

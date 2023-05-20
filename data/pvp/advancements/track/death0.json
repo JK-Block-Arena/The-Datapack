@@ -4,7 +4,9 @@
     "icon": {
       "item": "minecraft:wither_rose"
     },
-    "title": {"text": "死亡"},
+    "title": {
+      "text": "死亡"
+    },
     "description": "",
     "frame": "goal",
     "show_toast": false,
@@ -12,6 +14,8 @@
     "hidden": false
   },
   "criteria": {
-    "01": {"trigger":"minecraft:location"}
+    "01": {
+      "trigger": "minecraft:location"
+    }
   }
 }
