@@ -40,7 +40,7 @@ attribute @s[scores={respawn_time=01}] minecraft:generic.max_health base set 19
 
 # 显示 Title
 execute if score $mutation_anim mem matches 0 run title @s times 0 10 4
-execute if score $mutation_anim mem matches 0 run title @s[scores={respawn_time=1..}] title {"text":"正在复活……","color":"yellow"}
+execute if score $mutation_anim mem matches 0 run title @s[scores={respawn_time=1..}] title {"text":"复活中...","color":"yellow"}
 
 # 复活完成与在异常状态下回到大厅
 execute as @s[scores={respawn_time=..0}] run function pvp:state/battle/enter

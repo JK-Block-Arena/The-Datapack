@@ -4,7 +4,7 @@ scoreboard players set @s state 0
 tp @s[x=18,y=235,z=-2,distance=..1.5] 14 235 2
 tp @s[scores={tip_0_tutorial=7..},x=8,y=237,z=8,distance=40..] 3 235 8 -90 2
 attribute @s minecraft:generic.max_health base set 20
-effect clear @s
+effect clear @s[tag=!bad_guy]
 title @s clear
 gamemode adventure
 xp set @s 0 points

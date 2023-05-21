@@ -32,4 +32,15 @@ setblock 7 244 22 minecraft:barrel{Lock:"0",Items: [{Count: 1b, Slot: 0b, id: "m
 # 召唤师
 setblock 8 244 22 minecraft:barrel{Lock:"0",Items: [{Count: 1b, Slot: 0b, id: "minecraft:zombie_spawn_egg", tag: {AttributeModifiers: [], Damage: 0, HideFlags: 1023, Unbreakable: 1b, display: {Lore: ['{"text":"运用自己的召唤大法，将敌人围剿。","italic":false,"color":"gray"}','[{"text":"定位: 近程   ","italic":false,"color":"gold"},{"text":"偏好时段: 任意   ","color":"dark_aqua"},{"text":"复杂度: 中","color":"red"}]'], Name: '[{"text":"","italic":false},{"text":"召唤师","color":"white"}," - 按 [",{"keybind":"key.swapOffhand"},"] 选择"]'}}}, {Count: 1b, Slot: 1b, id: "minecraft:zombie_spawn_egg", tag: {AttributeModifiers: [], Damage: 0, Enchantments: [{id: "lure", lvl: 1}], HideFlags: 1023, Unbreakable: 1b, display: {Lore: ['{"text":"运用自己的召唤大法，将敌人围剿。","italic":false,"color":"gray"}', '[{"text":"定位: 近程   ","italic":false,"color":"gold"},{"text":"偏好时段: 任意   ","color":"dark_aqua"},{"text":"复杂度: 中","color":"red"}]'], Name: '[{"text":"","italic":false},{"text":"召唤师 - 已选择","color":"aqua"}]'}}},{Count:1b,Slot:26b,id:"minecraft:barrier",tag:{banned_class:1,AttributeModifiers:[],Damage:0,HideFlags:1023,Unbreakable:1b,display:{Name:'{"text":"召唤师 - 已禁用","italic":false,"color":"red"}'}}}]}
 
+kill @e[tag=enable_class]
+summon marker 4 245 23 {CustomName:'{"text":"游侠","color":"green"}',Tags:["enable_class","class1"]}
+summon marker 5 245 23 {CustomName:'{"text":"暗影","color":"green"}',Tags:["enable_class","class2"]}
+summon marker 6 245 23 {CustomName:'{"text":"突袭者","color":"green"}',Tags:["enable_class","class3"]}
+summon marker 7 245 23 {CustomName:'{"text":"海嗣","color":"green"}',Tags:["enable_class","class4"]}
+summon marker 8 245 23 {CustomName:'{"text":"耀骑士","color":"green"}',Tags:["enable_class","class5"]}
+summon marker 4 244 23 {CustomName:'{"text":"有用之人","color":"green"}',Tags:["enable_class","class6"]}
+summon marker 5 244 23 {CustomName:'{"text":"牧师","color":"green"}',Tags:["enable_class","class7"]}
+summon marker 6 244 23 {CustomName:'{"text":"夹子","color":"green"}',Tags:["enable_class","class8"]}
+summon marker 7 244 23 {CustomName:'{"text":"千机","color":"green"}',Tags:["enable_class","class9"]}
+summon marker 8 244 23 {CustomName:'{"text":"召唤师","color":"green"}',Tags:["enable_class","class10"]}
 function pvp:class/ban_class

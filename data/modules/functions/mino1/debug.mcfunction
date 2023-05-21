@@ -42,6 +42,7 @@ execute if score @s mino_type_now matches 10000 run tellraw @a ["<伤害来源> 
 execute if score @s mino_type_now matches 10010 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 僵尸攻击"}]
 execute if score @s mino_type_now matches 10020 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 恼鬼攻击"}]
 execute if score @s mino_type_now matches 10030 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 苦力怕爆炸"}]
+execute if score @s mino_type_now matches 10031 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 闪电苦力怕爆炸"}]
 execute if score @s mino_type_now matches 10040 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 铁傀儡攻击"}]
 
 execute if score @s mino_type_now matches 99010 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 一击烟花"}]

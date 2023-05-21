@@ -12,7 +12,7 @@ tellraw @s[team=red] [{"text":" ✳ ","color":"red"}," 你已加入红队！"]
 tellraw @s[team=blue] [{"text":" ✳ ","color":"blue"}," 你已加入蓝队！"]
 tellraw @s[team=green] [{"text":" ✳ ","color":"green"}," 你已加入绿队！"]
 tellraw @s[team=yellow] [{"text":" ✳ ","color":"yellow"}," 你已加入黄队！"]
-tellraw @a[distance=0.01..] ["",{"text":" ❇  "},{"selector":"@s"}," 加入了战场"]
+tellraw @a[distance=0.01..,scores={state=0..2}] ["",{"text":" ❇  "},{"selector":"@s"}," 加入了战场"]
 
 # 开始游戏
 function modules:regen/sub/reset_afk
