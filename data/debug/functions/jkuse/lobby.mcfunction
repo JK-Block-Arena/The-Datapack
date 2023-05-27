@@ -1,10 +1,10 @@
 function pvp:state/lobby/lobby_item
 
 setblock 16 235 0 birch_sign[rotation=2]{Text2:'[{"text":"查看排行榜","bold":true,"italic":false,"underlined":true,"color":"white","clickEvent":{"action":"run_command","value":"/function debug:jkuse/ranking_list/join_gray"}}]'} destroy
+setblock 18 235 -2 birch_sign[rotation=10]{Text2:'[{"text":"离开排行榜","bold":true,"italic":false,"underlined":true,"color":"white","clickEvent":{"action":"run_command","value":"/function debug:jkuse/1_back_spawn"}}]'} destroy
 setblock 24 235 -8 birch_sign[rotation=2]{Text2:'[{"text":"顺序切换排行榜","bold":true,"italic":false,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/function debug:jkuse/ranking_list/count"}}]'} destroy
 setblock 24 236 -6 birch_wall_sign[facing=west]{Text2:'[{"text":"排行榜序号+5","bold":true,"italic":false,"underlined":true,"color":"yellow","clickEvent":{"action":"run_command","value":"/function debug:jkuse/ranking_list/count_5"}}]'} destroy
 setblock 22 237 -8 birch_wall_sign[facing=south]{Text2:'[{"text":"获取个人数据","bold":true,"italic":false,"underlined":true,"color":"black","clickEvent":{"action":"run_command","value":"/function debug:jkuse/ranking_list/get_all_scores"}}]'} destroy
-setblock 26 237 -10 lantern destroy
 
 setblock 16 236 17 oak_wall_sign[facing=north]{Text2:'[{"text":"旧版传奇连杀","bold":true,"italic":false,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/function debug:jkuse/combokill_exp"}}]'} destroy
 setblock 17 236 16 oak_wall_sign[facing=west]{Text2:'[{"text":"新版传奇连杀","bold":true,"italic":false,"underlined":true,"color":"#FF41E7","clickEvent":{"action":"run_command","value":"/function debug:jkuse/combokill_exp2"}}]'} destroy
