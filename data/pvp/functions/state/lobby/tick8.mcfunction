@@ -21,7 +21,3 @@ execute as @s[gamemode=adventure,scores={state=0}] run function pvp:state/lobby/
 
 # 职业类型重置
 execute unless score @s class_type matches 1.. run scoreboard players set @s class_type 0
-
-# 1v1加入队伍
-execute as @s[gamemode=adventure,scores={state=0},x=2,y=10,z=-9,distance=..10] if block ~ ~-1 ~ red_concrete run team join red_v1
-execute as @s[gamemode=adventure,scores={state=0},x=2,y=10,z=-9,distance=..10] if block ~ ~-1 ~ blue_concrete run team join blue_v1

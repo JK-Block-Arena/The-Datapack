@@ -14,6 +14,10 @@ scoreboard objectives add statPlayerLevel dummy "玩家短期等级"
 # 玩家统计
 scoreboard objectives add Monthly_statPlayerRound dummy "本月玩家总循环"
 scoreboard objectives add Monthly_statPlayerKill dummy "本月玩家总击杀"
+scoreboard objectives add Monthly_statPlayerDeath dummy "本月玩家总死亡"
+scoreboard objectives add Monthly_statPlayerKD dummy "本月玩家K/D * 1k值"
+scoreboard objectives add Monthly_statPlayerKD_1 dummy
+scoreboard objectives add Monthly_statPlayerKD_2 dummy
 scoreboard objectives add Monthly_statPlayerClassKill1 dummy "本月游侠击杀"
 scoreboard objectives add Monthly_statPlayerClassKill2 dummy "本月暗影击杀"
 scoreboard objectives add Monthly_statPlayerClassKill3 dummy "本月突袭者击杀"
@@ -26,10 +30,12 @@ scoreboard objectives add Monthly_statPlayerClassKill9 dummy "本月千机击杀
 scoreboard objectives add Monthly_statPlayerClassKill10 dummy "本月召唤师击杀"
 scoreboard objectives add Monthly_statPlayerClassKill99 dummy "本月一击必杀击杀"
 
-
 scoreboard objectives add statPlayerRound dummy "玩家总循环"
 scoreboard objectives add statPlayerKill dummy "玩家总击杀"
 scoreboard objectives add statPlayerDeath dummy "玩家总死亡"
+scoreboard objectives add statPlayerKD dummy "玩家K/D * 1k值"
+scoreboard objectives add statPlayerKD_1 dummy
+scoreboard objectives add statPlayerKD_2 dummy
 scoreboard objectives add statPlayerDeathReal dummy "玩家包含自杀的总死亡"
 
 scoreboard objectives add statPlayerCombo2 dummy "2 连杀次数"

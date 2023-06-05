@@ -8,7 +8,13 @@ function modules:kill_count/init
 function modules:mutation/sub/off
 function pvp:class/ban_class
 
-# 轮换地图
+# 轮换1v1地图
+scoreboard players add $map_v1 mem 1
+execute if score $map_v1 mem matches 3.. run scoreboard players set $map_v1 mem 1
+scoreboard players set #1v1_red mem 0
+scoreboard players set #1v1_blue mem 0
+
+# 轮换主战场地图
 scoreboard players operation $map_last2 mem = $map_last mem
 scoreboard players operation $map_last mem = $map mem
 function modules:map/randomize

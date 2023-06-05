@@ -11,6 +11,8 @@ execute as @s[team=red] run team join red @e[tag=new_minion]
 execute as @s[team=blue] run team join blue @e[tag=new_minion]
 execute as @s[team=green] run team join green @e[tag=new_minion]
 execute as @s[team=yellow] run team join yellow @e[tag=new_minion]
+execute as @s[team=red_v1] run team join red_v1 @e[tag=new_minion]
+execute as @s[team=blue_v1] run team join blue_v1 @e[tag=new_minion]
 scoreboard players set @e[tag=new_minion] mem 2
 data modify entity @e[limit=1,tag=new_minion] Rotation set from entity @s Rotation
 ride @s mount @e[limit=1,type=pig,tag=new_minion,sort=nearest]

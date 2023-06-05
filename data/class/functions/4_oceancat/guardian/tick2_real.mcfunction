@@ -8,6 +8,8 @@ execute as @s[team=red] if entity @e[team=!red,tag=guardian_trigger,distance=..4
 execute as @s[team=blue] if entity @e[team=!blue,tag=guardian_trigger,distance=..4] run function class:4_oceancat/guardian/trigger
 execute as @s[team=green] if entity @e[team=!green,tag=guardian_trigger,distance=..4] run function class:4_oceancat/guardian/trigger
 execute as @s[team=yellow] if entity @e[team=!yellow,tag=guardian_trigger,distance=..4] run function class:4_oceancat/guardian/trigger
+execute as @s[team=red_v1] if entity @e[team=!red_v1,tag=guardian_trigger,distance=..4] run function class:4_oceancat/guardian/trigger
+execute as @s[team=blue_v1] if entity @e[team=!blue_v1,tag=guardian_trigger,distance=..4] run function class:4_oceancat/guardian/trigger
 
 # 看向最近的玩家
 execute facing entity @p[gamemode=adventure] eyes run tp @s ~ ~ ~ ~ ~

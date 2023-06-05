@@ -32,8 +32,8 @@ execute if score $mutation mem matches 6 run title @a[tag=brRegenCheck,scores={s
 execute if score $mutation mem matches 6 run tag @a[tag=brRegenCheck,scores={state=2}] remove brRegenCheck
 
 # 1v1模式无法回血
-title @a[tag=brRegenCheck,scores={state=4}] actionbar [{"color":"red","text":"✖ "},{"text":"1v1模式下无法静息治疗","bold":true}]
-tag @a[tag=brRegenCheck,scores={state=4}] remove brRegenCheck
+title @a[tag=brRegenCheck,scores={team=5..6}] actionbar [{"color":"red","text":"✖ "},{"text":"1v1模式下无法静息治疗","bold":true}]
+tag @a[tag=brRegenCheck,scores={team=5..6}] remove brRegenCheck
 
 # 清理上述判据，以供下一轮检查
 tag @a remove brRegenBreak

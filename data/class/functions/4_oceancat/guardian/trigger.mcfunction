@@ -17,6 +17,8 @@ execute as @s[team=red] run scoreboard players operation @e[tag=new_minion] play
 execute as @s[team=blue] run scoreboard players operation @e[tag=new_minion] player_id_sub = @p[team=!blue] player_id
 execute as @s[team=green] run scoreboard players operation @e[tag=new_minion] player_id_sub = @p[team=!green] player_id
 execute as @s[team=yellow] run scoreboard players operation @e[tag=new_minion] player_id_sub = @p[team=!yellow] player_id
+execute as @s[team=red_v1] run scoreboard players operation @e[tag=new_minion] player_id_sub = @p[team=!red_v1] player_id
+execute as @s[team=blue_v1] run scoreboard players operation @e[tag=new_minion] player_id_sub = @p[team=!blue_v1] player_id
 
 # 显示触发提示
 execute as @a if score @s player_id = @e[tag=new_minion,limit=1] player_id run title @s actionbar {"color":"aqua","text":"❇ 辉煌裂片已被激活"}

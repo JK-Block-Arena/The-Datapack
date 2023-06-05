@@ -1,6 +1,6 @@
 ## 木头人不许动
 # 显示
-tag @a[scores={state=2},gamemode=adventure] add 9_select_player
+tag @a[scores={state=2,team=1..4},gamemode=adventure] add 9_select_player
 title @a[tag=9_select_player] times 0 50 10
 title @a[tag=9_select_player] title "木头人不许动"
 title @a[tag=9_select_player] subtitle {"text":"哦，在这停顿！","color":"aqua"}

@@ -1,7 +1,7 @@
 ## 短跑运动员
 scoreboard objectives add select_run minecraft.custom:sprint_one_cm "跑的厘米数"
 # 显示
-tag @a[scores={state=2},gamemode=adventure] add 9_select_player
+tag @a[scores={state=2,team=1..4},gamemode=adventure] add 9_select_player
 title @a[tag=9_select_player] times 10 50 10
 title @a[tag=9_select_player] title {"text":"短跑运动员","color":"green"}
 title @a[tag=9_select_player] subtitle {"text":"不要停下来！","color":"aqua"}

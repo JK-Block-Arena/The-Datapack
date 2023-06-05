@@ -1,7 +1,7 @@
 # as tag为8_fangs_marker的实体
 # 落地后{盔甲架}成为状态1，记录落地位置{标记}为状态2
 tag @s[tag=!8_fangs_marker_1,nbt={OnGround:true}] add 8_fangs_marker_1
-execute at @s[tag=8_fangs_marker_1] if entity @e[distance=..3,type=#modules:living] run summon evoker_fangs ~ ~ ~
+execute at @s[tag=8_fangs_marker_1] if entity @e[distance=..3,type=#modules:livingnotfang] run summon evoker_fangs ~ ~ ~
 execute at @s[tag=8_fangs_marker_1] run summon marker ~ ~ ~ {Tags:["8_fangs_marker","8_fangs_marker_2"]}
 # 状态2存活时间
 scoreboard players set @s[tag=8_fangs_marker_2,tag=!fang_ed] 8_fangs_life 12

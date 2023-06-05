@@ -1,6 +1,6 @@
 # 玩家状态 1：重生中
 scoreboard players set @s state 1
-
+tag @s remove bad_guy
 # 重置位置与状态
 function modules:map/sub/respawn
 function class:modules/reset_modifiers
@@ -24,4 +24,7 @@ execute if score $skill_respawn debug matches 0 run scoreboard players set @s re
 execute if score $skill_respawn debug matches 1 run scoreboard players set @s respawn_time 11
 execute if score $skill_respawn debug matches 2 run scoreboard players set @s respawn_time 2
 execute if score $mutation mem matches 8 run scoreboard players set @s respawn_time 11
+scoreboard players set @s[scores={team=5..6}] respawn_time 11
+execute as @s[scores={team=5}] run scoreboard players add #1v1_blue mem 1
+execute as @s[scores={team=6}] run scoreboard players add #1v1_red mem 1
 function pvp:state/respawn/tick8

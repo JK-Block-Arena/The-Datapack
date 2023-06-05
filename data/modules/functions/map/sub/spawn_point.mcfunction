@@ -48,11 +48,9 @@ execute if score $map mem matches 9 run forceload add 12000 12000 12100 12100
 execute if score $map mem matches 100 run spawnpoint @a 3000 150000 3050
 execute if score $map mem matches 100 run forceload add 2950 3000 3050 3100
 
-# 1v1地图集
-#execute unless score $map_v1 mem matches 1.. run 
-scoreboard players set $map_v1 mem 1
+# 1v1地图
 execute if score $map_v1 mem matches 1 run forceload add 20014 20095 20098 20011
-execute if score $map_v1 mem matches 2 run forceload add 20014 20095 20098 20011
+execute if score $map_v1 mem matches 2 run forceload add 100031 100036 100107 100112
 
 # 刷新方块
 execute if score $map mem matches 1 run setblock -1959 47 -1987 minecraft:spruce_trapdoor[open=true,half=top]

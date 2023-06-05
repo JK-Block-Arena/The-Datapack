@@ -6,7 +6,7 @@ execute if score $mutation mem matches 8 run function modules:mutation/special/8
 scoreboard players add @a heartbeat 1
 scoreboard players set @a[scores={heartbeat=3}] heartbeat 0
 scoreboard players set @a[scores={hp=5..}] heartbeat 0
-execute as @a[scores={heartbeat=2,state=2..3,hp=1..4}] run playsound minecraft:block.conduit.ambient player @s 0 1000000 0 1000000 1.67
+execute as @a[scores={heartbeat=2,state=2,team=1..4,hp=1..4}] run playsound minecraft:block.conduit.ambient player @s 0 1000000 0 1000000 1.67
 
 # 换位仇恨倒计时
 scoreboard players remove @a[scores={mino_time_00080=1..}] mino_time_00080 1

@@ -1,1 +1,0 @@
-execute if score $map mem matches 8 as @a[scores={state=2}] at @s if entity @e[limit=1,sort=nearest,type=marker,tag=portal_marker,distance=..2] if block ~ ~ ~ end_portal run function modules:map/end_portal/check

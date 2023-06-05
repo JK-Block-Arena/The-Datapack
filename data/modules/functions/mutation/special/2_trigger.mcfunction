@@ -32,4 +32,4 @@ execute unless score $mutation mem matches 8 run effect give @s[tag=class99p] in
 tag @a remove class99p
 
 # 刷新多余血量
-execute unless score @s class matches 3 run effect give @s[scores={state=2..4,hp=21..}] minecraft:instant_health 2 0 true
+execute unless score @s class matches 3 run effect give @s[scores={state=2,team=1..4,hp=21..}] minecraft:instant_health 2 0 true

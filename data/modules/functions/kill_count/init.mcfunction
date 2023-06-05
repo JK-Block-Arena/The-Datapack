@@ -46,15 +46,15 @@ bossbar set bossbar:yellow value 0
 bossbar set bossbar:yellow color yellow
 
 bossbar add bossbar:red_v1 ""
-bossbar set bossbar:red_v1 style notched_6
-bossbar set bossbar:red_v1 max 6
-bossbar set bossbar:red_v1 value 0
+bossbar set bossbar:red_v1 style progress
+bossbar set bossbar:red_v1 max 1
+bossbar set bossbar:red_v1 value 1
 bossbar set bossbar:red_v1 color red
 
 bossbar add bossbar:blue_v1 ""
-bossbar set bossbar:blue_v1 style notched_6
-bossbar set bossbar:blue_v1 max 6
-bossbar set bossbar:blue_v1 value 0
+bossbar set bossbar:blue_v1 style progress
+bossbar set bossbar:blue_v1 max 1
+bossbar set bossbar:blue_v1 value 1
 bossbar set bossbar:blue_v1 color blue
 
 function modules:update_bossbar

@@ -1,7 +1,4 @@
 
-scoreboard objectives remove Sneaking_map
-scoreboard objectives add Sneaking_map minecraft.custom:minecraft.sneak_time "地图检测潜行"
-
 scoreboard objectives remove afkTime
 scoreboard objectives add afkTime dummy "未操作时间"
 

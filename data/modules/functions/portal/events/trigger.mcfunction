@@ -14,10 +14,6 @@ execute as @s[x=12,y=12,z=17,distance=..5] run scoreboard players set #portal me
 execute as @s[x=3,y=12,z=17,distance=..5] run scoreboard players set #portal mem 102
 # 赞助者大厅
 execute as @s[x=12,y=12,z=2,distance=..5] run scoreboard players set #portal mem 103
-# 1v1战场准备、进入与离开
-execute as @s[x=3,y=12,z=2,distance=..5] run scoreboard players set #portal mem 104
-execute as @s[x=2,y=12,z=-27,distance=..5] run scoreboard players set #portal mem 105
-execute as @s[x=2,y=12,z=-10,distance=..5] run scoreboard players set #portal mem 100
 
 # 触发
 execute if score #portal mem matches 1 run function pvp:state/lobby/in/enter_train
@@ -27,8 +23,7 @@ execute if score #portal mem matches 100 run tp @s 1.5 235.5 8.5 270 0
 execute if score #portal mem matches 101 run tp @s -99.5 237.5 8.5 90 0
 execute if score #portal mem matches 102 run tp @s 1.5 235.5 8.5 270 0
 execute if score #portal mem matches 103 run tp @s -887.5 38.5 8.5 90 0
-execute if score #portal mem matches 104 run tp @s 2.5 11.5 -11.5 180 0
-execute if score #portal mem matches 105 run function pvp:state/battle/enter_v1
+
 # 特效
 execute at @s run playsound minecraft:block.portal.travel block @s ~ ~ ~ 0.3
 effect give @s blindness 1 0 true

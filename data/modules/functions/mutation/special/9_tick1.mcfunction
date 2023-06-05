@@ -18,6 +18,6 @@ bossbar set modules:mutation_9 name ["",{"text":"剩余时间：","color":"gold"
 execute store result bossbar modules:mutation_9 value run scoreboard players get #9_time mem
 execute if score #9_time mem matches 1.. run bossbar set modules:mutation_9 visible true
 execute unless score #9_time mem matches 1.. run bossbar set modules:mutation_9 visible false
-bossbar set modules:mutation_9 players @a[scores={state=1..2}]
+bossbar set modules:mutation_9 players @a[scores={state=1..2,team=1..4}]
 
 execute if score #9_time mem matches 1 run tag @a remove 9_select_player

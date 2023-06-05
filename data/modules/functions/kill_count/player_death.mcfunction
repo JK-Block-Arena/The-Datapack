@@ -11,6 +11,8 @@ execute if entity @a[tag=murder,team=red] as @s[team=red] run scoreboard players
 execute if entity @a[tag=murder,team=blue] as @s[team=blue] run scoreboard players set #death_type mem 1
 execute if entity @a[tag=murder,team=green] as @s[team=green] run scoreboard players set #death_type mem 1
 execute if entity @a[tag=murder,team=yellow] as @s[team=yellow] run scoreboard players set #death_type mem 1
+execute if entity @a[tag=murder,team=red_v1] as @s[team=red_v1] run scoreboard players set #death_type mem 1
+execute if entity @a[tag=murder,team=blue_v1] as @s[team=blue_v1] run scoreboard players set #death_type mem 1
 
 # 触发敌方击杀
 execute if score #death_type mem matches 2 as @a[tag=murder] at @s run function modules:basic/events/player_kill

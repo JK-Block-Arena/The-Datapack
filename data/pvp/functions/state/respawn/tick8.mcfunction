@@ -1,4 +1,4 @@
-execute as @s[team=!lobby,team=!blue,team=!red,team=!green,team=!yellow] run function debug:jkuse/1_back_spawn
+execute as @s[team=!lobby,team=!red,team=!blue,team=!green,team=!yellow,team=!red_v1,team=!blue_v1] run function debug:jkuse/1_back_spawn
 # 强制重新分队
 execute if score $balance_team debug matches 0 if score $team_diff mem matches 2.. if score #red mem = #max mem as @s[scores={respawn_time=15},team=red] run function pvp:state/respawn/auto_team
 execute if score $balance_team debug matches 0 if score $team_diff mem matches 2.. if score #blue mem = #max mem as @s[scores={respawn_time=15},team=blue] run function pvp:state/respawn/auto_team

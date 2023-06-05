@@ -6,12 +6,16 @@ item replace entity @s[scores={10_flag_st=..0},team=red,nbt=!{Inventory:[{Slot:0
 item replace entity @s[scores={10_flag_st=..0},team=blue,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10000}}]}] hotbar.0 with blue_banner{BlockEntityTag:{Patterns:[{Pattern:"flo",Color:0}]},CustomModelData:10000,Unbreakable:1b,HideFlags:63}
 item replace entity @s[scores={10_flag_st=..0},team=green,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10000}}]}] hotbar.0 with green_banner{BlockEntityTag:{Patterns:[{Pattern:"flo",Color:0}]},CustomModelData:10000,Unbreakable:1b,HideFlags:63}
 item replace entity @s[scores={10_flag_st=..0},team=yellow,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10000}}]}] hotbar.0 with yellow_banner{BlockEntityTag:{Patterns:[{Pattern:"flo",Color:0}]},CustomModelData:10000,Unbreakable:1b,HideFlags:63}
+item replace entity @s[scores={10_flag_st=..0},team=red_v1,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10000}}]}] hotbar.0 with red_banner{BlockEntityTag:{Patterns:[{Pattern:"flo",Color:0}]},CustomModelData:10000,Unbreakable:1b,HideFlags:63}
+item replace entity @s[scores={10_flag_st=..0},team=blue_v1,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10000}}]}] hotbar.0 with blue_banner{BlockEntityTag:{Patterns:[{Pattern:"flo",Color:0}]},CustomModelData:10000,Unbreakable:1b,HideFlags:63}
 
 item replace entity @s[scores={10_flag_st=1..},team=lobby,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10001}}]}] hotbar.0 with white_banner{BlockEntityTag:{Patterns:[{Pattern:"cre",Color:15}]},CustomModelData:10001,Unbreakable:1b,HideFlags:63}
 item replace entity @s[scores={10_flag_st=1..},team=red,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10001}}]}] hotbar.0 with red_banner{BlockEntityTag:{Patterns:[{Pattern:"cre",Color:15}]},CustomModelData:10001,Unbreakable:1b,HideFlags:63}
 item replace entity @s[scores={10_flag_st=1..},team=blue,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10001}}]}] hotbar.0 with blue_banner{BlockEntityTag:{Patterns:[{Pattern:"cre",Color:15}]},CustomModelData:10001,Unbreakable:1b,HideFlags:63}
 item replace entity @s[scores={10_flag_st=1..},team=green,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10001}}]}] hotbar.0 with green_banner{BlockEntityTag:{Patterns:[{Pattern:"cre",Color:15}]},CustomModelData:10001,Unbreakable:1b,HideFlags:63}
 item replace entity @s[scores={10_flag_st=1..},team=yellow,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10001}}]}] hotbar.0 with yellow_banner{BlockEntityTag:{Patterns:[{Pattern:"cre",Color:15}]},CustomModelData:10001,Unbreakable:1b,HideFlags:63}
+item replace entity @s[scores={10_flag_st=1..},team=red_v1,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10001}}]}] hotbar.0 with red_banner{BlockEntityTag:{Patterns:[{Pattern:"cre",Color:15}]},CustomModelData:10001,Unbreakable:1b,HideFlags:63}
+item replace entity @s[scores={10_flag_st=1..},team=blue_v1,nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:10001}}]}] hotbar.0 with blue_banner{BlockEntityTag:{Patterns:[{Pattern:"cre",Color:15}]},CustomModelData:10001,Unbreakable:1b,HideFlags:63}
 scoreboard players set @s count1 -1
 
 # 僵尸

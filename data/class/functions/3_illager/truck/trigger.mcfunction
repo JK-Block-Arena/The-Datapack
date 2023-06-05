@@ -24,6 +24,8 @@ execute as @s[team=red] run team join red @e[tag=new_minion]
 execute as @s[team=blue] run team join blue @e[tag=new_minion]
 execute as @s[team=green] run team join green @e[tag=new_minion]
 execute as @s[team=yellow] run team join yellow @e[tag=new_minion]
+execute as @s[team=red_v1] run team join red_v1 @e[tag=new_minion]
+execute as @s[team=blue_v1] run team join blue_v1 @e[tag=new_minion]
 
 # 投掷
 execute at @e[tag=new_minion,limit=1] run summon marker ^ ^ ^1 {Tags:["mark"]}

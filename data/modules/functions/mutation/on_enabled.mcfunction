@@ -1,10 +1,10 @@
 scoreboard players operation $mutation mem = $mutation_new mem
 
 # 设置血量
-execute if score $mutation mem matches 1 as @a[scores={state=2}] run attribute @s minecraft:generic.max_health base set 12
-execute if score $mutation mem matches 1 as @a[scores={state=2,hp=20..}] if score @s class matches 3 run effect give @s minecraft:instant_health 2 0 true
-execute if score $mutation mem matches 1 as @a[scores={state=2,hp=12..}] unless score @s class matches 3 run effect give @s minecraft:instant_health 2 0 true
-execute if score $mutation mem matches 6 as @a[scores={state=2}] run attribute @s minecraft:generic.max_health base set 30
+execute if score $mutation mem matches 1 as @a[scores={state=2,team=1..4}] run attribute @s minecraft:generic.max_health base set 12
+execute if score $mutation mem matches 1 as @a[scores={state=2,team=1..4,hp=20..}] if score @s class matches 3 run effect give @s minecraft:instant_health 2 0 true
+execute if score $mutation mem matches 1 as @a[scores={state=2,team=1..4,hp=12..}] unless score @s class matches 3 run effect give @s minecraft:instant_health 2 0 true
+execute if score $mutation mem matches 6 as @a[scores={state=2,team=1..4}] run attribute @s minecraft:generic.max_health base set 30
 
 # 设置 bossbar
 scoreboard players set $mutation_bossbar mem 0

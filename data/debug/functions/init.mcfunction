@@ -149,6 +149,9 @@ scoreboard players set #1000 mem 1000
 scoreboard players set #10000 mem 10000
 scoreboard players set #1000000 mem 1000000
 
+scoreboard players set #1v1_red mem 0
+scoreboard players set #1v1_blue mem 0
+
 scoreboard objectives add hp health "❤"
 scoreboard objectives setdisplay list hp
 scoreboard objectives setdisplay belowName hp

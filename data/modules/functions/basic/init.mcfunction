@@ -8,11 +8,10 @@ scoreboard objectives remove death
 scoreboard objectives add death deathCount "死亡接口"
 
 # 在线时长
-scoreboard objectives remove play_time_trigger
-scoreboard objectives add play_time_trigger trigger "开启/关闭在线时长显示"
-#scoreboard objectives remove play_time_t
-#scoreboard objectives add play_time_t minecraft.custom:minecraft.play_time "本月在线时长/tick"
-#scoreboard objectives add play_time dummy "本月在线时长"
+scoreboard objectives remove play_time_show
+scoreboard objectives add play_time_show trigger "开启/关闭在线时长显示"
+scoreboard objectives remove play_time
+scoreboard objectives add play_time dummy "本月在线时长/天/时/分/秒"
 scoreboard objectives remove play_time_s
 scoreboard objectives add play_time_s dummy "在线时长/s"
 scoreboard objectives remove play_time_m

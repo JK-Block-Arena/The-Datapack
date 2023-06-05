@@ -1,5 +1,7 @@
 scoreboard objectives remove Monthly_statPlayerRound
 scoreboard objectives remove Monthly_statPlayerKill
+scoreboard objectives remove Monthly_statPlayerDeath
+scoreboard objectives remove Monthly_statPlayerKD
 scoreboard objectives remove Monthly_statPlayerClassKill1
 scoreboard objectives remove Monthly_statPlayerClassKill2
 scoreboard objectives remove Monthly_statPlayerClassKill3

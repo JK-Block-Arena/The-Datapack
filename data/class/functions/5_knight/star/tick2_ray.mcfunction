@@ -12,6 +12,8 @@ execute if score @s[scores={team=1}] ray_speed matches -3.. run particle dust 1 
 execute if score @s[scores={team=2}] ray_speed matches -3.. run particle dust 0.663 0.82 1 1.5 ~ ~ ~ 1.1 1.1 1.1 0 25 force
 execute if score @s[scores={team=3}] ray_speed matches -3.. run particle dust 0.69 1 0.663 1.5 ~ ~ ~ 1.1 1.1 1.1 0 25 force
 execute if score @s[scores={team=4}] ray_speed matches -3.. run particle dust 1 0.969 0.514 1.5 ~ ~ ~ 1.1 1.1 1.1 0 25 force
+execute if score @s[scores={team=5}] ray_speed matches -3.. run particle dust 1 0.631 0.651 1.5 ~ ~ ~ 1.1 1.1 1.1 0 25 force
+execute if score @s[scores={team=6}] ray_speed matches -3.. run particle dust 0.663 0.82 1 1.5 ~ ~ ~ 1.1 1.1 1.1 0 25 force
 
 # 减速、清理
 scoreboard players remove @s ray_speed 1

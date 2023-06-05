@@ -21,6 +21,8 @@ execute as @s[team=red] run team join red @e[tag=new_minion]
 execute as @s[team=blue] run team join blue @e[tag=new_minion]
 execute as @s[team=green] run team join green @e[tag=new_minion]
 execute as @s[team=yellow] run team join yellow @e[tag=new_minion]
+execute as @s[team=red_v1] run team join red_v1 @e[tag=new_minion]
+execute as @s[team=blue_v1] run team join blue_v1 @e[tag=new_minion]
 
 # 设置寿命
 execute if score @s statPlayerLevel matches 1 run scoreboard players set @e[tag=new_minion] 4_guardian_life 61

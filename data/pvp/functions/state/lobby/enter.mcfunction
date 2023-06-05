@@ -15,6 +15,15 @@ function class:modules/reset_modifiers
 # 重置伤害信息
 scoreboard players set @s killCombo 0
 function modules:mino2/sub/forgive
+scoreboard players operation @s statPlayerKD = @s statPlayerKill
+scoreboard players operation @s statPlayerKD *= #1000 mem
+scoreboard players operation @s statPlayerKD /= @s statPlayerDeath
+scoreboard players operation @s statPlayerKD_1 = @s statPlayerKD
+scoreboard players operation @s statPlayerKD_2 = @s statPlayerKD
+scoreboard players operation @s statPlayerKD_1 /= #1000 mem
+scoreboard players operation @s statPlayerKD_2 %= #1000 mem
+execute unless score @s Monthly_statPlayerKill matches 1.. run scoreboard players set @s Monthly_statPlayerKill 0
+execute as @s[scores={Monthly_statPlayerKill=60..}] run function pvp:state/lobby/monthly_kd
 
 # 重置物品栏与队伍
 team join lobby @s

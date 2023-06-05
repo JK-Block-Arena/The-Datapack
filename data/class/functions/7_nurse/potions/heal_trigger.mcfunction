@@ -9,7 +9,8 @@ execute as @s[team=green] run effect give @a[tag=!7_healer,distance=..8,team=gre
 execute as @s[team=lobby] run effect give @a[tag=!7_healer,distance=..8,team=lobby] regeneration 3 2
 execute as @s[team=lobby] run effect give @a[tag=!7_healer,distance=..8,team=lobby] absorption 5 0 
 effect give @s regeneration 3 2
-effect give @s absorption 5 0
+effect clear @s[scores={hp=..24}] absorption
+effect give @s[scores={hp=..24}] absorption 5 0
 # 特效
 playsound minecraft:entity.splash_potion.break player @a ~ ~ ~ 1 0.6
 

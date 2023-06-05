@@ -14,3 +14,16 @@ execute if entity @a[x=-2026,y=39,z=2023,distance=..20] run particle minecraft:c
 execute if entity @a[x=-2028,y=42,z=2048,distance=..20] run particle minecraft:falling_spore_blossom -2028 42 2048 3 2.5 3 0 3 normal @a
 # 古堡图书馆粒子
 execute if entity @a[x=-2052,y=39,z=2047,distance=..20] run particle minecraft:enchant -2052 39 2047 3 2.5 3 1 3 normal @a
+
+# 玄素图，给予贴墙浮空
+execute if score $map mem matches 100 as @a[scores={state=2,sneak_time=1..},nbt=!{OnGround:1b}] at @s run function modules:map/xuansu
+# 舞台图的毒药池
+execute if score $map mem matches 8 positioned 11010.5 36 11042 unless entity @e[limit=1,type=area_effect_cloud,tag=poison_pool,distance=..2] run summon area_effect_cloud 11010.5 36 11042 {Tags:["poison_pool"],Duration:1000000,DurationOnUse:0,RadiusOnUse:0f,Radius:3f,RadiusPerTick:0.0f,WaitTime:1,ReapplicationDelay:5,Color:5739047}
+# 舞台图的传送门
+execute if score $map mem matches 8 as @a[gamemode=!spectator] at @s if entity @e[limit=1,sort=nearest,type=marker,tag=portal_marker,distance=..2] if block ~ ~ ~ end_portal run function modules:map/end_portal/check
+# 矿洞冰上的速度buff
+execute if score $map mem matches 9 as @a[scores={state=2},gamemode=adventure] at @s if block ~ ~-1 ~ blue_ice run effect give @s speed 2 19
+
+# 1v1更新分数
+bossbar set bossbar:red_v1 name [{"text": "","color": "gold","bold": true},{"selector":"@p[team=red_v1]"}," → ",{"score":{"name": "#1v1_red","objective": "mem"},"color": "red","bold": true}," : ",{"score":{"name": "#1v1_blue","objective": "mem"},"color": "blue","bold": true}," ← ",{"selector":"@p[team=blue_v1]"}]
+bossbar set bossbar:blue_v1 name [{"text": "","color": "gold","bold": true},{"selector":"@p[team=red_v1]"}," → ",{"score":{"name": "#1v1_red","objective": "mem"},"color": "red","bold": true}," : ",{"score":{"name": "#1v1_blue","objective": "mem"},"color": "blue","bold": true}," ← ",{"selector":"@p[team=blue_v1]"}]

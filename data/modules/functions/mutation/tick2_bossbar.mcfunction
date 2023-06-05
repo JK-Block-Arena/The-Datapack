@@ -16,12 +16,12 @@ execute if score #mutation mem matches 8900.. run bossbar set modules:mutation c
 execute if score #mutation mem matches 8900.. run bossbar set modules:mutation name {"text": "◈ 突变效果触发 ◈","color":"red"}
 
 # 提示
-execute if score #mutation mem matches 9200.. if score $mutation_warn mem matches 0 run playsound minecraft:block.note_block.chime player @a[scores={state=1..2}] 0 1000000 0 1000000 0.7
-execute if score #mutation mem matches 9200.. if score $mutation_warn mem matches 0 run title @a[scores={state=1..2}] actionbar {"color":"gold","text":"⚠ 突变效果即将触发","bold": true}
+execute if score #mutation mem matches 9200.. if score $mutation_warn mem matches 0 run playsound minecraft:block.note_block.chime player @a[scores={state=1..2,team=1..4}] 0 1000000 0 1000000 0.7
+execute if score #mutation mem matches 9200.. if score $mutation_warn mem matches 0 run title @a[scores={state=1..2,team=1..4}] actionbar {"color":"gold","text":"⚠ 突变效果即将触发","bold": true}
 execute if score #mutation mem matches 9200.. if score $mutation_warn mem matches 0 run scoreboard players set $mutation_warn mem 1
 
 # 触发
-execute if score #mutation mem matches 10000.. if score $mutation mem matches 2 as @a[scores={state=2}] at @s run function modules:mutation/special/2_trigger
+execute if score #mutation mem matches 10000.. if score $mutation mem matches 2 as @a[scores={state=2,team=1..4}] at @s run function modules:mutation/special/2_trigger
 execute if score #mutation mem matches 10000.. if score $mutation mem matches 7 run function modules:mutation/special/7_trigger
 execute if score #mutation mem matches 10000.. if score $mutation mem matches 9 run function modules:mutation/special/9_trigger
 execute if score #mutation mem matches 10000.. run bossbar set modules:mutation value 0

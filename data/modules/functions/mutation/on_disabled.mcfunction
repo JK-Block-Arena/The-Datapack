@@ -11,11 +11,13 @@ bossbar set bossbar:red name ""
 bossbar set bossbar:blue name ""
 bossbar set bossbar:green name ""
 bossbar set bossbar:yellow name ""
+bossbar set bossbar:red_v1 name ""
+bossbar set bossbar:blue_v1 name ""
 function modules:update_bossbar
 
 # 恢复
 execute as @e[type=#modules:projectile/check,tag=!projectile_land] at @s run data modify entity @s NoGravity set value false
-execute as @a[scores={state=2}] run attribute @s minecraft:generic.max_health base set 20
+execute as @a[scores={state=2,team=1..4}] run attribute @s minecraft:generic.max_health base set 20
 scoreboard players set @a mino_time_00080 0
 effect clear @a absorption
 function modules:mutation/special/9_select/init
