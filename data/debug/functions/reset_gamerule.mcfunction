@@ -9,7 +9,7 @@ gamerule doMobSpawning false
 gamerule doTileDrops false
 gamerule doWeatherCycle false
 gamerule keepInventory true
-gamerule logAdminCommands false
+#gamerule logAdminCommands false
 gamerule mobGriefing false
 gamerule naturalRegeneration false
 gamerule randomTickSpeed 0

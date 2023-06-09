@@ -5,6 +5,7 @@ particle minecraft:bubble_pop ~5 ~0.8 ~ 0.2 0.6 0.2 0.1 50 normal @a
 playsound minecraft:entity.player.splash.high_speed player @a[distance=0.01..]
 
 # 传送
+effect clear @s[scores={hp=..28}] absorption
 effect give @s absorption infinite 1 true
 effect give @s blindness 1 0 true
 function modules:map/sub/enter_near_enemy

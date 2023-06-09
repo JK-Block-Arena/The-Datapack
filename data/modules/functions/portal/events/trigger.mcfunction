@@ -22,7 +22,7 @@ execute if score #portal mem matches 3 run function pvp:state/train/leave
 execute if score #portal mem matches 100 run tp @s 1.5 235.5 8.5 270 0
 execute if score #portal mem matches 101 run tp @s -99.5 237.5 8.5 90 0
 execute if score #portal mem matches 102 run tp @s 1.5 235.5 8.5 270 0
-execute if score #portal mem matches 103 run tp @s -887.5 38.5 8.5 90 0
+execute if score #portal mem matches 103 run function pvp:state/lobby/in/donator_hall
 
 # 特效
 execute at @s run playsound minecraft:block.portal.travel block @s ~ ~ ~ 0.3

@@ -2,11 +2,11 @@
 summon minecraft:zombie ^0.4 ^ ^ {PersistenceRequired:true,CustomName:'"僵尸守卫"',Health:20f,CustomNameVisible:true,Tags:["new_minion"]}
 summon minecraft:zombie ^-0.4 ^ ^ {PersistenceRequired:true,CustomName:'"僵尸守卫"',Health:20f,CustomNameVisible:true,Tags:["new_minion"]}
 item replace entity @e[tag=new_minion] armor.head with leather_helmet{NeedColor:1b,Unbreakable:1,AttributeModifiers:[]}
-item replace entity @e[tag=new_minion] weapon.mainhand with stone_sword{Unbreakable:1}
-execute if score @s statPlayerLevel matches 1 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.46
-execute if score @s statPlayerLevel matches 2 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.42
-execute if score @s statPlayerLevel matches 3 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.38
-execute if score @s statPlayerLevel matches 4 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.34
+item replace entity @e[tag=new_minion] weapon.mainhand with stone_sword{Unbreakable:1,AttributeModifiers:[{UUID:[I;1,1,1,1],Amount:3,AttributeName:"generic.attack_damage",Name:"attack",Slot:"mainhand",Operation:0}]}
+execute if score @s statPlayerLevel matches 1 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.4
+execute if score @s statPlayerLevel matches 2 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.36
+execute if score @s statPlayerLevel matches 3 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.32
+execute if score @s statPlayerLevel matches 4 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.28
 effect give @e[tag=new_minion] weakness infinite 0 true
 
 # 设置玩家信息
