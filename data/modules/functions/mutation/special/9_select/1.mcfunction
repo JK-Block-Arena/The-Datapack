@@ -1,4 +1,4 @@
-## 20以内的算法
+## 算数能手
 scoreboard objectives add answer trigger "答案"
 scoreboard players enable @a answer
 # 第一个数字
@@ -22,7 +22,7 @@ execute if score #9_c mem matches 4 run scoreboard players operation #9_r mem %=
 ## 显示
 # 副标题
 title @a[scores={state=1..2,team=1..4},gamemode=adventure] times 10 50 10
-title @a[scores={state=1..2,team=1..4},gamemode=adventure] title {"text":"20以内的算法","color":"green"}
+title @a[scores={state=1..2,team=1..4},gamemode=adventure] title {"text":"算数能手","color":"green"}
 execute if score #9_c mem matches 1 run title @a[scores={state=1..2,team=1..4},gamemode=adventure] subtitle ["",{"score":{"name":"#9_x","objective":"mem"},"color":"green"},{"text":" + ","color":"gold"},{"score":{"name":"#9_y","objective":"mem"},"color":"green"},{"text":" = ","color":"gold"},"?"]
 execute if score #9_c mem matches 2 run title @a[scores={state=1..2,team=1..4},gamemode=adventure] subtitle ["",{"score":{"name":"#9_x","objective":"mem"},"color":"green"},{"text":" - ","color":"gold"},{"score":{"name":"#9_y","objective":"mem"},"color":"green"},{"text":" = ","color":"gold"},"?"]
 execute if score #9_c mem matches 3 run title @a[scores={state=1..2,team=1..4},gamemode=adventure] subtitle ["",{"score":{"name":"#9_x","objective":"mem"},"color":"green"},{"text":" * ","color":"gold"},{"score":{"name":"#9_y","objective":"mem"},"color":"green"},{"text":" = ","color":"gold"},"?"]

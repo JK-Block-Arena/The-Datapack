@@ -32,5 +32,5 @@ tag @a remove owner
 tag @s remove self
 
 # 显示警告
-title @a[distance=..10] actionbar {"color":"gold","text":"⚠ 警惕雷暴威胁","bold":true}
-execute positioned ~ ~7 ~ run title @a[distance=..9] actionbar {"color":"gold","text":"⚠ 警惕雷暴威胁","bold":true}
+title @a[distance=..10,gamemode=!spectator] actionbar {"color":"gold","text":"⚠ 警惕雷暴威胁","bold":true}
+execute positioned ~ ~7 ~ run title @a[distance=..9,gamemode=!spectator] actionbar {"color":"gold","text":"⚠ 警惕雷暴威胁","bold":true}

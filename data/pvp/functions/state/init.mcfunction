@@ -10,5 +10,8 @@ scoreboard objectives add team_prefer dummy "队伍意向"
 scoreboard objectives remove back_spawn
 scoreboard objectives add back_spawn trigger "旁观者返回大厅"
 
+scoreboard objectives remove switch_bossbar
+scoreboard objectives add switch_bossbar trigger "切换boss条"
+
 scoreboard objectives remove key_use
 scoreboard objectives add key_use minecraft.used:carrot_on_a_stick "检测右键"

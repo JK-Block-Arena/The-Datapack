@@ -24,3 +24,4 @@ bossbar set bossbar:red name ["",{"text":"✧ 当前地图 ✧  ", "color":"red"
 bossbar set bossbar:blue name ["",{"text":"✧ 当前地图 ✧  ", "color":"aqua"},{"selector":"@e[tag=map_name]"},{"text":"  ♥ 作者 ♥  ", "color":"aqua"},{"selector":"@e[tag=map_author]"}]
 bossbar set bossbar:green name ["",{"text":"✧ 当前地图 ✧  ", "color":"green"},{"selector":"@e[tag=map_name]"},{"text":"  ♥ 作者 ♥  ", "color":"green"},{"selector":"@e[tag=map_author]"}]
 bossbar set bossbar:yellow name ["",{"text":"✧ 当前地图 ✧  ", "color":"yellow"},{"selector":"@e[tag=map_name]"},{"text":"  ♥ 作者 ♥  ", "color":"yellow"},{"selector":"@e[tag=map_author]"}]
+bossbar set sp:white name ["",{"text":"✧ 当前地图 ✧  ", "color":"gold"},{"selector":"@e[tag=map_name]"},{"text":"  ♥ 作者 ♥  ", "color":"gold"},{"selector":"@e[tag=map_author]"}]

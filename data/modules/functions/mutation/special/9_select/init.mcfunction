@@ -6,5 +6,7 @@ scoreboard players reset #9_time mem
 # 特有计分板
 scoreboard objectives remove answer
 scoreboard objectives remove select_run
+scoreboard objectives remove select_jump
+scoreboard objectives remove select_jump_real
 # 特有boss条
 bossbar set modules:mutation_9 visible false

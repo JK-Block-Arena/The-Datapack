@@ -1,7 +1,7 @@
 scoreboard players set #random_min mem 1
 scoreboard players set #random_max mem 10
 function modules:random
-execute if score $mutation mem matches 8 run scoreboard players operation #random mem = #99 mem
+execute if score $mutation mem matches 10 run scoreboard players operation #random mem = #99 mem
 scoreboard players operation @s class = #random mem
 
 execute if entity @e[limit=1,tag=class1,tag=banned_class] as @s[scores={class=1}] run function pvp:class/random_class

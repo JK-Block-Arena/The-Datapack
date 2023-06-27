@@ -24,8 +24,8 @@ execute as @s[team=blue_v1] run scoreboard players operation @e[tag=new_minion] 
 execute as @a if score @s player_id = @e[tag=new_minion,limit=1] player_id run title @s actionbar {"color":"aqua","text":"❇ 辉煌裂片已被激活"}
 
 # 显示警告
-title @a[distance=..10] actionbar {"color":"gold","text":"⚠ 警惕雷暴威胁","bold":true}
-execute positioned ~ ~7 ~ run title @a[distance=..9] actionbar {"color":"gold","text":"⚠ 警惕雷暴威胁","bold":true}
+title @a[distance=..10,gamemode=!spectator] actionbar {"color":"gold","text":"⚠ 警惕雷暴威胁","bold":true}
+execute positioned ~ ~7 ~ run title @a[distance=..9,gamemode=!spectator] actionbar {"color":"gold","text":"⚠ 警惕雷暴威胁","bold":true}
 
 # 清理
 tag @e remove new_minion

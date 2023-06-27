@@ -26,3 +26,5 @@ tag @s add refresh_inventory
 # 成就
 scoreboard players set @s[x=-1943.5,y=40.0,z=-1960.5,distance=..2,x_rotation=-90..-50] hidden_star 1
 scoreboard players set @s[x=7040.5,y=56.0,z=6954.5,distance=..2,x_rotation=-90..-50] hidden_star 1
+
+execute if score $mutation mem matches 8 run effect give @s[scores={state=2,team=1..4}] glowing 3

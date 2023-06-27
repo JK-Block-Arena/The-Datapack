@@ -10,4 +10,4 @@ effect give @s[scores={statPlayerLevel=1}] glowing 3
 effect give @s[scores={statPlayerLevel=2..3}] glowing 4
 effect give @s[scores={statPlayerLevel=4}] glowing 5
 effect give @s[type=!player] glowing 4
-title @s actionbar {"color":"gold","text":"⚠ 已被烁光新星照亮","bold":true}
+title @s[gamemode=!spectator] actionbar {"color":"gold","text":"⚠ 已被烁光新星照亮","bold":true}

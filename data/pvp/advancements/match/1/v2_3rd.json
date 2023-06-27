@@ -1,15 +1,15 @@
 {
-  "parent": "pvp:match/v2_1st",
+  "parent": "pvp:match/1/v2_2nd",
   "display": {
     "icon": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:iron_ingot"
     },
     "title": {
-      "text": "2v2v2v2----TOP2"
+      "text": "2v2v2v2----TOP3"
     },
     "description": [
       {
-        "text": "你在友谊赛2v2v2v2模式中取得了第二名的好成绩！\n",
+        "text": "你在友谊赛2v2v2v2模式中取得了第三名的好成绩！\n",
         "color": "white"
       },
       {
@@ -30,7 +30,7 @@
         "player": [
           {
             "scores": {
-              "extra_V2_2nd": {
+              "match_1_V2_3rd": {
                 "min": 1
               }
             },

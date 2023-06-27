@@ -155,20 +155,22 @@ execute if score $mutation mem matches 2 run summon marker ~ ~ ~ {CustomName:'{"
 execute unless score $mutation mem matches 2 run summon marker ~ ~ ~ {CustomName:'{"text":"[混沌灵魂++]","color":"gray"}',Tags:["display3"]}
 execute if score $mutation mem matches 3 run summon marker ~ ~ ~ {CustomName:'{"text":"[引力失衡]","color":"green"}',Tags:["display4"]}
 execute unless score $mutation mem matches 3 run summon marker ~ ~ ~ {CustomName:'{"text":"[引力失衡]","color":"gray"}',Tags:["display4"]}
-execute if score $mutation mem matches 4 run summon marker ~ ~ ~ {CustomName:'{"text":"[狂暴之血]","color":"green"}',Tags:["display5"]}
-execute unless score $mutation mem matches 4 run summon marker ~ ~ ~ {CustomName:'{"text":"[狂暴之血]","color":"gray"}',Tags:["display5"]}
+execute if score $mutation mem matches 4 run summon marker ~ ~ ~ {CustomName:'{"text":"[厄难之血]","color":"green"}',Tags:["display5"]}
+execute unless score $mutation mem matches 4 run summon marker ~ ~ ~ {CustomName:'{"text":"[厄难之血]","color":"gray"}',Tags:["display5"]}
 execute if score $mutation mem matches 5 run summon marker ~ ~ ~ {CustomName:'{"text":"[折跃灵泉]","color":"green"}',Tags:["display6"]}
 execute unless score $mutation mem matches 5 run summon marker ~ ~ ~ {CustomName:'{"text":"[折跃灵泉]","color":"gray"}',Tags:["display6"]}
 execute if score $mutation mem matches 6 run summon marker ~ ~ ~ {CustomName:'{"text":"[杀戮光环]","color":"green"}',Tags:["display7"]}
 execute unless score $mutation mem matches 6 run summon marker ~ ~ ~ {CustomName:'{"text":"[杀戮光环]","color":"gray"}',Tags:["display7"]}
 execute if score $mutation mem matches 7 run summon marker ~ ~ ~ {CustomName:'{"text":"[连锁换位]","color":"green"}',Tags:["display8"]}
 execute unless score $mutation mem matches 7 run summon marker ~ ~ ~ {CustomName:'{"text":"[连锁换位]","color":"gray"}',Tags:["display8"]}
-execute if score $mutation mem matches 8 run summon marker ~ ~ ~ {CustomName:'{"text":"[一击必杀]","color":"green"}',Tags:["display9"]}
-execute unless score $mutation mem matches 8 run summon marker ~ ~ ~ {CustomName:'{"text":"[一击必杀]","color":"black"}',Tags:["display9"]}
+execute if score $mutation mem matches 8 run summon marker ~ ~ ~ {CustomName:'{"text":"[黑暗森林]","color":"green"}',Tags:["display9"]}
+execute unless score $mutation mem matches 8 run summon marker ~ ~ ~ {CustomName:'{"text":"[黑暗森林]","color":"gray"}',Tags:["display9"]}
 execute if score $mutation mem matches 9 run summon marker ~ ~ ~ {CustomName:'{"text":"[你说我做]","color":"green"}',Tags:["display10"]}
 execute unless score $mutation mem matches 9 run summon marker ~ ~ ~ {CustomName:'{"text":"[你说我做]","color":"gray"}',Tags:["display10"]}
+execute if score $mutation mem matches 10 run summon marker ~ ~ ~ {CustomName:'{"text":"[一击必杀]","color":"green"}',Tags:["display11"]}
+execute unless score $mutation mem matches 10 run summon marker ~ ~ ~ {CustomName:'{"text":"[一击必杀]","color":"black"}',Tags:["display11"]}
 
-tellraw @s ["     切换突变  >>   ",{"selector":"@e[tag=display1]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_0"}},"  ",{"selector":"@e[tag=display2]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_1"},"hoverEvent":{"action":"show_text","contents":"生命上限降低，但静息治疗会瞬间恢复所有生命"}},"  ",{"selector":"@e[tag=display3]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_2"},"hoverEvent":{"action":"show_text","contents":"职业仅能随机选择，也会因死亡或时间随机改变"}},"  ",{"selector":"@e[tag=display4]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_3"},"hoverEvent":{"action":"show_text","contents":"大地的引力几乎消失了，一切都变得诡异而陌生"}},"  ",{"selector":"@e[tag=display5]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_4"},"hoverEvent":{"action":"show_text","contents":"能力冷却仅在攻击敌人或被攻击时才能恢复"}},"  ",{"selector":"@e[tag=display6]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_5"},"hoverEvent":{"action":"show_text","contents":"接触水的生物会获得少量护盾，并传送到敌方附近"}},"  ",{"selector":"@e[tag=display7]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_6"},"hoverEvent":{"action":"show_text","contents":"友伤开启，攻击任何人获得增益，但是无法静息治疗"}},"  ",{"selector":"@e[tag=display8]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_7"},"hoverEvent":{"action":"show_text","contents":"每隔一段时间，所有人就会随机交换位置"}},"  ",{"selector":"@e[tag=display9]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_8"},"hoverEvent":{"action":"show_text","contents":"不计摔伤与死亡数，一击必杀你的对手吧！"}},"  ",{"selector":"@e[tag=display10]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_9"},"hoverEvent":{"action":"show_text","contents":"随机任务！做得对有奖励，做错了有惩罚"}}]
+tellraw @s ["     切换突变  >>   ",{"selector":"@e[tag=display1]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_0"}},"  ",{"selector":"@e[tag=display2]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_1"},"hoverEvent":{"action":"show_text","contents":"生命上限降低，但静息治疗会瞬间恢复所有生命"}},"  ",{"selector":"@e[tag=display3]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_2"},"hoverEvent":{"action":"show_text","contents":"职业仅能随机选择，也会因死亡或时间随机改变"}},"  ",{"selector":"@e[tag=display4]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_3"},"hoverEvent":{"action":"show_text","contents":"大地的引力几乎消失了，一切都变得诡异而陌生"}},"  ",{"selector":"@e[tag=display5]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_4"},"hoverEvent":{"action":"show_text","contents":"能力冷却仅在攻击敌人或被攻击时才能恢复"}},"  ",{"selector":"@e[tag=display6]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_5"},"hoverEvent":{"action":"show_text","contents":"接触水的生物会获得少量护盾，并传送到敌方附近"}},"  ",{"selector":"@e[tag=display7]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_6"},"hoverEvent":{"action":"show_text","contents":"攻击友方/敌方获得增益，但静息无法治疗"}},"  ",{"selector":"@e[tag=display8]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_7"},"hoverEvent":{"action":"show_text","contents":"每隔一段时间，所有人就会随机交换位置"}},"  ",{"selector":"@e[tag=display9]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_8"},"hoverEvent":{"action":"show_text","contents":"获得可静息的隐身，但任何动作都会暴露你"}},"  ",{"selector":"@e[tag=display10]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_9"},"hoverEvent":{"action":"show_text","contents":"出现随机任务，完成与否奖惩分明"}},"  ",{"selector":"@e[tag=display11]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_10"},"hoverEvent":{"action":"show_text","contents":"不计摔伤与死亡数，一击必杀你的对手吧！"}}]
 
 kill @e[tag=display1]
 kill @e[tag=display2]
@@ -180,6 +182,7 @@ kill @e[tag=display7]
 kill @e[tag=display8]
 kill @e[tag=display9]
 kill @e[tag=display10]
+kill @e[tag=display11]
 
 tellraw @s "\n"
 execute at @s run playsound minecraft:ui.button.click player @s ~ ~ ~ 0.15 1

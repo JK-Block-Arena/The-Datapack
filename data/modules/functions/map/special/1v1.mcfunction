@@ -1,0 +1,5 @@
+execute as @a[scores={team=5..6,state=2}] at @s if block ~ ~-1 ~ emerald_block run effect give @s jump_boost 1 2
+execute as @a[scores={team=5..6,state=2}] at @s if block ~ ~-1 ~ gold_block run effect give @s speed 1 5
+bossbar set sp:white_v1 name [{"text": "","color": "gold","bold": true},{"selector":"@p[team=red_v1]"}," → ",{"score":{"name": "#1v1_red","objective": "mem"},"color": "red","bold": true}," : ",{"score":{"name": "#1v1_blue","objective": "mem"},"color": "blue","bold": true}," ← ",{"selector":"@p[team=blue_v1]"}]
+bossbar set bossbar:red_v1 name [{"text": "","color": "gold","bold": true},{"selector":"@p[team=red_v1]"}," → ",{"score":{"name": "#1v1_red","objective": "mem"},"color": "red","bold": true}," : ",{"score":{"name": "#1v1_blue","objective": "mem"},"color": "blue","bold": true}," ← ",{"selector":"@p[team=blue_v1]"}]
+bossbar set bossbar:blue_v1 name [{"text": "","color": "gold","bold": true},{"selector":"@p[team=red_v1]"}," → ",{"score":{"name": "#1v1_red","objective": "mem"},"color": "red","bold": true}," : ",{"score":{"name": "#1v1_blue","objective": "mem"},"color": "blue","bold": true}," ← ",{"selector":"@p[team=blue_v1]"}]

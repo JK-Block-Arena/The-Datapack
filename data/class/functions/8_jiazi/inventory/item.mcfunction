@@ -35,7 +35,7 @@ item replace entity @s hotbar.7 with air
 scoreboard players set @s count8 -1
 
 # 护甲
-item replace entity @s[nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:810}}]}] armor.head from block 6 244 22 container.2
+item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:810}}]}] armor.head from block 6 244 22 container.2
 item replace entity @s armor.chest with air
-item replace entity @s[nbt=!{Inventory:[{Slot:101b,tag:{CustomModelData:811}}]}] armor.legs with leather_leggings{CustomModelData:811,Unbreakable:1b,display:{Name:'{"text":"便服","italic": false,"color":"white"}',Lore:['{"text":"便于分辨敌友的裤子。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:1b}
-item replace entity @s[nbt=!{Inventory:[{Slot:100b,tag:{CustomModelData:812}}]}] armor.feet with iron_boots{CustomModelData:812,Unbreakable:1b,display:{Name:'{"text":"防夹靴","italic": false,"color":"white"}',Lore:['{"text":"减少队内夹子造成的伤害。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:0b}
+item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:101b,tag:{CustomModelData:811}}]}] armor.legs with leather_leggings{CustomModelData:811,Unbreakable:1b,display:{Name:'{"text":"便服","italic": false,"color":"white"}',Lore:['{"text":"便于分辨敌友的裤子。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:1b}
+item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:100b,tag:{CustomModelData:812}}]}] armor.feet with iron_boots{CustomModelData:812,Unbreakable:1b,display:{Name:'{"text":"防夹靴","italic": false,"color":"white"}',Lore:['{"text":"减少队内夹子造成的伤害。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:0b}

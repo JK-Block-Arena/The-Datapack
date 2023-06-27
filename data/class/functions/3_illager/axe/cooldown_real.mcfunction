@@ -17,4 +17,4 @@ scoreboard players operation #now temp /= #1000 mem
 execute unless score @s temp = #now temp run tag @s add refresh_inventory
 
 # 持续刷新
-execute at @s[scores={state=2..4,class=3}] run function class:3_illager/axe/cooldown_update
+execute at @s[scores={state=2..3,class=3}] run function class:3_illager/axe/cooldown_update

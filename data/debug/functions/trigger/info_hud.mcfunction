@@ -19,7 +19,9 @@ execute if score $info_hud debug matches 0..1 run bossbar set bossbar:green visi
 execute if score $info_hud debug matches 0..1 run bossbar set bossbar:yellow visible true
 execute if score $info_hud debug matches 0..1 run bossbar set bossbar:red_v1 visible true
 execute if score $info_hud debug matches 0..1 run bossbar set bossbar:blue_v1 visible true
+execute if score $info_hud debug matches 0..1 run bossbar set sp:white visible true
 execute if score $info_hud debug matches 0..1 run bossbar set modules:mutation visible true
+
 execute if score $info_hud debug matches 2 run bossbar set bossbar:white visible false
 execute if score $info_hud debug matches 2 run bossbar set bossbar:red visible false
 execute if score $info_hud debug matches 2 run bossbar set bossbar:blue visible false
@@ -27,6 +29,7 @@ execute if score $info_hud debug matches 2 run bossbar set bossbar:green visible
 execute if score $info_hud debug matches 2 run bossbar set bossbar:yellow visible false
 execute if score $info_hud debug matches 2 run bossbar set bossbar:red_v1 visible false
 execute if score $info_hud debug matches 2 run bossbar set bossbar:blue_v1 visible false
+execute if score $info_hud debug matches 2 run bossbar set sp:white visible false
 execute if score $info_hud debug matches 2 run bossbar set modules:mutation visible false
 
 function debug

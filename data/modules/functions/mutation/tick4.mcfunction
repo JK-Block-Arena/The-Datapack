@@ -1,1 +1,2 @@
 execute if score $mutation mem matches 5 run function modules:mutation/special/5_tick4
+execute if score $mutation mem matches 8 as @a[scores={state=2,team=1..4}] run function modules:mutation/special/8_tick4

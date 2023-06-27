@@ -9,9 +9,12 @@ scoreboard players add @s[scores={7_strength_cd=..0}] 7_strength_storage 1
 
 execute unless score $mutation mem matches 4 run scoreboard players add @s[scores={7_strength_cd=..0,7_strength_storage=..1}] 7_strength_cd 20000
 execute unless score $mutation mem matches 4 run scoreboard players set @s[scores={7_strength_cd=..0,7_strength_storage=2..}] 7_strength_cd 20000
-# 冷却时间加倍
-execute if score $mutation mem matches 4 run scoreboard players add @s[scores={7_strength_cd=..0,7_strength_storage=..1}] 7_strength_cd 40000
-execute if score $mutation mem matches 4 run scoreboard players set @s[scores={7_strength_cd=..0,7_strength_storage=2..}] 7_strength_cd 40000
+
+execute if score $mutation mem matches 4 run scoreboard players add @s[scores={state=3,7_strength_cd=..0,7_strength_storage=..1}] 7_strength_cd 20000
+execute if score $mutation mem matches 4 run scoreboard players set @s[scores={state=3,7_strength_cd=..0,7_strength_storage=2..}] 7_strength_cd 20000
+
+execute if score $mutation mem matches 4 run scoreboard players add @s[scores={state=2,7_strength_cd=..0,7_strength_storage=..1}] 7_strength_cd 40000
+execute if score $mutation mem matches 4 run scoreboard players set @s[scores={state=2,7_strength_cd=..0,7_strength_storage=2..}] 7_strength_cd 40000
 
 # 检测刷新
 tag @s[scores={7_strength_cd=..3099,7_strength_storage=0}] add refresh_inventory

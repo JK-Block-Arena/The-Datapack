@@ -26,8 +26,8 @@ item replace entity @s hotbar.8 with air
 scoreboard players set @s count9 -1
 
 # 护甲
-item replace entity @s[nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:603}}]}] armor.head with chainmail_helmet{CustomModelData:603,Unbreakable:1b,display:{Name:'{"text":"铁链头盔","italic": false,"color":"white"}',Lore:['{"text":"这是他曾奔赴战场的证明。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:0b}
+item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:603}}]}] armor.head with chainmail_helmet{CustomModelData:603,Unbreakable:1b,display:{Name:'{"text":"铁链头盔","italic": false,"color":"white"}',Lore:['{"text":"这是他曾奔赴战场的证明。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:0b}
 #,'""','[{"text":"❤ 生命  ","italic": false,"color":"red"},{"text":"+ 6","italic": false,"color":"white"}]'
-item replace entity @s[nbt=!{Inventory:[{Slot:102b,tag:{CustomModelData:604}}]}] armor.chest with leather_chestplate{CustomModelData:604,Unbreakable:1b,display:{Name:'{"text":"便服","italic": false,"color":"white"}',Lore:['{"text":"便于分辨敌友的轻便服装。","italic": false,"color":"gray"}','{"text":"风尘仆仆是最好的写照。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:1b}
+item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:102b,tag:{CustomModelData:604}}]}] armor.chest with leather_chestplate{CustomModelData:604,Unbreakable:1b,display:{Name:'{"text":"便服","italic": false,"color":"white"}',Lore:['{"text":"便于分辨敌友的轻便服装。","italic": false,"color":"gray"}','{"text":"风尘仆仆是最好的写照。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:1b}
 item replace entity @s armor.legs with air
 item replace entity @s armor.feet with air

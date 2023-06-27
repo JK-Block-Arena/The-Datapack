@@ -57,4 +57,16 @@ bossbar set bossbar:blue_v1 max 1
 bossbar set bossbar:blue_v1 value 1
 bossbar set bossbar:blue_v1 color blue
 
+bossbar add sp:white ""
+bossbar set sp:white style notched_6
+bossbar set sp:white max 6000
+bossbar set sp:white value 0
+bossbar set sp:white color white
+
+bossbar add sp:white_v1 ""
+bossbar set sp:white_v1 style progress
+bossbar set sp:white_v1 max 1
+bossbar set sp:white_v1 value 1
+bossbar set sp:white_v1 color white
+
 function modules:update_bossbar

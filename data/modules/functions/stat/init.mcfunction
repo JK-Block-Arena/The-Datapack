@@ -5,7 +5,6 @@ function modules:stat/hidden_and_extra
 scoreboard objectives add play_time_t minecraft.custom:minecraft.play_time "本月在线时长/tick"
 
 # 玩家表现
-
 scoreboard objectives add statPlayerElo dummy "玩家长期表现"
 scoreboard objectives add statPlayerEloCount dummy "ELO 记录次数"
 scoreboard objectives add statPlayerKd dummy "玩家短期表现"

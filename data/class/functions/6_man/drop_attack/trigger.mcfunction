@@ -11,3 +11,4 @@ execute as @s[scores={6_drop_attack=6}] anchored eyes positioned ^ ^ ^3 run func
 execute as @s[scores={6_drop_attack=7}] anchored eyes positioned ^ ^ ^2 run function class:6_man/drop_attack/pos
 item replace entity @s weapon.mainhand from entity @s weapon.offhand
 item replace entity @s weapon.offhand with air
+execute if score $mutation mem matches 8 run effect give @s[scores={state=2,team=1..4}] glowing 3

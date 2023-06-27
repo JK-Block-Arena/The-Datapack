@@ -6,6 +6,7 @@ item replace entity @a[gamemode=creative,team=!creator] armor.feet with air
 clear @a[gamemode=creative,team=!creator]
 execute as @a[gamemode=creative,team=!creator] at @s run function debug:jkuse/2_book
 scoreboard players set @a[gamemode=creative,team=!creator] state 0
+scoreboard players set @a[gamemode=creative,team=!creator] team 0
 team join creator @a[gamemode=creative,team=!creator]
 effect give @a[team=creator] invisibility infinite 0 true
 effect clear @a[team=creator] glowing

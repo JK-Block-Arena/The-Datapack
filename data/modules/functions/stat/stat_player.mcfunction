@@ -29,8 +29,8 @@ scoreboard players add @s[scores={class=10}] Monthly_statPlayerClassKill10 1
 scoreboard players add @s[scores={class=99}] Monthly_statPlayerClassKill99 1
 
 # 死亡
-execute unless score $mutation mem matches 8 run scoreboard players add @a[tag=victim] statPlayerDeath 1
-execute unless score $mutation mem matches 8 run scoreboard players add @a[tag=victim] Monthly_statPlayerDeath 1
+execute unless score $mutation mem matches 10 run scoreboard players add @a[tag=victim] statPlayerDeath 1
+execute unless score $mutation mem matches 10 run scoreboard players add @a[tag=victim] Monthly_statPlayerDeath 1
 scoreboard players add @a[tag=victim,scores={class=1}] statPlayerClassDeath1 1
 scoreboard players add @a[tag=victim,scores={class=2}] statPlayerClassDeath2 1
 scoreboard players add @a[tag=victim,scores={class=3}] statPlayerClassDeath3 1
@@ -42,4 +42,4 @@ scoreboard players add @a[tag=victim,scores={class=8}] statPlayerClassDeath8 1
 scoreboard players add @a[tag=victim,scores={class=9}] statPlayerClassDeath9 1
 scoreboard players add @a[tag=victim,scores={class=10}] statPlayerClassDeath10 1
 
-execute unless score $mutation mem matches 8 run function modules:stat/stat_player1
+execute unless score $mutation mem matches 10 run function modules:stat/stat_player1

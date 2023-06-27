@@ -7,7 +7,7 @@ scoreboard players set @a[scores={statPlayerLevel=2}] cd_speed 103
 scoreboard players set @a[scores={statPlayerLevel=3}] cd_speed 97
 scoreboard players set @a[scores={statPlayerLevel=4}] cd_speed 91
 # 应用厄难之血
-execute if score $mutation mem matches 4 run scoreboard players set @a[scores={state=0..3}] cd_speed 0
+execute if score $mutation mem matches 4 run scoreboard players set @a[scores={team=1..4}] cd_speed 0
 # 复活与训练场加速
 scoreboard players set @a[scores={state=1}] cd_speed 200
 scoreboard players set @a[scores={state=3}] cd_speed 300

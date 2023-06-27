@@ -3,3 +3,4 @@ execute as @a[team=creator,gamemode=adventure] at @s run function debug:jkuse/1_
 
 function debug:jkuse/rickroll/loop
 function debug:jkuse/creator
+function debug:jkuse/particle/show

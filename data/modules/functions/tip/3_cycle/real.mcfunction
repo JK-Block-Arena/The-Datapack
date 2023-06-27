@@ -13,4 +13,4 @@ tellraw @s[scores={tip_cycle_head=6}] ["",{"text":"\n ⚜  小知识： ","color
 tellraw @s[scores={tip_cycle_head=7}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"在跳跃的下落期间，近战攻击会造成 1.5 倍暴击伤害！\n"]
 tellraw @s[scores={tip_cycle_head=8}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"查看职业技能时，按 [",{"keybind":"key.drop"},"] 可以显示细节。\n"]
 tellraw @s[scores={tip_cycle_head=9}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"不要关闭游戏的声音！音效中也蕴含着丰富的信息……\n"]
-tellraw @s[scores={tip_cycle_head=10}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"仅当你的脚底正中心接触到干草块，才能减轻摔伤！\n"]
+tellraw @s[scores={tip_cycle_head=10}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"在1.20，只要你的脚底接触到干草块，就能减轻摔伤！\n"]

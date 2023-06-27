@@ -2,7 +2,6 @@
 scoreboard players set @s state 2
 
 # 记录队伍 ID
-function modules:update_bossbar
 scoreboard players set @s[team=red] team 1
 scoreboard players set @s[team=blue] team 2
 scoreboard players set @s[team=green] team 3
@@ -18,6 +17,7 @@ effect clear @s slow_falling
 effect clear @s resistance
 effect clear @s poison
 effect clear @s speed
+effect clear @s weakness
 effect give @s instant_health 20 5 true
 effect give @s blindness 1 0 true
 effect give @s resistance 2 5 true
@@ -37,6 +37,7 @@ function modules:mino2/sub/forgive
 
 # 调用事件
 execute at @s run function modules:basic/events/player_spawn
+function modules:update_bossbar
 
 # 刷新物品栏
 scoreboard players reset @s throw

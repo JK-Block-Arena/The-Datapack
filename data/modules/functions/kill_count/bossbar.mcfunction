@@ -33,6 +33,7 @@ execute store result bossbar bossbar:red value run scoreboard players get #after
 execute store result bossbar bossbar:blue value run scoreboard players get #after mem
 execute store result bossbar bossbar:green value run scoreboard players get #after mem
 execute store result bossbar bossbar:yellow value run scoreboard players get #after mem
+execute store result bossbar sp:white value run scoreboard players get #after mem
 
 # 触发中段突变
 execute if score $mutation_count debug matches 0 unless entity @a[scores={statPlayerRound=..1,state=1..2,team=1..4}] if score #before mem matches ..1999 if score #after mem matches 2000.. run function modules:mutation/sub/on_random

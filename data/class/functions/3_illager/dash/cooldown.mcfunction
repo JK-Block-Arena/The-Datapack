@@ -9,4 +9,4 @@ scoreboard players add @s[scores={3_dash_cooldown=..0,3_dash_storage=..2}] 3_das
 scoreboard players set @s[scores={3_dash_cooldown=..0,3_dash_storage=3..}] 3_dash_cooldown 10000
 
 # 持续刷新
-execute at @s[scores={state=2..4}] run function class:3_illager/dash/update
+execute at @s[scores={state=2..3}] run function class:3_illager/dash/update

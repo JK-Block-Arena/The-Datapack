@@ -18,11 +18,11 @@ item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:24b}]}] inventor
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:25b}]}] inventory.16 with air
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:26b}]}] inventory.17 with air
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:27b}]}] inventory.18 with air
-item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:28b}]},scores={state=2..4}] inventory.19 with air
-item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:29b}]},scores={state=2..4}] inventory.20 with air
-item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:30b}]},scores={state=2..4}] inventory.21 with air
-item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:31b}]},scores={state=2..4}] inventory.22 with air
-item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:32b}]},scores={state=2..4}] inventory.23 with air
+item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:28b}]},scores={state=2..3}] inventory.19 with air
+item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:29b}]},scores={state=2..3}] inventory.20 with air
+item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:30b}]},scores={state=2..3}] inventory.21 with air
+item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:31b}]},scores={state=2..3}] inventory.22 with air
+item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:32b}]},scores={state=2..3}] inventory.23 with air
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:33b}]}] inventory.24 with air
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:34b}]}] inventory.25 with air
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:35b}]}] inventory.26 with air

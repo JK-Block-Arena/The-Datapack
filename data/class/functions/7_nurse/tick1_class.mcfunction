@@ -6,13 +6,12 @@ effect clear @s strength
 effect clear @s weakness
 effect clear @s slowness
 
-# 牧师静息，技能冷却速度为2.5倍，瞬息万变中冷却速度为5倍，狂暴之血关闭冷却
-# 这里把data\modules\functions\regen\tick8.mcfunction都修改了。。
-execute if score $mutation mem matches 1 as @s[scores={brRegen=..0}] run scoreboard players set @s cd_speed 500
-execute unless score $mutation mem matches 1 as @s[scores={brRegen=..0}] run scoreboard players set @s cd_speed 250
-
-execute if score $mutation mem matches 4 run title @s[scores={brRegen=4}] actionbar [{"color":"red","text":"✖ "},{"text":"狂暴之血突变时牧师无法静息","bold":true}]
-execute if score $mutation mem matches 4 run scoreboard players set @s[scores={brRegen=..4}] brRegen 10
+# 牧师在瞬息万变冷却加速
+scoreboard players set @s[scores={team=0,brRegen=..0}] cd_speed 250
+execute if score $mutation mem matches 1 run scoreboard players set @s[scores={team=1..4,brRegen=..0}] cd_speed 500
+execute unless score $mutation mem matches 1 run scoreboard players set @s[scores={team=1..4,brRegen=..0}] cd_speed 250
 
 # 成就
 scoreboard players enable @s[advancements={pvp:extra/believer=false}] believer_book
+
+execute if score $mutation mem matches 8 run effect give @s[nbt={Inventory:[{Slot:-106b}]},scores={state=2,team=1..4}] glowing 3

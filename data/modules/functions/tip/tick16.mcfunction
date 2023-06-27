@@ -1,5 +1,5 @@
 # 触发疾跑提示
-tag @a[scores={state=2..4,tip_run=..3000,tip_walk=10000..}] add tip_2_run
+tag @a[scores={state=2..3,tip_run=..3000,tip_walk=10000..}] add tip_2_run
 
 # 计算总延迟与间歇延迟
 scoreboard players remove @a[scores={tip_battle_delay=1..}] tip_battle_delay 1

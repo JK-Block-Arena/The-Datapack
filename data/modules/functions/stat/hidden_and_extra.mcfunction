@@ -24,19 +24,9 @@ scoreboard objectives add extra_rick_foot dummy "彩蛋-rick脚"
 scoreboard objectives add extra_rick_body dummy "彩蛋-rick身"
 scoreboard objectives add rick_tp trigger "彩蛋-rick解锁"
 
-scoreboard objectives add extra_V4_1st dummy "彩蛋-友谊赛v4第一"
-scoreboard objectives add extra_V2_1st dummy "彩蛋-友谊赛v2第一"
-scoreboard objectives add extra_V1_1st dummy "彩蛋-友谊赛v1第一"
-scoreboard objectives add extra_V4_2nd dummy "彩蛋-友谊赛v4第二"
-scoreboard objectives add extra_V2_2nd dummy "彩蛋-友谊赛v2第二"
-scoreboard objectives add extra_V1_2nd dummy "彩蛋-友谊赛v1第二"
-scoreboard objectives add extra_V4_3rd dummy "彩蛋-友谊赛v4第三"
-scoreboard objectives add extra_V2_3rd dummy "彩蛋-友谊赛v2第三"
-scoreboard objectives add extra_V1_3rd dummy "彩蛋-友谊赛v1第三"
-
-scoreboard objectives add extra_V4_1st_name dummy "V4自定义称号"
-scoreboard objectives add extra_V2_1st_name dummy "V2自定义称号"
-scoreboard objectives add extra_V1_1st_name dummy "V1自定义称号"
+scoreboard objectives add match_1_V2_1st dummy "友谊赛-1-v2第一"
+scoreboard objectives add match_1_V2_2nd dummy "友谊赛-1-v2第二"
+scoreboard objectives add match_1_V2_3rd dummy "友谊赛-1-v2第三"
 
 # pck = PlayerClassKill
 scoreboard objectives add pck1 dummy "初窥门径计数"

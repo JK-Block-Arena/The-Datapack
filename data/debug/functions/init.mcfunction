@@ -63,11 +63,13 @@ team remove red_v1
 team add red_v1 {"text":"v1红队","color":"dark_red"}
 team modify red_v1 collisionRule always
 team modify red_v1 color dark_red
+team modify red_v1 friendlyFire false
 
 team remove blue_v1
 team add blue_v1 {"text":"v1蓝队","color":"blue"}
 team modify blue_v1 collisionRule always
 team modify blue_v1 color dark_blue
+team modify blue_v1 friendlyFire false
 # ---------------------------------------------
 #  时钟（略微修改了初相，让它们间隔执行）
 # ---------------------------------------------
@@ -148,9 +150,6 @@ scoreboard players set #950 mem 950
 scoreboard players set #1000 mem 1000
 scoreboard players set #10000 mem 10000
 scoreboard players set #1000000 mem 1000000
-
-scoreboard players set #1v1_red mem 0
-scoreboard players set #1v1_blue mem 0
 
 scoreboard objectives add hp health "❤"
 scoreboard objectives setdisplay list hp

@@ -14,3 +14,5 @@ scoreboard players remove @s 6_mint_storage 1
 # 刷新物品&打断回血
 tag @s add brRegenBreak
 tag @s add refresh_inventory
+
+execute if score $mutation mem matches 8 run effect give @s[scores={state=2,team=1..4}] glowing 3

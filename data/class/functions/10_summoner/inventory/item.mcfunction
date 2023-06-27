@@ -49,6 +49,6 @@ scoreboard players set @s count9 -1
 
 # 护甲
 item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:1010}}]}] armor.head with leather_helmet{CustomModelData:1010,Unbreakable:1b,display:{color:7276430,Name:'{"text":"召唤师皮帽","italic": false,"color":"white"}',Lore:['{"text":"女巫同款帽子！","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:0b}
-item replace entity @s[nbt=!{Inventory:[{Slot:102b,tag:{id:1011}}]}] armor.chest with leather_chestplate{id:1011,Unbreakable:1b,display:{Name:'{"text":"便服","italic": false,"color":"white"}',Lore:['{"text":"便于分辨敌友的轻便服装。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:1b}
+item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:102b,tag:{id:1011}}]}] armor.chest with leather_chestplate{id:1011,Unbreakable:1b,display:{Name:'{"text":"便服","italic": false,"color":"white"}',Lore:['{"text":"便于分辨敌友的轻便服装。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:1b}
 item replace entity @s armor.legs with air
 item replace entity @s armor.feet with air

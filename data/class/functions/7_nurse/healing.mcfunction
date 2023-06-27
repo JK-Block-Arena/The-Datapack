@@ -1,4 +1,4 @@
-# 每 3s 执行一次 execute as @a[tag=7_healer,scores={class=7,state=2..4}] at @s
+# 每 3s 执行一次 execute as @a[tag=7_healer,scores={class=7,state=2..3}] at @s
 
 # 被动，治疗自己
 effect give @s regeneration 3 1 true

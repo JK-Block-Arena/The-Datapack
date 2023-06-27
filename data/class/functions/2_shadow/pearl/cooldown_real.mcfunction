@@ -3,6 +3,7 @@ scoreboard players operation @s temp = @s 2_pearl_cd
 
 # 减少冷却
 scoreboard players operation @s 2_pearl_cd -= @s cd_speed
+scoreboard players set @s[scores={2_pearl_storage=1..,2_pearl_cd=..-1}] 2_pearl_cd 0
 
 # 冷却完成
 scoreboard players add @s[scores={2_pearl_cd=..0}] 2_pearl_storage 1

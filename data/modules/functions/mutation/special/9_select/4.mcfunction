@@ -1,6 +1,5 @@
 ## 和平模式
 # 显示
-tag @a[scores={state=2,team=1..4},gamemode=adventure] add 9_select_player
 title @a[tag=9_select_player] times 0 50 10
 title @a[tag=9_select_player] title {"text":"和平模式","color":"green"}
 title @a[tag=9_select_player] subtitle {"text":"Love & Peace","color":"aqua"}

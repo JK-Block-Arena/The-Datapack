@@ -11,5 +11,5 @@ execute positioned 11004 34 11051 run tp @s[distance=..2] 11097 38 11008
 execute positioned 11084 36 11093 run tp @s[distance=..2] 11003 35 11012
 execute positioned 11003 34 11010 run tp @s[distance=..2] 11086 38 11093
 # 特效（传送后）
-execute as @s run function modules:map/end_portal/special
+execute as @s run function modules:map/special/8_portal_
 effect give @s nausea 4 3 true

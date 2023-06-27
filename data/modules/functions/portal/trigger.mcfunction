@@ -10,19 +10,22 @@ execute as @s[x=1043,y=98,z=1085,distance=..20] run scoreboard players set #port
 execute as @s[x=-5,y=13,z=9,distance=..8] run scoreboard players set #portal mem 100
 # 创作者大厅
 execute as @s[x=12,y=12,z=17,distance=..5] run scoreboard players set #portal mem 101
-# 粒子切换
+# 锻造&尾迹大厅
 execute as @s[x=3,y=12,z=17,distance=..5] run scoreboard players set #portal mem 102
 # 赞助者大厅
 execute as @s[x=12,y=12,z=2,distance=..5] run scoreboard players set #portal mem 103
+# 1v1
+execute as @s[x=3,y=12,z=2,distance=..5] run scoreboard players set #portal mem 104
 
 # 触发
 execute if score #portal mem matches 1 run function pvp:state/lobby/in/enter_train
 execute if score #portal mem matches 2 run function pvp:state/lobby/in/prepared
 execute if score #portal mem matches 3 run function pvp:state/train/leave
 execute if score #portal mem matches 100 run tp @s 1.5 235.5 8.5 270 0
-execute if score #portal mem matches 101 run tp @s -99.5 237.5 8.5 90 0
-execute if score #portal mem matches 102 run tp @s 1.5 235.5 8.5 270 0
+execute if score #portal mem matches 101 run tp @s -878.5 47.0 7.5 90 0
+execute if score #portal mem matches 102 run tp @s 28.5 11 9.5 270 0
 execute if score #portal mem matches 103 run function pvp:state/lobby/in/donator_hall
+execute if score #portal mem matches 104 run function pvp:state/lobby/in/prepared_v1
 
 # 特效
 execute at @s run playsound minecraft:block.portal.travel block @s ~ ~ ~ 0.3
