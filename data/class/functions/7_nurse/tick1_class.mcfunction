@@ -9,7 +9,7 @@ effect clear @s slowness
 # 牧师在瞬息万变冷却加速
 scoreboard players set @s[scores={team=0,brRegen=..0}] cd_speed 250
 execute if score $mutation mem matches 1 run scoreboard players set @s[scores={team=1..4,brRegen=..0}] cd_speed 500
-execute unless score $mutation mem matches 1 run scoreboard players set @s[scores={team=1..4,brRegen=..0}] cd_speed 250
+execute unless score $mutation mem matches 1 run scoreboard players set @s[tag=brRegenCheck,scores={team=1..4,brRegen=..0}] cd_speed 250
 
 # 成就
 scoreboard players enable @s[advancements={pvp:extra/believer=false}] believer_book
