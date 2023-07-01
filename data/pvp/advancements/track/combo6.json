@@ -9,7 +9,7 @@
     },
     "description": [
       {
-        "text": "完成 4 次传奇连杀。",
+        "text": "完成 40 次七连杀。",
         "color": "white"
       }
     ],
@@ -25,8 +25,8 @@
         "player": [
           {
             "scores": {
-              "statPlayerCombo_much": {
-                "min": 4
+              "statPlayerCombo7": {
+                "min": 40
               }
             },
             "condition": "entity_scores",

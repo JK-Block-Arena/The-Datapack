@@ -35,7 +35,7 @@ scoreboard objectives add pck3 dummy "驾轻就熟计数"
 scoreboard objectives add pck4 dummy "炉火纯青计数"
 scoreboard objectives add pck5 dummy "登峰造极计数"
 scoreboard objectives add pck6 dummy "出神入化计数"
-scoreboard objectives add pck_max dummy "萌新计数"
+scoreboard objectives add pck_max dummy "返璞归真计数"
 
 scoreboard objectives add particle_gold dummy "黄金粒子分数"
 scoreboard objectives add particle_rainbow dummy "彩虹粒子解锁"

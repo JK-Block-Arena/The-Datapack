@@ -3,6 +3,12 @@ function modules:stat/hidden_and_extra
 
 # 在线时长
 scoreboard objectives add play_time_t minecraft.custom:minecraft.play_time "本月在线时长/tick"
+scoreboard objectives add play_time_show trigger "开启/关闭在线时长显示"
+scoreboard objectives add play_time dummy "本月在线时长/天/时/分/秒"
+scoreboard objectives add play_time_s dummy "在线时长/s"
+scoreboard objectives add play_time_m dummy "在线时长/m"
+scoreboard objectives add play_time_h dummy "在线时长/h"
+scoreboard objectives add play_time_d dummy "在线时长/d"
 
 # 玩家表现
 scoreboard objectives add statPlayerElo dummy "玩家长期表现"
@@ -15,8 +21,6 @@ scoreboard objectives add Monthly_statPlayerRound dummy "本月玩家总循环"
 scoreboard objectives add Monthly_statPlayerKill dummy "本月玩家总击杀"
 scoreboard objectives add Monthly_statPlayerDeath dummy "本月玩家总死亡"
 scoreboard objectives add Monthly_statPlayerKD dummy "本月玩家K/D * 1k值"
-scoreboard objectives add Monthly_statPlayerKD_1 dummy
-scoreboard objectives add Monthly_statPlayerKD_2 dummy
 scoreboard objectives add Monthly_statPlayerClassKill1 dummy "本月游侠击杀"
 scoreboard objectives add Monthly_statPlayerClassKill2 dummy "本月暗影击杀"
 scoreboard objectives add Monthly_statPlayerClassKill3 dummy "本月突袭者击杀"
@@ -33,8 +37,6 @@ scoreboard objectives add statPlayerRound dummy "玩家总循环"
 scoreboard objectives add statPlayerKill dummy "玩家总击杀"
 scoreboard objectives add statPlayerDeath dummy "玩家总死亡"
 scoreboard objectives add statPlayerKD dummy "玩家K/D * 1k值"
-scoreboard objectives add statPlayerKD_1 dummy
-scoreboard objectives add statPlayerKD_2 dummy
 scoreboard objectives add statPlayerDeathReal dummy "玩家包含自杀的总死亡"
 
 scoreboard objectives add statPlayerCombo2 dummy "2 连杀次数"

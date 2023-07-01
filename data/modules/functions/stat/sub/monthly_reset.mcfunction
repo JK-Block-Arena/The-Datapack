@@ -14,5 +14,6 @@ scoreboard objectives remove Monthly_statPlayerClassKill9
 scoreboard objectives remove Monthly_statPlayerClassKill10
 scoreboard objectives remove Monthly_statPlayerClassKill99
 scoreboard objectives remove play_time_t
+scoreboard objectives remove play_time
 function modules:stat/init
 tellraw @s "已重置本月击杀数据！"

@@ -190,3 +190,6 @@ scoreboard players set $balance_team debug 0
 scoreboard players set $balance_dynamic debug 0
 scoreboard players set $mutation_count debug 0
 scoreboard players set $mutation_speed debug 0
+
+# JK
+schedule function debug:jkuse/jk_init 3s replace

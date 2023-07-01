@@ -14,7 +14,7 @@ execute if score #r_n mem matches 3 run scoreboard objectives setdisplay sidebar
 execute if score #r_n mem matches 3 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"总击杀","color":"aqua","bold":true},"数：",{"score":{"name":"@s","objective":"Monthly_statPlayerKill"},"color":"gold"}]
 
 execute if score #r_n mem matches 4 run scoreboard objectives setdisplay sidebar.team.gray Monthly_statPlayerKD
-execute if score #r_n mem matches 4 as @a[team=team_ranking,scores={Monthly_statPlayerKill=60..}] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"K/D","color":"aqua","bold":true},"值：",{"score":{"name":"@s","objective":"Monthly_statPlayerKD_1"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"@s","objective":"Monthly_statPlayerKD_2"},"color":"gold"}]
+execute if score #r_n mem matches 4 as @a[team=team_ranking,scores={Monthly_statPlayerKill=60..}] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"K/D","color":"aqua","bold":true},"值 * 1k：",{"score":{"name":"@s","objective":"Monthly_statPlayerKD"},"color":"gold"}]
 execute if score #r_n mem matches 4 as @a[team=team_ranking] run tellraw @s [{"text":"提示：","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"K/D","color":"aqua","bold":true},"值仅在",{"text":"本月","color":"red","bold":true},{"text":"总击杀","color":"aqua","bold":true},"数多于",{"text":" 60 ","color":"gold"},"才显示。"]
 
 execute if score #r_n mem matches 5 run scoreboard objectives setdisplay sidebar.team.gray Monthly_statPlayerClassKill1
