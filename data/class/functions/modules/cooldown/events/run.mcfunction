@@ -9,6 +9,7 @@ function class:4_oceancat/water/cooldown_run
 function class:4_oceancat/guardian_summon/cooldown_run
 function class:5_knight/star/cooldown_run
 function class:6_man/mint/cooldown_run
+function class:6_man/drop_attack/cooldown_run
 function class:7_nurse/potions/cooldown_run
 function class:7_nurse/tele_eye/cooldown_run
 function class:8_jiazi/pierce/cooldown_run

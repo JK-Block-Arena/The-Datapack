@@ -23,7 +23,7 @@ scoreboard players set @e[tag=new_ray] ray_precise 4
 tag @e[tag=new_ray] remove new_ray
 
 # 减少存储
-scoreboard players remove @s 3_magic_storage 1
+scoreboard players remove @s 3_magic_st 1
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

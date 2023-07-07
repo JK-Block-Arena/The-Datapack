@@ -19,9 +19,8 @@ tellraw @s[scores={4_tip=13}] ["",{"text":"\n ⚜  小知识： ","color":"light
 tellraw @s[scores={4_tip=14}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"闪电会击中上方 9 格内的生物，因此能在地面劈到屋顶的敌人！\n"]
 tellraw @s[scores={4_tip=15}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"平贴着水面投掷海神戟能让你以最高的效率横向移动。\n"]
 tellraw @s[scores={4_tip=16}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"不要站在辉煌裂片的旁边！否则你会和敌人同归于尽……\n"]
-tellraw @s[scores={4_tip=17}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"在队友与敌人近战时，请不要唤雷劈队友……\n"]
+tellraw @s[scores={4_tip=17}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"你可以通过激流的旋转突刺，对敌人造成近战伤害！\n"]
 tellraw @s[scores={4_tip=18}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"希望你别看到一个人拿着海雷核心从天而降……\n"]
 tellraw @s[scores={4_tip=19}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"站在水中向正上方投掷海神戟飞得最高，但指不定也摔得最狠。\n"]
 tellraw @s[scores={4_tip=20}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"如果觉得雷声太吵，可以在设置中调小 “环境” 一项的音量。\n"]
 tellraw @s[scores={4_tip=21}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"训练场里没有放村民的原因之一，是村民被雷劈会变成女巫。\n"]
-

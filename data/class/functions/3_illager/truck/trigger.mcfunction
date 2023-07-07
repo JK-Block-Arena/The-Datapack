@@ -51,7 +51,7 @@ kill @e[tag=new_minion_pos]
 kill @e[tag=mark]
 
 # 减少存储
-scoreboard players remove @s 3_truck_storage 1
+scoreboard players remove @s 3_truck_st 1
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

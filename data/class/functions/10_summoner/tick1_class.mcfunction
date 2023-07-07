@@ -1,4 +1,3 @@
 function class:10_summoner/eggs/tick1_class
 function class:10_summoner/flag/tick1_class
 execute if score $mutation mem matches 8 run effect give @s[nbt={Inventory:[{Slot:-106b}]},scores={state=2,team=1..4}] glowing 3
-#title @s actionbar [{"score":{"name": "@s","objective": "brRegenBreak0"}}," ",{"score":{"name": "@s","objective": "brRegenBreak1"}}," ",{"score":{"name": "@s","objective": "brRegenBreak2"}}," ",{"score":{"name": "@s","objective": "brRegenBreak3"}}," ",{"score":{"name": "@s","objective": "brRegenBreak4"}}," ",{"score":{"name": "@s","objective": "brRegenBreak5"}}," ",{"score":{"name": "@s","objective": "brRegenBreak6"}}]

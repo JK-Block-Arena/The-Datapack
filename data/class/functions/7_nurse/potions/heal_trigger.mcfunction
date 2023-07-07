@@ -15,7 +15,7 @@ effect give @s[scores={hp=..24}] absorption 5 0
 playsound minecraft:entity.splash_potion.break player @a ~ ~ ~ 1 0.6
 
 # 减少存储
-scoreboard players remove @s 7_heal_storage 1
+scoreboard players remove @s 7_heal_st 1
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

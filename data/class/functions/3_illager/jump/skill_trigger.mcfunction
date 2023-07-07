@@ -10,7 +10,7 @@ playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 2 0.7
 particle minecraft:large_smoke ~ ~0.2 ~ 0.2 0 0.2 0.05 30 normal @a
 
 # 减少次数
-scoreboard players remove @s 3_jump_storage 1
+scoreboard players remove @s 3_jump_st 1
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

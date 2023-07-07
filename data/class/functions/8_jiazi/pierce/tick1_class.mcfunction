@@ -1,2 +1,2 @@
-execute as @s[scores={8_pierce_storage=1..},nbt={Inventory:[{Slot:-106b,tag:{CustomModelData:802}}]}] run function class:8_jiazi/pierce/trigger
+execute as @s[scores={8_pierce_st=1..},nbt={Inventory:[{Slot:-106b,tag:{CustomModelData:802}}]}] run function class:8_jiazi/pierce/trigger
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{CustomModelData:809}}]}] run function class:8_jiazi/pierce/trigger_switch

@@ -5,11 +5,12 @@ scoreboard players operation @s temp = @s 8_pierce_cd
 scoreboard players operation @s 8_pierce_cd -= @s cd_speed
 
 # 冷却完成
-scoreboard players add @s[scores={8_pierce_cd=..0}] 8_pierce_storage 1
-scoreboard players set @s[scores={8_pierce_cd=..0}] 8_pierce_cd 6000
+scoreboard players add @s[scores={8_pierce_cd=..0}] 8_pierce_st 1
+scoreboard players add @s[scores={8_pierce_cd=..0,8_pierce_st=..1}] 8_pierce_cd 5000
+scoreboard players set @s[scores={8_pierce_cd=..0,8_pierce_st=2..}] 8_pierce_cd 5000
 
 # 检测刷新
-tag @s[scores={8_pierce_cd=..3099,8_pierce_storage=0}] add refresh_inventory
+tag @s[scores={8_pierce_cd=..3099,8_pierce_st=..0}] add refresh_inventory
 scoreboard players operation @s temp /= #1000 mem
 scoreboard players operation #now temp = @s 8_pierce_cd
 scoreboard players operation #now temp /= #1000 mem

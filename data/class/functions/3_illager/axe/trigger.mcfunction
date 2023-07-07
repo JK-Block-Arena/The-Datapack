@@ -16,7 +16,7 @@ playsound minecraft:block.beacon.activate player @a[distance=0.1..] ~ ~ ~ 1 1.1
 playsound minecraft:block.beacon.activate player @a[distance=0.1..] ~ ~ ~ 1 1.1
 
 # 减少存储
-scoreboard players remove @s 3_axe_storage 1
+scoreboard players remove @s 3_axe_st 1
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

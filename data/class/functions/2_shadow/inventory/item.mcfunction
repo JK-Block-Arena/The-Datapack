@@ -3,9 +3,9 @@
 item replace entity @s weapon.offhand with air
 
 # 暗影精髓
-execute if score $is_day mem matches 1 run item replace entity @s[scores={2_pearl_storage=1..},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:201,day:1}}]}] hotbar.0 with ender_pearl{CustomModelData:201,day:1}
-execute if score $is_day mem matches 0 run item replace entity @s[scores={2_pearl_storage=1..},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:201,day:0}}]}] hotbar.0 with ender_pearl{CustomModelData:201,day:0}
-scoreboard players operation @s count1 = @s 2_pearl_storage
+execute if score $is_day mem matches 1 run item replace entity @s[scores={2_pearl_st=1..},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:201,day:1}}]}] hotbar.0 with ender_pearl{CustomModelData:201,day:1}
+execute if score $is_day mem matches 0 run item replace entity @s[scores={2_pearl_st=1..},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:201,day:0}}]}] hotbar.0 with ender_pearl{CustomModelData:201,day:0}
+scoreboard players operation @s count1 = @s 2_pearl_st
 scoreboard players operation @s cd1 = @s 2_pearl_cd
 
 # 镰刀
@@ -16,11 +16,11 @@ item replace entity @s[scores={statPlayerLevel=4},nbt=!{Inventory:[{Slot:1b,tag:
 scoreboard players set @s count2 -1
 
 # 技能：融身入影
-execute if score $is_day mem matches 1 run item replace entity @s[scores={2_sneak_storage=1..,2_sneak_state=0},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:208}}]}] hotbar.8 with white_dye{CustomModelData:208,day:1}
-execute if score $is_day mem matches 0 run item replace entity @s[scores={2_sneak_storage=1..,2_sneak_state=0},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:208}}]}] hotbar.8 with white_dye{CustomModelData:208,day:0}
-execute if score $is_day mem matches 1 run item replace entity @s[scores={2_sneak_storage=1..,2_sneak_state=1},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:209}}]}] hotbar.8 with black_dye{CustomModelData:209,day:1}
-execute if score $is_day mem matches 0 run item replace entity @s[scores={2_sneak_storage=1..,2_sneak_state=1},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:209}}]}] hotbar.8 with black_dye{CustomModelData:209,day:0}
-scoreboard players operation @s count9 = @s 2_sneak_storage
+execute if score $is_day mem matches 1 run item replace entity @s[scores={2_sneak_st=1..,2_sneak_state=0},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:208}}]}] hotbar.8 with white_dye{CustomModelData:208,day:1}
+execute if score $is_day mem matches 0 run item replace entity @s[scores={2_sneak_st=1..,2_sneak_state=0},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:208}}]}] hotbar.8 with white_dye{CustomModelData:208,day:0}
+execute if score $is_day mem matches 1 run item replace entity @s[scores={2_sneak_st=1..,2_sneak_state=1},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:209}}]}] hotbar.8 with black_dye{CustomModelData:209,day:1}
+execute if score $is_day mem matches 0 run item replace entity @s[scores={2_sneak_st=1..,2_sneak_state=1},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:209}}]}] hotbar.8 with black_dye{CustomModelData:209,day:0}
+scoreboard players operation @s count9 = @s 2_sneak_st
 scoreboard players operation @s cd9 = @s 2_sneak_cd
 
 

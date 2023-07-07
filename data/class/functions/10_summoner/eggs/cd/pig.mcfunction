@@ -9,7 +9,7 @@ scoreboard players add @s[scores={10_pig_cd=..0}] 10_pig_st 1
 scoreboard players set @s[scores={10_pig_cd=..0}] 10_pig_cd 20000
 
 # 检测刷新
-tag @s[scores={10_pig_cd=..3099,10_pig_st=0}] add refresh_inventory
+tag @s[scores={10_pig_cd=..3099,10_pig_st=..0}] add refresh_inventory
 scoreboard players operation @s temp /= #1000 mem
 scoreboard players operation #now temp = @s 10_pig_cd
 scoreboard players operation #now temp /= #1000 mem

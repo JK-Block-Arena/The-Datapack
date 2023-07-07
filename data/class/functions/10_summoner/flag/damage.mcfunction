@@ -1,7 +1,7 @@
 kill @s[scores={mem=..0}]
 scoreboard players remove @s mem 1
 # 粒子
-particle witch ~ ~ ~ 0.2 0.1 0.2 0.1 6
+particle soul_fire_flame ~ ~ ~ 0.2 0.1 0.2 0.05 6
 # 移动（朝向最近的玩家）
 execute as @s[tag=10_flag_0] at @s facing entity @e[limit=1,sort=nearest,tag=!invisible,team=!lobby,type=#modules:living] eyes run tp @s ^ ^ ^1.5
 execute as @s[tag=10_flag_1] facing entity @e[limit=1,sort=nearest,tag=!invisible,team=!red,type=#modules:living] eyes run tp @s ^ ^ ^1.5

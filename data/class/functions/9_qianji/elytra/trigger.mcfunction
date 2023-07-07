@@ -8,7 +8,7 @@ effect give @s levitation 1 30
 scoreboard players set @s 9_elytra_last 160
 
 # 减少存储
-scoreboard players remove @s 9_elytra_storage 1
+scoreboard players remove @s 9_elytra_st 1
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

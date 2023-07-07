@@ -14,3 +14,5 @@ execute as @s[scores={class=99}] run function class:99_oneshot/tick1_class
 function class:modules/inventory/tick1_class
 function class:modules/sneak/tick1_class
 function class:modules/inventory/invisibility_changed
+
+#title @s actionbar [{"score":{"name": "@s","objective": "brRegenBreak0"}}," ",{"score":{"name": "@s","objective": "brRegenBreak1"}}," ",{"score":{"name": "@s","objective": "brRegenBreak2"}}," ",{"score":{"name": "@s","objective": "brRegenBreak3"}}," ",{"score":{"name": "@s","objective": "brRegenBreak4"}}," ",{"score":{"name": "@s","objective": "brRegenBreak5"}}," ",{"score":{"name": "@s","objective": "brRegenBreak6"}}]

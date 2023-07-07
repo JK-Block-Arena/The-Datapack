@@ -18,6 +18,8 @@ execute as @a[team=blue] if score @s player_id = @p[tag=mino_guardian,team=blue]
 execute as @a[team=green] if score @s player_id = @p[tag=mino_guardian,team=green] mino_source_now run scoreboard players set @a[tag=mino_guardian] mino_type_now 04012
 execute as @a[team=yellow] if score @s player_id = @p[tag=mino_guardian,team=yellow] mino_source_now run scoreboard players set @a[tag=mino_guardian] mino_type_now 04012
 tag @s remove mino_guardian
+execute as @a[team=red_v1] if score @s player_id = @p[tag=mino_guardian,team=red_v1] mino_source_now run scoreboard players set @a[tag=mino_guardian] mino_type_now 04012
+execute as @a[team=blue_v1] if score @s player_id = @p[tag=mino_guardian,team=blue_v1] mino_source_now run scoreboard players set @a[tag=mino_guardian] mino_type_now 04012
 
 # 击中友方：标记攻击者
 tag @s add mino_victim

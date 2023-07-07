@@ -9,7 +9,7 @@ playsound minecraft:entity.ender_dragon.flap player @s 0 1000000 0 1000000 1
 playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 0.4 1
 
 # 刷新冷却
-scoreboard players remove @s 2_sneak_storage 1
+scoreboard players remove @s 2_sneak_st 1
 execute if score $is_day mem matches 0 run scoreboard players set @s 2_sneak_cd 9000
 execute if score $is_day mem matches 1 run scoreboard players set @s 2_sneak_cd 18000
 

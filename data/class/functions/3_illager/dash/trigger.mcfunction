@@ -16,7 +16,7 @@ scoreboard players set @s[scores={3_dash_last=..0,statPlayerLevel=3}] 3_dash_las
 scoreboard players set @s[scores={3_dash_last=..0,statPlayerLevel=4}] 3_dash_last 8
 
 # 减少次数
-scoreboard players remove @s 3_dash_storage 1
+scoreboard players remove @s 3_dash_st 1
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

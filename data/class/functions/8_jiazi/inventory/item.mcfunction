@@ -8,13 +8,13 @@ item replace entity @s[scores={statPlayerLevel=4},nbt=!{Inventory:[{Slot:0b,tag:
 scoreboard players set @s count1 -1
 
 # 穿刺
-item replace entity @s[scores={8_pierce_storage=1..},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:802}}]}] hotbar.1 with end_rod{CustomModelData:802}
-scoreboard players operation @s count2 = @s 8_pierce_storage
+item replace entity @s[scores={8_pierce_st=1..},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:802}}]}] hotbar.1 with end_rod{CustomModelData:802}
+scoreboard players operation @s count2 = @s 8_pierce_st
 scoreboard players operation @s cd2 = @s 8_pierce_cd
 
 # 画地为牢
-item replace entity @s[scores={8_wave_storage=1..},nbt=!{Inventory:[{Slot:2b,tag:{CustomModelData:803}}]}] hotbar.2 with music_disc_cat{CustomModelData:803}
-scoreboard players operation @s count3 = @s 8_wave_storage
+item replace entity @s[scores={8_wave_st=1..},nbt=!{Inventory:[{Slot:2b,tag:{CustomModelData:803}}]}] hotbar.2 with music_disc_cat{CustomModelData:803}
+scoreboard players operation @s count3 = @s 8_wave_st
 scoreboard players operation @s cd3 = @s 8_wave_cd
 
 # 穿刺开关

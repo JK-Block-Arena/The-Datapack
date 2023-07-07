@@ -15,9 +15,9 @@ item replace entity @s[scores={statPlayerLevel=4},nbt=!{Inventory:[{Slot:0b,tag:
 scoreboard players set @s count1 -1
 
 # 烁光新星
-item replace entity @s[scores={5_star_storage=1..,5_star_last=0},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:502}}]}] hotbar.1 with nether_star{CustomModelData:502}
-item replace entity @s[scores={5_star_storage=1..,5_star_last=1..},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:503}}]}] hotbar.1 with beacon{CustomModelData:503}
-scoreboard players operation @s count2 = @s 5_star_storage
+item replace entity @s[scores={5_star_st=1..,5_star_last=0},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:502}}]}] hotbar.1 with nether_star{CustomModelData:502}
+item replace entity @s[scores={5_star_st=1..,5_star_last=1..},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:503}}]}] hotbar.1 with beacon{CustomModelData:503}
+scoreboard players operation @s count2 = @s 5_star_st
 scoreboard players operation @s cd2 = @s 5_star_cd
 
 # 空格子

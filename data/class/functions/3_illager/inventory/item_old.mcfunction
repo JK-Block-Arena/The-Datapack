@@ -9,13 +9,13 @@ item replace entity @s[scores={statPlayerLevel=4},nbt=!{Inventory:[{Slot:0b,tag:
 scoreboard players set @s count1 -1
 
 # 幻术师之杖
-item replace entity @s[scores={3_magic_storage=1..},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:303}}]}] hotbar.1 with amethyst_shard{CustomModelData:303}
-scoreboard players operation @s count2 = @s 3_magic_storage
+item replace entity @s[scores={3_magic_st=1..},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:303}}]}] hotbar.1 with amethyst_shard{CustomModelData:303}
+scoreboard players operation @s count2 = @s 3_magic_st
 scoreboard players operation @s cd2 = @s 3_magic_cd
 
 # 劫掠兽之卵
-item replace entity @s[scores={3_truck_storage=1..},nbt=!{Inventory:[{Slot:2b,tag:{CustomModelData:302}}]}] hotbar.2 with ravager_spawn_egg{CustomModelData:302}
-scoreboard players operation @s count3 = @s 3_truck_storage
+item replace entity @s[scores={3_truck_st=1..},nbt=!{Inventory:[{Slot:2b,tag:{CustomModelData:302}}]}] hotbar.2 with ravager_spawn_egg{CustomModelData:302}
+scoreboard players operation @s count3 = @s 3_truck_st
 scoreboard players operation @s cd3 = @s 3_truck_cd
 
 

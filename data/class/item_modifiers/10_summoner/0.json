@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag": "{display:{Name:'{\"text\":\"招魂幡\",\"italic\": false,\"color\":\"white\"}',Lore:['{\"text\":\"召唤师用于召唤仪式的旗子。\",\"color\":\"gray\",\"italic\": false}','\"\"','{\"text\":\"当旗帜显示为“黑色苦力怕”时，\",\"color\":\"gray\",\"italic\": false}','[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"},{\"text\":\" 将生成一幅招魂幡。\",\"color\":\"gray\",\"italic\": false}]','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"15 秒\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
-}

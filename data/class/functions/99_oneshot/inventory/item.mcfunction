@@ -6,7 +6,7 @@ scoreboard players set @s count1 -1
 
 # 三叉戟
 item replace entity @s[scores={99_trident_st=1},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:401}}]}] hotbar.1 with trident{CustomModelData:401,Unbreakable:1b,Enchantments:[{id:"loyalty",lvl:3},{id:"sharpness",lvl:1}]}
-item replace entity @s[scores={99_trident_st=0},nbt={Inventory:[{Slot:1b}]}] hotbar.1 with air
+item replace entity @s[scores={99_trident_st=..0},nbt={Inventory:[{Slot:1b}]}] hotbar.1 with air
 scoreboard players set @s count2 -1
 
 # 弓

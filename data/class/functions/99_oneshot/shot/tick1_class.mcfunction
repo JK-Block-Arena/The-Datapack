@@ -1,6 +1,6 @@
 # 三叉戟
 scoreboard players set @s[scores={99_trident_st=1,99_trident_use=1..}] 99_trident_st 0
-scoreboard players set @s[scores={99_trident_st=0},nbt={Inventory:[{tag:{CustomModelData:401}}]}] 99_trident_st 1
+scoreboard players set @s[scores={99_trident_st=..0},nbt={Inventory:[{tag:{CustomModelData:401}}]}] 99_trident_st 1
 scoreboard players reset @s 99_trident_use
 
 # 烟花弩

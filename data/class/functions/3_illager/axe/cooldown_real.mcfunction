@@ -6,11 +6,11 @@ scoreboard players operation @s 3_axe_cd -= @s cd_speed
 
 # 冷却完成
 tag @s[scores={3_axe_cd=..0}] add refresh_inventory
-scoreboard players add @s[scores={3_axe_cd=..0}] 3_axe_storage 1
+scoreboard players add @s[scores={3_axe_cd=..0}] 3_axe_st 1
 scoreboard players set @s[scores={3_axe_cd=..0}] 3_axe_cd 5000
 
 # 检测刷新
-tag @s[scores={3_axe_cd=..3099,3_axe_storage=0}] add refresh_inventory
+tag @s[scores={3_axe_cd=..3099,3_axe_st=..0}] add refresh_inventory
 scoreboard players operation @s temp /= #1000 mem
 scoreboard players operation #now temp = @s 3_axe_cd
 scoreboard players operation #now temp /= #1000 mem

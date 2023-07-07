@@ -18,6 +18,7 @@ effect clear @s resistance
 effect clear @s poison
 effect clear @s speed
 effect clear @s weakness
+effect clear @s invisibility
 effect give @s instant_health 20 5 true
 effect give @s blindness 1 0 true
 effect give @s resistance 2 5 true

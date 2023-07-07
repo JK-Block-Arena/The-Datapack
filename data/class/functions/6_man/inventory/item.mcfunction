@@ -6,8 +6,8 @@ item replace entity @s[scores={statPlayerLevel=2..3},nbt=!{Inventory:[{Slot:0b,t
 item replace entity @s[scores={statPlayerLevel=4},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:601}}]}] hotbar.0 with wooden_sword{CustomModelData:601,AttributeModifiers:[{UUID:[I;6,0,1,1],Amount:3.1,AttributeName:"generic.attack_damage",Name:"attack",Slot:"mainhand",Operation:0},{Operation:0,Amount:16,UUID:[I;6,0,1,2],AttributeName:"generic.attack_speed",Name:"generic.attackSpeed"}],Unbreakable:1b,HideFlags:63}
 scoreboard players set @s count1 -1
 # 薄荷糖
-item replace entity @s[scores={6_mint_storage=1..},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:602}}]}] hotbar.1 with dragon_breath{CustomModelData:602}
-scoreboard players operation @s count2 = @s 6_mint_storage
+item replace entity @s[scores={6_mint_st=1..},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:602}}]}] hotbar.1 with dragon_breath{CustomModelData:602}
+scoreboard players operation @s count2 = @s 6_mint_st
 scoreboard players operation @s cd2 = @s 6_mint_cd
 # 空格子
 item replace entity @s hotbar.2 with air

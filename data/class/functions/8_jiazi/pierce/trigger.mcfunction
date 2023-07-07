@@ -35,7 +35,7 @@ particle witch ~ ~1 ~ 0.1 0.3 0.1 0.01 10 normal @a[distance=.1..]
 scoreboard players set @s[scores={8_fangs_last=..80}] 8_fangs_last 80
 
 # 移除储存
-scoreboard players remove @s 8_pierce_storage 1
+scoreboard players remove @s 8_pierce_st 1
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

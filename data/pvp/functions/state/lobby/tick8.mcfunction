@@ -5,7 +5,7 @@ scoreboard players reset @s[gamemode=adventure] switch_bossbar
 scoreboard players reset @s believer_book
 
 # rick
-execute as @s[advancements={pvp:rickroll/rick5=false},x=8,y=300,z=8,distance=..20] run function pvp:state/lobby/rick_nope
+execute as @s[advancements={pvp:rickroll/rick5=false},x=8,y=318,z=8,distance=..20] run function pvp:state/lobby/rick_nope
 execute as @s[advancements={pvp:rickroll/rick5=true}] run function pvp:state/lobby/rick_check
 
 # 状态效果

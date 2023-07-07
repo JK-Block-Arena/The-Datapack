@@ -14,7 +14,7 @@ effect give @s speed 6 1
 playsound minecraft:entity.splash_potion.break player @a ~ ~ ~ 1 0.6
 
 # 减少存储
-scoreboard players remove @s 7_strength_storage 1
+scoreboard players remove @s 7_strength_st 1
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

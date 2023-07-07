@@ -12,4 +12,4 @@ tag @s add brRegenBreak
 tag @s add refresh_inventory
 
 # 移除储存
-scoreboard players remove @s 8_wave_storage 1
+scoreboard players remove @s 8_wave_st 1

@@ -9,4 +9,4 @@ execute as @s[scores={3_dash_last=1..}] run function class:3_illager/dash/contin
 scoreboard players remove @s[scores={3_dash_last=-19..}] 3_dash_last 1
 
 # 冲刺冷却
-execute as @s[scores={3_dash_storage=..2}] run function class:3_illager/dash/cooldown
+execute as @s[scores={3_dash_st=..2}] run function class:3_illager/dash/cooldown

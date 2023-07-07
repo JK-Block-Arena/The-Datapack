@@ -10,7 +10,7 @@ scoreboard players set @s[scores={statPlayerLevel=3}] 4_guardian_cast 8
 scoreboard players set @s[scores={statPlayerLevel=4}] 4_guardian_cast 9
 
 # 减少仓储
-scoreboard players remove @s 4_heart_storage 1
+scoreboard players remove @s 4_heart_st 1
 execute if score $is_day mem matches 1 run scoreboard players set @s 4_heart_cd 40000
 execute if score $is_day mem matches 0 run scoreboard players set @s 4_heart_cd 25000
 

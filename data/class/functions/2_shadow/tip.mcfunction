@@ -1,6 +1,6 @@
 # 轮换
 scoreboard players add @s 2_tip 1
-scoreboard players set @s[scores={2_tip=21..}] 2_tip 2
+scoreboard players set @s[scores={2_tip=23..}] 2_tip 2
 
 # 显示提示
 tellraw @s[scores={2_tip=1}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"你手持的物品不会隐形！不要拿着镰刀到处跑！\n"]
@@ -23,3 +23,4 @@ tellraw @s[scores={2_tip=17}] ["",{"text":"\n ⚜  小知识： ","color":"light
 tellraw @s[scores={2_tip=18}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"减少疾跑，也不要静止不动，这样敌人才更难发现你的痕迹。\n"]
 tellraw @s[scores={2_tip=19}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"在不慎坠崖时使用暗影精髓，能避免受到摔落伤害！\n"]
 tellraw @s[scores={2_tip=20}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"若被怪物发现，即使进入隐身也会被继续追杀。太不合理了。\n"]
+tellraw @s[scores={2_tip=21}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"技能隐身的暗影在黑暗森林突变时，只要双脚不离地是不会发光的。\n"]

@@ -29,9 +29,9 @@ tag @e[tag=new_ray] remove new_ray
 #kill @e[tag=target]
 
 # 减少珍珠
-scoreboard players remove @s 2_pearl_storage 1
-execute if score $is_day mem matches 0 run scoreboard players set @s[scores={2_pearl_storage=1}] 2_pearl_cd 12000
-execute if score $is_day mem matches 1 run scoreboard players set @s[scores={2_pearl_storage=1}] 2_pearl_cd 18000
+scoreboard players remove @s 2_pearl_st 1
+execute if score $is_day mem matches 0 run scoreboard players set @s[scores={2_pearl_st=1}] 2_pearl_cd 12000
+execute if score $is_day mem matches 1 run scoreboard players set @s[scores={2_pearl_st=1}] 2_pearl_cd 18000
 kill @e[type=ender_pearl,sort=nearest,limit=1]
 
 # 刷新物品&打断回血

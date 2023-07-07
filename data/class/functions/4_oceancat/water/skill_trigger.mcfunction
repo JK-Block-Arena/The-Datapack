@@ -6,7 +6,7 @@ playsound minecraft:block.brewing_stand.brew player @s 0 1000000 0 150000 0.5
 particle minecraft:dolphin ~ ~0.8 ~ 0.3 0.7 0.3 0 200 normal @a
 
 # 减少次数
-scoreboard players remove @s 4_water_storage 1
+scoreboard players remove @s 4_water_st 1
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

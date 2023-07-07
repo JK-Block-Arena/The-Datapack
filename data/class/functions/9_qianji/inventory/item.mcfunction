@@ -21,8 +21,8 @@ scoreboard players operation @s count4 = @s 9_st4
 scoreboard players operation @s cd4 = @s 9_cd4
 
 # 鞘翅
-item replace entity @s[scores={9_elytra_storage=1..},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:909}}]}] hotbar.8 with elytra{CustomModelData:909}
-scoreboard players operation @s count9 = @s 9_elytra_storage
+item replace entity @s[scores={9_elytra_st=1..},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:909}}]}] hotbar.8 with elytra{CustomModelData:909}
+scoreboard players operation @s count9 = @s 9_elytra_st
 scoreboard players operation @s cd9 = @s 9_elytra_cd
 
 # 空格子

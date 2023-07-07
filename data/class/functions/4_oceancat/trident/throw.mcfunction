@@ -2,7 +2,7 @@
 tag @s[nbt=!{Inventory:[{Slot:0b}]}] add is_throw
 
 # 引雷：减少存储量
-scoreboard players remove @s[tag=!4_trident_melee,tag=is_throw] 4_trident_storage 1
+scoreboard players remove @s[tag=!4_trident_melee,tag=is_throw] 4_trident_st 1
 
 # 激流：开始滞空
 effect give @s[tag=!4_trident_melee,tag=!is_throw,scores={statPlayerLevel=1}] slow_falling 6 0 true

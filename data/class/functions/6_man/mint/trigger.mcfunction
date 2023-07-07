@@ -9,7 +9,7 @@ scoreboard players set @s[scores={statPlayerLevel=2..3}] 6_mint_last 60
 scoreboard players set @s[scores={statPlayerLevel=4}] 6_mint_last 50
 
 # 减少存储
-scoreboard players remove @s 6_mint_storage 1
+scoreboard players remove @s 6_mint_st 1
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak
