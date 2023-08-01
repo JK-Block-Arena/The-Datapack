@@ -10,4 +10,4 @@ function modules:detail/tick1
 function modules:jump/tick1
 function pvp:state/tick1
 function class:events/tick1
-function debug:jkuse/tick1
+#function debug:jkuse/tick1

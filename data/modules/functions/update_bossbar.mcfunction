@@ -6,5 +6,6 @@ bossbar set bossbar:yellow players @a[scores={state=1..2},team=yellow]
 bossbar set bossbar:red_v1 players @a[scores={state=1..2},team=red_v1]
 bossbar set bossbar:blue_v1 players @a[scores={state=1..2},team=blue_v1]
 bossbar set sp:white players @a[gamemode=spectator]
+execute if score #match_mode mem matches 1 if score #match_type mem matches 1 run bossbar set sp:white_v1 players @a[gamemode=spectator]
 execute if score $mutation_bossbar mem matches 1 run bossbar set modules:mutation players @a[scores={state=1..2,team=1..4}]
 execute if score $mutation_bossbar mem matches 0 run bossbar set modules:mutation players

@@ -1,0 +1,21 @@
+execute if entity @e[limit=1,tag=class1,tag=match_v1_red] as @s[team=red_v1,scores={class=1}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class2,tag=match_v1_red] as @s[team=red_v1,scores={class=2}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class3,tag=match_v1_red] as @s[team=red_v1,scores={class=3,class_type=0}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class4,tag=match_v1_red] as @s[team=red_v1,scores={class=4}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class5,tag=match_v1_red] as @s[team=red_v1,scores={class=5}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class6,tag=match_v1_red] as @s[team=red_v1,scores={class=6}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class7,tag=match_v1_red] as @s[team=red_v1,scores={class=7}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class8,tag=match_v1_red] as @s[team=red_v1,scores={class=3,class_type=1}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class9,tag=match_v1_red] as @s[team=red_v1,scores={class=9}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class10,tag=match_v1_red] as @s[team=red_v1,scores={class=10}] run function pvp:class/random_class
+
+execute if entity @e[limit=1,tag=class1,tag=match_v1_blue] as @s[team=blue_v1,scores={class=1}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class2,tag=match_v1_blue] as @s[team=blue_v1,scores={class=2}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class3,tag=match_v1_blue] as @s[team=blue_v1,scores={class=3,class_type=0}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class4,tag=match_v1_blue] as @s[team=blue_v1,scores={class=4}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class5,tag=match_v1_blue] as @s[team=blue_v1,scores={class=5}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class6,tag=match_v1_blue] as @s[team=blue_v1,scores={class=6}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class7,tag=match_v1_blue] as @s[team=blue_v1,scores={class=7}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class8,tag=match_v1_blue] as @s[team=blue_v1,scores={class=3,class_type=1}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class9,tag=match_v1_blue] as @s[team=blue_v1,scores={class=9}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class10,tag=match_v1_blue] as @s[team=blue_v1,scores={class=10}] run function pvp:class/random_class

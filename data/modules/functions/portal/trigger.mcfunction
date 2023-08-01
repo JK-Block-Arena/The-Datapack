@@ -19,7 +19,9 @@ execute as @s[x=3,y=12,z=2,distance=..5] run scoreboard players set #portal mem 
 
 # 触发
 execute if score #portal mem matches 1 run function pvp:state/lobby/in/enter_train
-execute if score #portal mem matches 2 run function pvp:state/lobby/in/prepared
+execute if score #portal mem matches 2 store result score #player_all mem if entity @a[scores={state=1..2,team=1..4}]
+execute if score #portal mem matches 2 if score #player_all mem matches ..15 run function pvp:state/lobby/in/prepared
+execute if score #portal mem matches 2 if score #player_all mem matches 16.. run function pvp:state/lobby/back
 execute if score #portal mem matches 3 run function pvp:state/train/leave
 execute if score #portal mem matches 100 run tp @s 1.5 235.5 8.5 270 0
 execute if score #portal mem matches 101 run tp @s -878.5 47.0 7.5 90 0

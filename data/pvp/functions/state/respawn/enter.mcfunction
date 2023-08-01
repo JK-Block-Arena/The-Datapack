@@ -27,4 +27,5 @@ execute if score $mutation mem matches 10 run scoreboard players set @s respawn_
 scoreboard players set @s[scores={team=5..6}] respawn_time 11
 execute as @s[scores={team=5}] run scoreboard players add #1v1_blue mem 1
 execute as @s[scores={team=6}] run scoreboard players add #1v1_red mem 1
+scoreboard players add #1v1_all mem 1
 function pvp:state/respawn/tick8

@@ -24,6 +24,9 @@ effect give @s blindness 1 0 true
 effect give @s resistance 2 5 true
 effect give @s invisibility 1 5 true
 attribute @s minecraft:generic.attack_damage base set 1
+execute if score #match_mode mem matches 1 run scoreboard players set @s[scores={class=4..}] statPlayerLevel 3
+execute if score #match_mode mem matches 1 run scoreboard players set @s[scores={class=1..3}] statPlayerLevel 4
+scoreboard players set @s suicide_time 0
 
 # 重置位置
 execute as @s[scores={team=1..4}] run function modules:map/sub/enter

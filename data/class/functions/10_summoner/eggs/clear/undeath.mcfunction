@@ -1,4 +1,5 @@
 # 清理
+kill @s[nbt={IsBaby:true}]
 execute store result score @s temp run data get entity @s Health 10
 scoreboard players remove @s[scores={statPlayerLevel=1}] temp 14
 scoreboard players remove @s[scores={statPlayerLevel=2}] temp 16

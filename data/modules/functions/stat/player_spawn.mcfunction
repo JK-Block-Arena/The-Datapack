@@ -1,4 +1,4 @@
-function modules:stat/sub/balance_refresh
+execute unless score #match_mode mem matches 1 run function modules:stat/sub/balance_refresh
 
 # 记录职业选择信息
 execute if score @s class matches 1 run scoreboard players add $1 statClassSelectReal 1

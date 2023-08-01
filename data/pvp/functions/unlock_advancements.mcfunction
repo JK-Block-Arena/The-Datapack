@@ -11,7 +11,7 @@ execute as @s[x=6095,y=41,z=6030,dx=5,dy=2,dz=5,scores={tip_0_tutorial=7..,state
 # Believer
 execute as @s[scores={class=7,believer_book=756538722}] run scoreboard players set @s extra_believer 1
 # 丧钟为谁而鸣
-execute unless block 8039 63 8081 minecraft:target[power=0] run scoreboard players set @a[x=8039,y=63,z=8081,distance=..30] extra_bell 1
+execute unless block 8039 63 8081 minecraft:target[power=0] run scoreboard players set @a[gamemode=adventure,x=8039,y=63,z=8081,distance=..30] extra_bell 1
 # rick头
 execute as @s[scores={state=2},x=-5041,y=38,z=-5021,distance=..1] run scoreboard players set @s extra_rick_head 1
 # rick手
@@ -21,6 +21,6 @@ execute as @s[scores={state=2},x=6023,y=39,z=6041,distance=..1] run scoreboard p
 # rick身
 execute as @s[scores={state=2},x=-1959,y=47,z=-1985,distance=..1] run scoreboard players set @s extra_rick_body 1
 # 友谊赛自定义称号
-execute as @s[team=lobby,scores={state=0},advancements={pvp:match/1/v2_1st=true}] run team join v2_1st
+execute unless score #match_mode mem matches 1 as @s[team=lobby,scores={state=0},advancements={pvp:match/1/v2_1st=true}] run team join v2_1st
 
 function pvp:unlock_advancements2

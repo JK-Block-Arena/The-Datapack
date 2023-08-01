@@ -5,11 +5,11 @@
       "item": "minecraft:gilded_blackstone"
     },
     "title": {
-      "text": "有用之人 · 出神入化"
+      "text": "有用 · 出神入化"
     },
     "description": [
       {
-        "text": "使用有用之人完成 1000 次击杀。",
+        "text": "使用有用完成 1000 次击杀。",
         "color": "white"
       }
     ],

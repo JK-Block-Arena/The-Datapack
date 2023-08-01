@@ -26,7 +26,7 @@ scoreboard objectives add Monthly_statPlayerClassKill2 dummy "本月暗影击杀
 scoreboard objectives add Monthly_statPlayerClassKill3 dummy "本月突袭者击杀"
 scoreboard objectives add Monthly_statPlayerClassKill4 dummy "本月海嗣击杀"
 scoreboard objectives add Monthly_statPlayerClassKill5 dummy "本月耀骑士击杀"
-scoreboard objectives add Monthly_statPlayerClassKill6 dummy "本月有用之人击杀"
+scoreboard objectives add Monthly_statPlayerClassKill6 dummy "本月有用击杀"
 scoreboard objectives add Monthly_statPlayerClassKill7 dummy "本月牧师击杀"
 scoreboard objectives add Monthly_statPlayerClassKill8 dummy "本月夹子击杀"
 scoreboard objectives add Monthly_statPlayerClassKill9 dummy "本月千机击杀"

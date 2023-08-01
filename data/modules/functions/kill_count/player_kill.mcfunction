@@ -8,4 +8,5 @@ scoreboard players add @s[scores={class=2}] killComboReset 20
 execute as @s[scores={state=2}] at @s run function modules:kill_count/combo_feedback
 
 # 只有主战场更新bossbar
-execute as @s[scores={team=1..4}] run function modules:kill_count/bossbar
+execute unless score #match_mode mem matches 1 as @s[scores={team=1..4}] run function modules:kill_count/bossbar
+execute if score #match_mode mem matches 1 run function modules:kill_count/bossbar_match

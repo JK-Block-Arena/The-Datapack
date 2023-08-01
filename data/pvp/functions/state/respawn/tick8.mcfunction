@@ -1,4 +1,8 @@
+# 防止奇怪方式进入战场
 execute as @s[team=!lobby,team=!red,team=!blue,team=!green,team=!yellow,team=!red_v1,team=!blue_v1] run function debug:jkuse/1_back_spawn
+# 自杀重置
+scoreboard players reset @s suicide
+
 # 强制重新分队
 execute if score $balance_team debug matches 0 if score $team_diff mem matches 2.. if score #red mem = #max mem as @s[scores={respawn_time=15},team=red] run function pvp:state/respawn/auto_team
 execute if score $balance_team debug matches 0 if score $team_diff mem matches 2.. if score #blue mem = #max mem as @s[scores={respawn_time=15},team=blue] run function pvp:state/respawn/auto_team
@@ -6,16 +10,17 @@ execute if score $balance_team debug matches 0 if score $team_diff mem matches 2
 execute if score $balance_team debug matches 0 if score $team_diff mem matches 2.. if score #yellow mem = #max mem as @s[scores={respawn_time=15},team=yellow] run function pvp:state/respawn/auto_team
 
 # 状态效果
-effect give @s instant_health 39 2 true
-effect give @s resistance 1 5 true
-effect give @s invisibility 1 0 true
-effect give @s blindness 100 10 true
-effect give @s night_vision 100 10 true
-effect give @s weakness 1 10 true
-effect give @s slow_falling 1 0 true
+effect give @s instant_health 1 9 true
+effect give @s resistance 1 9 true
+effect give @s invisibility 1 9 true
+effect give @s blindness 10 9 true
+effect give @s night_vision 10 9 true
+effect give @s weakness 1 9 true
+effect give @s slow_falling 1 9 true
 
 # 重生等待
-scoreboard players remove @s respawn_time 1
+execute unless score #match_mode mem matches 1 run scoreboard players remove @s respawn_time 1
+execute if score #match_mode mem matches 1 run function debug:jkuse/match/class/diff
 
 # 设置生命值
 attribute @s[scores={respawn_time=22}] minecraft:generic.max_health base set 01
@@ -45,6 +50,7 @@ execute if score $mutation_anim mem matches 0 run title @s[scores={respawn_time=
 # 复活完成与在异常状态下回到大厅
 execute as @s[scores={respawn_time=..0}] run function pvp:state/battle/enter
 execute as @s[team=lobby] run function pvp:state/lobby/enter
+execute if score #match_mode mem matches 1 if score #match_type mem matches 1 run schedule function debug:jkuse/match/v1/back 4t append
 
 # 特效
 execute at @s run playsound minecraft:block.note_block.hat player @s[scores={respawn_time=..21}] ~ ~ ~ 0.2 0

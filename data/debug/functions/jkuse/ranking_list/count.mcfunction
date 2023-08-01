@@ -1,11 +1,12 @@
 scoreboard players add #r_n mem 1
 
 execute if score #r_n mem matches 0 run scoreboard objectives setdisplay sidebar.team.gray
-execute if score #r_n mem matches 0 run tellraw @a[team=team_ranking] "\n为防数据竞技场，生涯数据已隐去，个人数据请于左上方查询。\n"
+execute if score #r_n mem matches 0 run tellraw @a[team=team_ranking] ["\n为防数据竞技场，生涯数据已隐去，个人数据请于左上方查询。\n"]
+#你现在可以 ",{"text":"/trigger disable_month","color":"yellow","underlined": true,"clickEvent": {"action":"run_command","value": "/trigger disable_month"}},{"text": " 禁用你的月计分板"}]
 
 execute if score #r_n mem matches 1 run scoreboard objectives setdisplay sidebar.team.gray play_time
 execute if score #r_n mem matches 1 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"在线时长","color":"aqua","bold":true},"：",{"score":{"name":"@s","objective":"play_time"},"color":"gold"}]
-execute if score #r_n mem matches 1 run tellraw @a[team=team_ranking] [{"text":"你可以使用 ","color":"green"},{"text":"/trigger play_time_show","color":"gold"}," 在大厅随时查看在线时长。"]
+execute if score #r_n mem matches 1 run tellraw @a[team=team_ranking] [{"text":"你可以使用 ","color":"green"},{"text":"/trigger play_time_show","color":"yellow","underlined": true,"clickEvent": {"action":"run_command","value": "/trigger play_time_show"}}," 在大厅随时查看在线时长。"]
 
 execute if score #r_n mem matches 2 run scoreboard objectives setdisplay sidebar.team.gray Monthly_statPlayerRound
 execute if score #r_n mem matches 2 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"总循环","color":"aqua","bold":true},"数：",{"score":{"name":"@s","objective":"Monthly_statPlayerRound"},"color":"gold"}]
@@ -33,7 +34,7 @@ execute if score #r_n mem matches 9 run scoreboard objectives setdisplay sidebar
 execute if score #r_n mem matches 9 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"耀骑士","color":"aqua","bold":true},"击杀数：",{"score":{"name":"@s","objective":"Monthly_statPlayerClassKill5"},"color":"gold"}]
 
 execute if score #r_n mem matches 10 run scoreboard objectives setdisplay sidebar.team.gray Monthly_statPlayerClassKill6
-execute if score #r_n mem matches 10 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"有用之人","color":"aqua","bold":true},"击杀数：",{"score":{"name":"@s","objective":"Monthly_statPlayerClassKill6"},"color":"gold"}]
+execute if score #r_n mem matches 10 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"有用","color":"aqua","bold":true},"击杀数：",{"score":{"name":"@s","objective":"Monthly_statPlayerClassKill6"},"color":"gold"}]
 
 execute if score #r_n mem matches 11 run scoreboard objectives setdisplay sidebar.team.gray Monthly_statPlayerClassKill7
 execute if score #r_n mem matches 11 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"牧师","color":"aqua","bold":true},"击杀数：",{"score":{"name":"@s","objective":"Monthly_statPlayerClassKill7"},"color":"gold"}]

@@ -42,4 +42,4 @@ scoreboard players add @a[tag=victim,scores={class=8}] statPlayerClassDeath8 1
 scoreboard players add @a[tag=victim,scores={class=9}] statPlayerClassDeath9 1
 scoreboard players add @a[tag=victim,scores={class=10}] statPlayerClassDeath10 1
 
-execute unless score $mutation mem matches 10 run function modules:stat/stat_player1
+execute unless score $mutation mem matches 10 unless score #match_mode mem matches 1 run function modules:stat/stat_player1

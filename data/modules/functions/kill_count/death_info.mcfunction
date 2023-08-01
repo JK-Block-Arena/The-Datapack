@@ -1,18 +1,18 @@
 # 连杀数
+execute unless entity @e[tag=death_info] run summon marker 8.5 240.5 8.5 {Tags:["death_info"]}
+execute if score #death_type mem matches 0 run data modify entity @e[limit=1,tag=death_info] CustomName set value '{"text":"自杀 ✒  ","color":"gray"}'
+execute if score #death_type mem matches 1 run data modify entity @e[limit=1,tag=death_info] CustomName set value '{"text":"误杀 ✒  ","color":"gray"}'
+execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches ..1 if score @s killCombo matches ..2 run data modify entity @e[limit=1,tag=death_info] CustomName set value '{"text":"击杀 ✒  ","color":"#E6ED67"}'
+execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches ..1 if score @s killCombo matches 3.. run data modify entity @e[limit=1,tag=death_info] CustomName set value '{"text":"终结 ✒  ","color":"#E6ED67"}'
+execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 2 run data modify entity @e[limit=1,tag=death_info] CustomName set value '{"text":"双杀 ✒  ","color":"#FDA61D"}'
+execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 3 run data modify entity @e[limit=1,tag=death_info] CustomName set value '{"text":"三连杀 ✒  ","color":"#FDA61D"}'
+execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 4 run data modify entity @e[limit=1,tag=death_info] CustomName set value '{"text":"四连杀 ✒  ","color":"red"}'
+execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 5 run data modify entity @e[limit=1,tag=death_info] CustomName set value '{"text":"五连杀 ✒  ","color":"red"}'
+execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 6 run data modify entity @e[limit=1,tag=death_info] CustomName set value '{"text":"六连杀 ✒  ","color":"#FF41E7"}'
+execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 7 run data modify entity @e[limit=1,tag=death_info] CustomName set value '{"text":"七连杀 ✒  ","color":"#FF41E7"}'
+execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 8.. run data modify entity @e[limit=1,tag=death_info] CustomName set value '{"text":"传奇连杀 ✒  ","color":"#FF41E7"}'
 
-execute if score #death_type mem matches 0 run summon marker ~ ~ ~ {CustomName:'{"text":"自杀 ✒  ","color":"gray"}',Tags:["death_info"]}
-execute if score #death_type mem matches 1 run summon marker ~ ~ ~ {CustomName:'{"text":"误杀 ✒  ","color":"gray"}',Tags:["death_info"]}
-execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches ..1 if score @s killCombo matches ..2 run summon marker ~ ~ ~ {CustomName:'{"text":"击杀 ✒  ","color":"#E6ED67"}',Tags:["death_info"]}
-execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches ..1 if score @s killCombo matches 3.. run summon marker ~ ~ ~ {CustomName:'{"text":"终结 ✒  ","color":"#E6ED67"}',Tags:["death_info"]}
-execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 2 run summon marker ~ ~ ~ {CustomName:'{  "text":"双杀 ✒  ","color":"#FDA61D"}',Tags:["death_info"]}
-execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 3 run summon marker ~ ~ ~ {CustomName:'{"text":"三连杀 ✒  ","color":"#FDA61D"}',Tags:["death_info"]}
-execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 4 run summon marker ~ ~ ~ {CustomName:'{"text":"四连杀 ✒  ","color":"red"}',Tags:["death_info"]}
-execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 5 run summon marker ~ ~ ~ {CustomName:'{"text":"五连杀 ✒  ","color":"red"}',Tags:["death_info"]}
-execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 6 run summon marker ~ ~ ~ {CustomName:'{"text":"六连杀 ✒  ","color":"#FF41E7"}',Tags:["death_info"]}
-execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 7 run summon marker ~ ~ ~ {CustomName:'{"text":"七连杀 ✒  ","color":"#FF41E7"}',Tags:["death_info"]}
-execute if score #death_type mem matches 2 if score @p[tag=murder] killCombo matches 8.. run summon marker ~ ~ ~ {CustomName:'{"text":"传奇连杀 ✒  ","color":"#FF41E7"}',Tags:["death_info"]}
-
-# 摔落
+# 摔落0
 execute if score @s mino_type_last matches 00000 if score #death_type mem matches 0 as @s[tag=!mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 从高处坠下，粉身碎骨"]
 execute if score @s mino_type_last matches 00000 if score #death_type mem matches 0 as @s[tag=mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 摔死了"]
 execute if score @s mino_type_last matches 00000 if score #death_type mem matches 1.. unless score @s mino_type_real matches 00080 if score @s mino_forgive_timer matches 0.. as @s[tag=!mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 在与 ",{"selector":"@p[tag=murder]"}," 战斗时从高处坠下，粉身碎骨"]
@@ -106,7 +106,7 @@ execute if score @s mino_type_last matches 05010 as @s[tag=!mino_story_small] ru
 execute if score @s mino_type_last matches 05020 if score #death_type mem matches 0 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 与自己的烁光新星一起化为了星光"]
 execute if score @s mino_type_last matches 05020 if score #death_type mem matches 1.. run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 与 ",{"selector":"@p[tag=murder]"}," 的烁光新星一起化为了星光"]
 
-# 有用之人
+# 有用
 
 execute if score @s mino_type_last matches 06010 as @s[tag=mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的桃木剑杀死了"]
 execute if score @s mino_type_last matches 06010 as @s[tag=!mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用桃木剑斩杀了"]
@@ -197,4 +197,4 @@ execute if score @s mino_type_last matches 99030 if score #death_type mem matche
 execute if score @s mino_type_last matches 99030 if score #death_type mem matches 0 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 射爆了自己"]
 
 # 清理
-kill @e[tag=death_info]
+#kill @e[tag=death_info]

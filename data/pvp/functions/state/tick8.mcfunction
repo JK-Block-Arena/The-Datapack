@@ -1,5 +1,6 @@
 execute as @a[scores={state=0},gamemode=!creative,tag=pass] at @s run function pvp:state/lobby/tick8
 execute as @a[scores={state=1},gamemode=!creative,tag=pass] at @s run function pvp:state/respawn/tick8
+execute as @a[scores={state=2},gamemode=!creative,tag=pass] at @s run function pvp:state/battle/tick8
 
 execute as @e[tag=time,tag=lobby_item,limit=1] at @s run function pvp:state/lobby/update_time
 

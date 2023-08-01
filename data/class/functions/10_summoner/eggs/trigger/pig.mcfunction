@@ -1,6 +1,6 @@
 ride @s dismount
 # 召唤
-summon minecraft:pig ^ ^ ^0.6 {Silent:1b,NoAI:1b,Saddle:1b,CustomName:'"猪猪发射器"',CustomNameVisible:true,Tags:["new_minion"]}
+summon minecraft:pig ~ ~.1 ~ {Silent:1b,NoAI:1b,Saddle:1b,CustomName:'"猪猪发射器"',CustomNameVisible:true,Tags:["new_minion"]}
 playsound minecraft:entity.pig.ambient player @a ~ ~ ~ 1.5 1.1
 
 # 设置玩家信息

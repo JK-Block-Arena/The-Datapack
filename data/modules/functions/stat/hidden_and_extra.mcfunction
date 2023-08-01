@@ -28,6 +28,18 @@ scoreboard objectives add match_1_V2_1st dummy "友谊赛-1-v2第一"
 scoreboard objectives add match_1_V2_2nd dummy "友谊赛-1-v2第二"
 scoreboard objectives add match_1_V2_3rd dummy "友谊赛-1-v2第三"
 
+scoreboard objectives add match_2_V1_1st dummy "友谊赛-2-v1第一"
+scoreboard objectives add match_2_V1_2nd dummy "友谊赛-2-v1第二"
+scoreboard objectives add match_2_V1_3rd dummy "友谊赛-2-v1第三"
+
+scoreboard objectives add match_2_V2_1st dummy "友谊赛-2-v2第一"
+scoreboard objectives add match_2_V2_2nd dummy "友谊赛-2-v2第二"
+scoreboard objectives add match_2_V2_3rd dummy "友谊赛-2-v2第三"
+
+scoreboard objectives add match_2_V3_1st dummy "友谊赛-2-v3第一"
+scoreboard objectives add match_2_V3_2nd dummy "友谊赛-2-v3第二"
+scoreboard objectives add match_2_V3_3rd dummy "友谊赛-2-v3第三"
+
 # pck = PlayerClassKill
 scoreboard objectives add pck1 dummy "初窥门径计数"
 scoreboard objectives add pck2 dummy "日益精进计数"
@@ -37,5 +49,4 @@ scoreboard objectives add pck5 dummy "登峰造极计数"
 scoreboard objectives add pck6 dummy "出神入化计数"
 scoreboard objectives add pck_max dummy "返璞归真计数"
 
-scoreboard objectives add particle_gold dummy "黄金粒子分数"
 scoreboard objectives add particle_rainbow dummy "彩虹粒子解锁"

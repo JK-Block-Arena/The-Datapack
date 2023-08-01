@@ -1,0 +1,44 @@
+{
+  "parent": "pvp:match/2/v3_1st",
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_ingot"
+    },
+    "title": {
+      "text": "3v3v3----TOP2"
+    },
+    "description": [
+      {
+        "text": "你在友谊赛3v3v3模式中取得了第二名的好成绩！\n",
+        "color": "white"
+      },
+      {
+        "text": "作为永远的成就收藏awa",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "match_2_V3_2nd": {
+                "min": 1
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

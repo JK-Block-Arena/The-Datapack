@@ -3,7 +3,7 @@ scoreboard players add @s 8_tip 1
 scoreboard players set @s[scores={8_tip=16..}] 8_tip 0
 
 # 显示提示
-tellraw @s[scores={8_tip=1}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"夹子这个职业其实在有用之人以后就被JK设想出来了。\n"]
+tellraw @s[scores={8_tip=1}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"夹子这个职业其实在有用以后就被JK设想出来了。\n"]
 tellraw @s[scores={8_tip=2}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"尖刺和闪电一样，是没法避免友伤的！\n"]
 tellraw @s[scores={8_tip=3}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"夹子的位移技能如果运用得当，甚至能够穿墙！\n"]
 tellraw @s[scores={8_tip=4}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"尖刺都可以为对手带来挖掘疲劳（降低攻击速度）。\n"]

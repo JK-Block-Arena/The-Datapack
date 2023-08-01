@@ -3,6 +3,3 @@
 
 # 游侠光焰箭
 execute as @s[nbt={Color:16752969}] run function class:1_ranger/special/light_move
-
-# 弹射物尾迹
-function debug:jkuse/particle/loop_projectile

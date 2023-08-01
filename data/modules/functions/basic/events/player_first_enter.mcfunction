@@ -4,3 +4,4 @@
 function pvp:player_first_enter
 function modules:stat/player_first_enter
 function modules:basic/player_first_enter
+execute if score #match_mode mem matches 1 run gamemode spectator @s
