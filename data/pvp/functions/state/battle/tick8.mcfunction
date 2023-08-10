@@ -12,4 +12,4 @@ tag @s remove suicide
 scoreboard players set @s suicide 0
 
 scoreboard players remove @s[scores={suicide_time=1..}] suicide_time 1
-execute as @s[scores={suicide_time=1}] run function debug:jkuse/kill_noob
+kill @s[scores={suicide_time=1}]

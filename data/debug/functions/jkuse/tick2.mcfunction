@@ -5,3 +5,5 @@ function debug:jkuse/particle/tick2
 
 function debug:jkuse/rickroll/loop
 function debug:jkuse/creator
+
+execute as @e[tag=torso_dummy] at @s run function debug:jkuse/torso_dummy/check

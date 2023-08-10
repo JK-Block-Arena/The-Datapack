@@ -11,6 +11,7 @@
         "minecraft:pig",
         "minecraft:creeper",
         "minecraft:vex",
+        "minecraft:cow",
         "#modules:undead"
     ]
 }

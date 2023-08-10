@@ -12,7 +12,7 @@ tellraw @s[scores={tip_minor_head=6}] ["",{"text":"\n ⚜  小知识： ","color
 tellraw @s[scores={tip_minor_head=7}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"在视频设置中把粒子打开吧，粒子能帮助你追踪敌人的踪迹！\n"]
 tellraw @s[scores={tip_minor_head=8}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"小知识也可能是没用的小知识，例如这一条。\n"]
 tellraw @s[scores={tip_minor_head=9}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"多看看技能的细节介绍吧！里面有很多有用的知识的！\n"]
-tellraw @s[scores={tip_minor_head=10}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"如果看厌了小知识…… 可以按下 Alt+F4 关掉它（雾）。\n"]
+tellraw @s[scores={tip_minor_head=10}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"在JK服，战场中退游戏会得到惩罚。\n"]
 tellraw @s[scores={tip_minor_head=11}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"静息治疗的时间越长，生命恢复的速度越快。\n"]
 tellraw @s[scores={tip_cycle_head=12}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"每一轮游戏结束后，系统会禁用其中的 3 个职业！\n"]
 tellraw @s[scores={tip_minor_head=13}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"其实，小知识的显示频率是会逐渐降低的……\n"]
