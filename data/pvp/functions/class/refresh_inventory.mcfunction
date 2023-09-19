@@ -23,8 +23,6 @@ execute if score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,tag=b
 execute if entity @e[limit=1,tag=class9,tag=banned_class] as @s[scores={class=9}] run function pvp:class/random_class
 execute if entity @e[limit=1,tag=class10,tag=banned_class] as @s[scores={class=10}] run function pvp:class/random_class
 
-item replace entity @s container.32 from block 8 244 22 container.26
-
 execute if entity @e[limit=1,tag=class1,tag=!banned_class] unless score @s class matches 1 run item replace entity @s hotbar.1 from block 4 245 22 container.0
 execute if entity @e[limit=1,tag=class1,tag=!banned_class] if score @s class matches 1 run item replace entity @s hotbar.1 from block 4 245 22 container.1
 
