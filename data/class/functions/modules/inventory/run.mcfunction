@@ -10,15 +10,15 @@ item replace entity @s[tag=invisible] armor.legs with air
 item replace entity @s[tag=invisible] armor.feet with air
 
 # 设置格子中的物品
-execute as @s[scores={count1=0..}] run function class:modules/inventory/slot_1
-execute as @s[scores={count2=0..}] run function class:modules/inventory/slot_2
-execute as @s[scores={count3=0..}] run function class:modules/inventory/slot_3
-execute as @s[scores={count4=0..}] run function class:modules/inventory/slot_4
-execute as @s[scores={count5=0..}] run function class:modules/inventory/slot_5
-execute as @s[scores={count6=0..}] run function class:modules/inventory/slot_6
-execute as @s[scores={count7=0..}] run function class:modules/inventory/slot_7
-execute as @s[scores={count8=0..}] run function class:modules/inventory/slot_8
-execute as @s[scores={count9=0..}] run function class:modules/inventory/slot_9
+execute as @s[scores={count0=0..}] run function class:modules/inventory/slot_s {"slot":0}
+execute as @s[scores={count1=0..}] run function class:modules/inventory/slot_s {"slot":1}
+execute as @s[scores={count2=0..}] run function class:modules/inventory/slot_s {"slot":2}
+execute as @s[scores={count3=0..}] run function class:modules/inventory/slot_s {"slot":3}
+execute as @s[scores={count4=0..}] run function class:modules/inventory/slot_s {"slot":4}
+execute as @s[scores={count5=0..}] run function class:modules/inventory/slot_s {"slot":5}
+execute as @s[scores={count6=0..}] run function class:modules/inventory/slot_s {"slot":6}
+execute as @s[scores={count7=0..}] run function class:modules/inventory/slot_s {"slot":7}
+execute as @s[scores={count8=0..}] run function class:modules/inventory/slot_s {"slot":8}
 
 # 设置护甲颜色
 function class:modules/inventory/color

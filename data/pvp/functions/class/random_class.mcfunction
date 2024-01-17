@@ -1,7 +1,5 @@
-scoreboard players set #random_min mem 1
-scoreboard players set #random_max mem 10
-function modules:random
-execute if score $mutation mem matches 10 run scoreboard players operation #random mem = #99 mem
+execute store result score #random mem run random value 1..11
+execute if score $mutation mem matches 11 run scoreboard players operation #random mem = #99 mem
 scoreboard players operation @s class = #random mem
 
 execute if score #match_mode mem matches 1 as @s[scores={class=3}] run scoreboard players set @s class_type 0
@@ -20,6 +18,7 @@ execute unless score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,t
 execute if score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,tag=banned_class] as @s[scores={class=3,class_type=1}] run function pvp:class/random_class
 execute if entity @e[limit=1,tag=class9,tag=banned_class] as @s[scores={class=9}] run function pvp:class/random_class
 execute if entity @e[limit=1,tag=class10,tag=banned_class] as @s[scores={class=10}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class11,tag=banned_class] as @s[scores={class=11}] run function pvp:class/random_class
 
 execute if score #match_mode mem matches 1 if score #match_type mem matches 1 run function debug:jkuse/match/v1/random_class
 
@@ -30,11 +29,12 @@ execute if score #match_mode mem matches 1 at @s[scores={class=3,class_type=0}] 
 execute at @s[scores={class=3,class_type=1}] run summon marker ~ ~ ~ {Tags:["current_class"],CustomName:'[{"text":"突袭者 · 旧版","color":"aqua","bold":true}]'}
 execute at @s[scores={class=4}] run summon marker ~ ~ ~ {Tags:["current_class"],CustomName:'[{"text":"海嗣","color":"aqua","bold":true}]'}
 execute at @s[scores={class=5}] run summon marker ~ ~ ~ {Tags:["current_class"],CustomName:'[{"text":"耀骑士","color":"aqua","bold":true}]'}
-execute at @s[scores={class=6}] run summon marker ~ ~ ~ {Tags:["current_class"],CustomName:'[{"text":"有用","color":"aqua","bold":true}]'}
+execute at @s[scores={class=6}] run summon marker ~ ~ ~ {Tags:["current_class"],CustomName:'[{"text":"有用之人","color":"aqua","bold":true}]'}
 execute at @s[scores={class=7}] run summon marker ~ ~ ~ {Tags:["current_class"],CustomName:'[{"text":"牧师","color":"aqua","bold":true}]'}
 execute at @s[scores={class=8}] run summon marker ~ ~ ~ {Tags:["current_class"],CustomName:'[{"text":"夹子","color":"aqua","bold":true}]'}
 execute at @s[scores={class=9}] run summon marker ~ ~ ~ {Tags:["current_class"],CustomName:'[{"text":"千机","color":"aqua","bold":true}]'}
 execute at @s[scores={class=10}] run summon marker ~ ~ ~ {Tags:["current_class"],CustomName:'[{"text":"召唤师","color":"aqua","bold":true}]'}
+execute at @s[scores={class=11}] run summon marker ~ ~ ~ {Tags:["current_class"],CustomName:'[{"text":"魔术师","color":"aqua","bold":true}]'}
 
 execute at @s[scores={class=99}] run summon marker ~ ~ ~ {Tags:["current_class"],CustomName:'[{"text":"一击必杀","color":"aqua","bold":true}]'}
 

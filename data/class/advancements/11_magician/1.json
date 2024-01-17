@@ -1,0 +1,45 @@
+{
+    "criteria": {
+        "left": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{CustomModelData:11015}"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "right": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "equipment": {
+                                "offhand": {
+                                    "nbt": "{CustomModelData:11015}"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "left",
+            "right"
+        ]
+    ],
+    "rewards": {
+        "function": "class:11_magician/charm/weapons/1"
+    }
+}

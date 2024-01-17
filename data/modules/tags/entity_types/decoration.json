@@ -1,14 +1,14 @@
 {
     "values": [
-        "marker",
-        "armor_stand",
-        "item",
-        "item_frame",
-        "glow_item_frame",
-        "bee",
-        "snow_golem",
-        "fox",
-        "cat",
-        "polar_bear"
+        "minecraft:marker",
+        "minecraft:armor_stand",
+        "minecraft:item",
+        "minecraft:item_frame",
+        "minecraft:glow_item_frame",
+        "minecraft:bee",
+        "minecraft:snow_golem",
+        "minecraft:fox",
+        "minecraft:cat",
+        "minecraft:polar_bear"
     ]
 }

@@ -31,7 +31,7 @@ execute if score @s mino_type_last matches 00010 if score #death_type mem matche
 execute if score @s mino_type_last matches 00020 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 太弱小了，以至于被 ",{"selector":"@p[tag=murder]"}," 一巴掌揍死了"]
 
 execute if score @s mino_type_last matches 00030 if score #death_type mem matches 0 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 凋零了"]
-execute if score @s mino_type_last matches 00030 if score #death_type mem matches 1.. unless score @s mino_type_real matches 00080 if score @s mino_type_real matches 01020 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的凋亡箭命中，最终凋谢了"]
+execute if score @s mino_type_last matches 00030 if score #death_type mem matches 1.. unless score @s mino_type_real matches 00080 if score @s mino_type_real matches 01020 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的巫毒箭命中，最终凋谢了"]
 execute if score @s mino_type_last matches 00030 if score #death_type mem matches 1.. unless score @s mino_type_real matches 00080 unless score @s mino_type_real matches 01020 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 在与 ",{"selector":"@p[tag=murder]"}," 战斗时凋零了"]
 execute if score @s mino_type_last matches 00030 if score #death_type mem matches 1.. if score @s mino_type_real matches 00080 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 在与 ",{"selector":"@p[tag=murder]"}," 换位后凋零了"]
 
@@ -109,28 +109,28 @@ execute if score @s mino_type_last matches 05010 as @s[tag=!mino_story_small] ru
 execute if score @s mino_type_last matches 05020 if score #death_type mem matches 0 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 与自己的烁光新星一起化为了星光"]
 execute if score @s mino_type_last matches 05020 if score #death_type mem matches 1.. run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 与 ",{"selector":"@p[tag=murder]"}," 的烁光新星一起化为了星光"]
 
-# 有用
+# 有用之人
 
-execute if score @s mino_type_last matches 06010 as @s[tag=mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的桃木剑杀死了"]
-execute if score @s mino_type_last matches 06010 as @s[tag=!mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用桃木剑斩杀了"]
+execute if score @s mino_type_last matches 06010 as @s[tag=mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的桃木剑杀死了"]
+execute if score @s mino_type_last matches 06010 as @s[tag=!mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用桃木剑斩杀了"]
 
-execute if score @s mino_type_last matches 06020 as @s[tag=mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的剑气吹散了"]
-execute if score @s mino_type_last matches 06020 as @s[tag=!mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用剑气斩杀了"]
+execute if score @s mino_type_last matches 06020 as @s[tag=mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的剑气吹散了"]
+execute if score @s mino_type_last matches 06020 as @s[tag=!mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用剑气斩杀了"]
 # 牧师
 
-execute if score @s mino_type_last matches 07010 as @s[tag=mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的圣书呼死了"]
-execute if score @s mino_type_last matches 07010 as @s[tag=!mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的圣书呼死了"]
+execute if score @s mino_type_last matches 07010 as @s[tag=mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的圣书呼死了"]
+execute if score @s mino_type_last matches 07010 as @s[tag=!mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的圣书呼死了"]
 
-execute if score @s mino_type_last matches 07020 if score #death_type mem matches 1.. as @s[tag=mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的蜜汁药水砸死了"]
-execute if score @s mino_type_last matches 07020 if score #death_type mem matches 1.. as @s[tag=!mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的圣水感化了"]
+execute if score @s mino_type_last matches 07020 if score #death_type mem matches 1.. as @s[tag=mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的蜜汁药水砸死了"]
+execute if score @s mino_type_last matches 07020 if score #death_type mem matches 1.. as @s[tag=!mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的圣水感化了"]
 
-execute if score @s mino_type_last matches 07020 if score #death_type mem matches 0 as @s[tag=mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被自己的蜜汁药水砸死了"]
-execute if score @s mino_type_last matches 07020 if score #death_type mem matches 0 as @s[tag=!mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被自己的圣水感化了"]
+execute if score @s mino_type_last matches 07020 if score #death_type mem matches 0 as @s[tag=mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被自己的蜜汁药水砸死了"]
+execute if score @s mino_type_last matches 07020 if score #death_type mem matches 0 as @s[tag=!mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被自己的圣水感化了"]
 
 # 夹子
 
-execute if score @s mino_type_last matches 08010 as @s[tag=mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的手中夹剪断了"]
-execute if score @s mino_type_last matches 08010 as @s[tag=!mino_story_small] run tellraw @a ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的手中夹剪成了两半"]
+execute if score @s mino_type_last matches 08010 as @s[tag=mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的手中夹剪断了"]
+execute if score @s mino_type_last matches 08010 as @s[tag=!mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的手中夹剪成了两半"]
 
 execute if score @s mino_type_last matches 08020 if score #death_type mem matches 0 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 自愿成为自己夹子的饵料"]
 execute if score @s mino_type_last matches 08020 if score #death_type mem matches 1.. if score @s mino_source_last matches 0 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 在与 ",{"selector":"@p[tag=murder]"}," 战斗时，被自己召唤的夹子吞噬了"]
@@ -189,6 +189,20 @@ execute if score @s mino_type_last matches 10031 if score #death_type mem matche
 execute if score @s mino_type_last matches 10040 if score #death_type mem matches 1.. as @s[tag=mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的铁傀儡打扁了"]
 execute if score @s mino_type_last matches 10040 if score #death_type mem matches 1.. as @s[tag=!mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 的铁傀儡砸死了"]
 execute if score @s mino_type_last matches 10040 if score #death_type mem matches 0 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被自己换队前的铁傀儡击杀了"]
+
+# 魔术师
+
+execute if score @s mino_type_last matches 11010 if score #death_type mem matches 1.. run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用百变符挠死了"]
+execute if score @s mino_type_last matches 11011 if score #death_type mem matches 1.. run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用书呼死了"]
+execute if score @s mino_type_last matches 11012 if score #death_type mem matches 1.. run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用石锄刨开了"]
+execute if score @s mino_type_last matches 11013 if score #death_type mem matches 1.. run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用石剑击杀了"]
+execute if score @s mino_type_last matches 11014 if score #death_type mem matches 1.. run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 用石斧劈开了"]
+
+execute if score @s mino_type_last matches 11020 if score #death_type mem matches 1.. as @s[tag=mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 发射的火球炸飞了"]
+execute if score @s mino_type_last matches 11020 if score #death_type mem matches 1.. as @s[tag=!mino_story_small] run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 发射的火球送上了天"]
+execute if score @s mino_type_last matches 11020 if score #death_type mem matches 0 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被自己发射的火球炸飞了"]
+
+# 一击必杀
 
 execute if score @s mino_type_last matches 99010 if score #death_type mem matches 1.. as @s run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被 ",{"selector":"@p[tag=murder]"}," 炸得灰都不剩"]
 execute if score @s mino_type_last matches 99010 if score #death_type mem matches 0 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 被自己送上天了"]

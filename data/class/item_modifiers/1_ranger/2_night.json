@@ -1,4 +1,4 @@
 {
     "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"巫毒箭\",\"italic\": false}',Lore:['{\"text\":\"在箭矢落地之处散出一大片毒沼，\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"使毒沼中的生物中毒。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"28 秒 (白昼) /\",\"italic\": false,\"color\":\"dark_gray\"},{\"text\":\" 12 秒 (夜晚)\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+    "tag":"{display:{Name:'{\"text\":\"巫毒箭\",\"italic\": false}',Lore:['{\"text\":\"命中时对目标造成长时间的凋零效果。\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"未命中时在箭矢落地之处散出一大片毒沼，\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"使毒沼中的生物中毒。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"25 秒 (白昼) /\",\"italic\": false,\"color\":\"dark_gray\"},{\"text\":\" 15 秒 (夜晚)\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
 }

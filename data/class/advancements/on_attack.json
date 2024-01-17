@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "any": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "player": {}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "class:modules/on_attack"
+    }
+}

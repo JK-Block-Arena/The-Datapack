@@ -17,5 +17,5 @@ execute if score $skill_cd debug matches 2 run scoreboard players operation @a c
 execute if score $skill_cd debug matches 3 run scoreboard players set @a cd_speed 1000000
 
 # 应用潮涌能量
-#scoreboard players add @a[nbt={ActiveEffects:[{Id:29,Amplifier:0b}]}] cd_speed 25
-#scoreboard players add @a[nbt={ActiveEffects:[{Id:29,Amplifier:1b}]}] cd_speed 67
+#scoreboard players add @a[nbt={active_effects:[{id:"minecraft:conduit_power",amplifier:0b}]}] cd_speed 25
+#scoreboard players add @a[nbt={active_effects:[{id:"minecraft:conduit_power",amplifier:1b}]}] cd_speed 67

@@ -1,0 +1,1 @@
+function class:11_magician/tp/tick1_global

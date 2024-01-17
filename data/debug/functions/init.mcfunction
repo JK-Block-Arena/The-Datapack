@@ -40,11 +40,6 @@ team modify lobby collisionRule never
 team modify lobby color white
 team modify lobby friendlyFire false
 team modify lobby seeFriendlyInvisibles true
-#
-team remove team_ranking
-team add team_ranking
-team modify team_ranking color gray
-team modify team_ranking friendlyFire false
 
 team remove creator
 team add creator {"text":"创造者","color":"light_purple"}
@@ -52,12 +47,10 @@ team modify creator collisionRule never
 team modify creator color light_purple
 team modify creator seeFriendlyInvisibles true
 
-team remove v2_1st
-team add v2_1st {"text":"v2第一称号"}
-team modify v2_1st collisionRule never
-team modify v2_1st color white
-team modify v2_1st prefix ["",{"text":"人间失格 ","color":"black"},{"text":"","color":"white"}]
-team modify v2_1st friendlyFire false
+team remove team_ranking
+team add team_ranking
+team modify team_ranking color gray
+team modify team_ranking friendlyFire false
 
 team remove red_v1
 team add red_v1 {"text":"v1红队","color":"dark_red"}
@@ -70,19 +63,42 @@ team add blue_v1 {"text":"v1蓝队","color":"blue"}
 team modify blue_v1 collisionRule always
 team modify blue_v1 color dark_blue
 team modify blue_v1 friendlyFire false
+
+team remove match_1_v2_1st
+team add match_1_v2_1st
+team modify match_1_v2_1st collisionRule never
+team modify match_1_v2_1st color white
+team modify match_1_v2_1st prefix ["",{"text":"人间失格 ","color":"black"}]
+
+team remove match_2_v1_1st
+team add match_2_v1_1st
+team modify match_2_v1_1st collisionRule never
+team modify match_2_v1_1st color white
+team modify match_2_v1_1st prefix ["",{"text":"金光闪闪 ","color":"yellow"}]
+
+team remove match_2_v2_1st
+team add match_2_v2_1st
+team modify match_2_v2_1st collisionRule never
+team modify match_2_v2_1st color white
+team modify match_2_v2_1st prefix "秋风坐牢 "
+
+team remove match_2_v3_1st
+team add match_2_v3_1st
+team modify match_2_v3_1st collisionRule never
+team modify match_2_v3_1st color white
+team modify match_2_v3_1st prefix ["",{"text":"brainless ","color":"blue","bold": true}]
 # ---------------------------------------------
 #  时钟（略微修改了初相，让它们间隔执行）
 # ---------------------------------------------
 
 schedule function modules:basic/events/tick1 1t replace
-schedule function modules:basic/events/tick2 1t replace
-schedule function modules:basic/events/tick4 2t replace
-schedule function modules:basic/events/tick8 4t replace
-schedule function modules:basic/events/tick16 8t replace
-schedule function modules:basic/events/sec1 10t replace
-schedule function modules:basic/events/sec3 16t replace
-schedule function modules:basic/events/sec4 1s replace
-schedule function modules:basic/events/sec30 2s replace
+schedule function modules:basic/events/tick2 2t replace
+schedule function modules:basic/events/tick4 3t replace
+schedule function modules:basic/events/tick8 5t replace
+schedule function modules:basic/events/tick16 7t replace
+schedule function modules:basic/events/sec1 11t replace
+schedule function modules:basic/events/sec3 13t replace
+schedule function modules:basic/events/sec30 17t replace
 
 # ---------------------------------------------
 #  Game Rule
@@ -98,7 +114,7 @@ forceload add -16 -16 16 16
 #  记分板
 # ---------------------------------------------
 
-#scoreboard objectives remove mem
+scoreboard objectives remove mem
 scoreboard objectives add mem dummy "全局变量"
 scoreboard players set $version mem 1
 scoreboard players set #-1 mem -1
@@ -153,7 +169,7 @@ scoreboard players set #1000000 mem 1000000
 
 scoreboard objectives add hp health "❤"
 scoreboard objectives setdisplay list hp
-scoreboard objectives setdisplay belowName hp
+scoreboard objectives setdisplay below_name hp
 
 scoreboard objectives remove temp
 scoreboard objectives add temp dummy "缓存"

@@ -12,29 +12,29 @@ item replace entity @s[scores={statPlayerLevel=1},nbt=!{Inventory:[{Slot:0b,tag:
 item replace entity @s[scores={statPlayerLevel=2},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:501}}]}] hotbar.0 with golden_sword{CustomModelData:501,AttributeModifiers:[{UUID:[I;5,0,1,1],Amount:5,AttributeName:"generic.attack_damage",Name:"attack",Slot:"mainhand",Operation:0},{Operation: 0, Amount: -2.4, UUID: [I;5,0,1,2], AttributeName: "generic.attack_speed", Name: "generic.attackSpeed"}],Unbreakable:1b,HideFlags:63,Enchantments:[{id:"minecraft:fire_aspect",lvl:1}]}
 item replace entity @s[scores={statPlayerLevel=3},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:501}}]}] hotbar.0 with golden_sword{CustomModelData:501,AttributeModifiers:[{UUID:[I;5,0,1,1],Amount:5,AttributeName:"generic.attack_damage",Name:"attack",Slot:"mainhand",Operation:0},{Operation: 0, Amount: -2.5, UUID: [I;5,0,1,2], AttributeName: "generic.attack_speed", Name: "generic.attackSpeed"}],Unbreakable:1b,HideFlags:63,Enchantments:[{id:"minecraft:fire_aspect",lvl:1}]}
 item replace entity @s[scores={statPlayerLevel=4},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:501}}]}] hotbar.0 with golden_sword{CustomModelData:501,AttributeModifiers:[{UUID:[I;5,0,1,1],Amount:5,AttributeName:"generic.attack_damage",Name:"attack",Slot:"mainhand",Operation:0},{Operation: 0, Amount: -2.65, UUID: [I;5,0,1,2], AttributeName: "generic.attack_speed", Name: "generic.attackSpeed"}],Unbreakable:1b,HideFlags:63,Enchantments:[{id:"minecraft:fire_aspect",lvl:1}]}
-scoreboard players set @s count1 -1
+scoreboard players set @s count0 -1
 
 # 烁光新星
 item replace entity @s[scores={5_star_st=1..,5_star_last=0},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:502}}]}] hotbar.1 with nether_star{CustomModelData:502}
 item replace entity @s[scores={5_star_st=1..,5_star_last=1..},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:503}}]}] hotbar.1 with beacon{CustomModelData:503}
-scoreboard players operation @s count2 = @s 5_star_st
-scoreboard players operation @s cd2 = @s 5_star_cd
+scoreboard players operation @s count1 = @s 5_star_st
+scoreboard players operation @s cd1 = @s 5_star_cd
 
 # 空格子
 item replace entity @s hotbar.2 with air
-scoreboard players set @s count3 -1
+scoreboard players set @s count2 -1
 item replace entity @s hotbar.3 with air
-scoreboard players set @s count4 -1
+scoreboard players set @s count3 -1
 item replace entity @s hotbar.4 with air
-scoreboard players set @s count5 -1
+scoreboard players set @s count4 -1
 item replace entity @s hotbar.5 with air
-scoreboard players set @s count6 -1
+scoreboard players set @s count5 -1
 item replace entity @s hotbar.6 with air
-scoreboard players set @s count7 -1
+scoreboard players set @s count6 -1
 item replace entity @s hotbar.7 with air
-scoreboard players set @s count8 -1
+scoreboard players set @s count7 -1
 item replace entity @s hotbar.8 with air
-scoreboard players set @s count9 -1
+scoreboard players set @s count8 -1
 
 # 护甲
 item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:520}}]}] armor.head with leather_helmet{CustomModelData:520,Unbreakable:1b,display:{Name:'{"text":"染色皮帽","italic": false,"color":"white"}',Lore:['{"text":"便于分辨敌友的小帽子。","italic": false,"color":"gray"}']},AttributeModifiers:[],HideFlags:1023,NeedColor:1b}

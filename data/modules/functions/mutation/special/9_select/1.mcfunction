@@ -2,16 +2,13 @@
 scoreboard objectives add answer trigger "答案"
 scoreboard players enable @a answer
 # 第一个数字
-scoreboard players set #random_min mem 1
-scoreboard players set #random_max mem 20
-function modules:random
+execute store result score #random mem run random value 1..20
 scoreboard players operation #9_x mem = #random mem
 # 第二个数字
-function modules:random
+execute store result score #random mem run random value 1..20
 scoreboard players operation #9_y mem = #random mem
 # 选择符号
-scoreboard players set #random_max mem 4
-function modules:random
+execute store result score #random mem run random value 1..4
 scoreboard players operation #9_c mem = #random mem
 # 计算正确答案储存到 9_r 中
 scoreboard players operation #9_r mem = #9_x mem

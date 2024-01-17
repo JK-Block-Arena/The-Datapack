@@ -96,19 +96,6 @@ kill @e[tag=debug2]
 kill @e[tag=debug3]
 #kill @e[tag=debug4]
 
-# 地图
-#summon marker ~ ~ ~ {CustomName:'{"text":"[正午]","color":"white"}',Tags:["debug1"]}
-#summon marker ~ ~ ~ {CustomName:'{"text":"[凌晨]","color":"white"}',Tags:["debug2"]}
-#execute if score $map_time debug matches 0 run summon marker ~ ~ ~ {CustomName:'{"text":"[关闭昼夜交替]","color":"gray"}',Tags:["debug3"]}
-#execute if score $map_time debug matches 1 run summon marker ~ ~ ~ {CustomName:'{"text":"[关闭昼夜交替]","color":"green"}',Tags:["debug3"]}
-#execute if score $map_marker debug matches 0 run summon marker ~ ~ ~ {CustomName:'{"text":"[出生点标记]","color":"gray"}',Tags:["debug4"]}
-#execute if score $map_marker debug matches 1 run summon marker ~ ~ ~ {CustomName:'{"text":"[出生点标记]","color":"green"}',Tags:["debug4"]}
-#tellraw @s ["     地图  >>   ",{"selector":"@e[tag=debug1]","clickEvent":{"action":"run_command","value":"/time set noon"}},"  ",{"selector":"@e[tag=debug2]","clickEvent":{"action":"run_command","value":"/time set midnight"}},"  ",{"selector":"@e[tag=debug3]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_time"}},"  ",{"selector":"@e[tag=debug4]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_marker"}}]
-#kill @e[tag=debug1]
-#kill @e[tag=debug2]
-#kill @e[tag=debug3]
-#kill @e[tag=debug4]
-
 # 切换部分
 tellraw @s ""
 
@@ -133,7 +120,7 @@ execute if score $map mem matches 9 run summon marker ~ ~ ~ {CustomName:'{"text"
 execute unless score $map mem matches 9 run summon marker ~ ~ ~ {CustomName:'{"text":"[矿洞]","color":"gray"}',Tags:["debug9"]}
 execute if score $map mem matches 100 run summon marker ~ ~ ~ {CustomName:'{"text":"[玄素]","color":"green"}',Tags:["debug100"]}
 execute unless score $map mem matches 100 run summon marker ~ ~ ~ {CustomName:'{"text":"[玄素]","color":"black"}',Tags:["debug100"]}
-tellraw @s ["     切换战场  >>   ",{"selector":"@e[tag=debug1]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_1"}},"  ",{"selector":"@e[tag=debug2]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_2"}},"  ",{"selector":"@e[tag=debug3]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_3"}},"  ",{"selector":"@e[tag=debug4]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_4"}},"  ",{"selector":"@e[tag=debug5]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_5"}},"  ",{"selector":"@e[tag=debug6]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_6"}},"  ",{"selector":"@e[tag=debug7]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_7"}},"  ",{"selector":"@e[tag=debug8]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_8"}},"  ",{"selector":"@e[tag=debug9]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_9"}},"  ",{"selector":"@e[tag=debug100]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_100"}}]
+tellraw @s ["     切换战场  >>   ",{"selector":"@e[tag=debug1]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_s {\"num\":1}"}},"  ",{"selector":"@e[tag=debug2]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_s {\"num\":2}"}},"  ",{"selector":"@e[tag=debug3]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_s {\"num\":3}"}},"  ",{"selector":"@e[tag=debug4]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_s {\"num\":4}"}},"  ",{"selector":"@e[tag=debug5]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_s {\"num\":5}"}},"  ",{"selector":"@e[tag=debug6]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_s {\"num\":6}"}},"  ",{"selector":"@e[tag=debug7]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_s {\"num\":7}"}},"  ",{"selector":"@e[tag=debug8]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_s {\"num\":8}"}},"  ",{"selector":"@e[tag=debug9]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_s {\"num\":9}"}},"  ",{"selector":"@e[tag=debug100]","clickEvent":{"action":"run_command","value":"/function debug:trigger/map_change_s {\"num\":100}"}}]
 
 kill @e[tag=debug1]
 kill @e[tag=debug2]
@@ -151,8 +138,8 @@ execute if score $mutation mem matches 0 run summon marker ~ ~ ~ {CustomName:'{"
 execute unless score $mutation mem matches 0 run summon marker ~ ~ ~ {CustomName:'{"text":"[无]","color":"gray"}',Tags:["debug1"]}
 execute if score $mutation mem matches 1 run summon marker ~ ~ ~ {CustomName:'{"text":"[瞬息万变]","color":"green"}',Tags:["debug2"]}
 execute unless score $mutation mem matches 1 run summon marker ~ ~ ~ {CustomName:'{"text":"[瞬息万变]","color":"gray"}',Tags:["debug2"]}
-execute if score $mutation mem matches 2 run summon marker ~ ~ ~ {CustomName:'{"text":"[混沌灵魂++]","color":"green"}',Tags:["debug3"]}
-execute unless score $mutation mem matches 2 run summon marker ~ ~ ~ {CustomName:'{"text":"[混沌灵魂++]","color":"gray"}',Tags:["debug3"]}
+execute if score $mutation mem matches 2 run summon marker ~ ~ ~ {CustomName:'{"text":"[混沌灵魂+]","color":"green"}',Tags:["debug3"]}
+execute unless score $mutation mem matches 2 run summon marker ~ ~ ~ {CustomName:'{"text":"[混沌灵魂+]","color":"gray"}',Tags:["debug3"]}
 execute if score $mutation mem matches 3 run summon marker ~ ~ ~ {CustomName:'{"text":"[引力失衡]","color":"green"}',Tags:["debug4"]}
 execute unless score $mutation mem matches 3 run summon marker ~ ~ ~ {CustomName:'{"text":"[引力失衡]","color":"gray"}',Tags:["debug4"]}
 execute if score $mutation mem matches 4 run summon marker ~ ~ ~ {CustomName:'{"text":"[厄难之血]","color":"green"}',Tags:["debug5"]}
@@ -167,10 +154,12 @@ execute if score $mutation mem matches 8 run summon marker ~ ~ ~ {CustomName:'{"
 execute unless score $mutation mem matches 8 run summon marker ~ ~ ~ {CustomName:'{"text":"[黑暗森林]","color":"gray"}',Tags:["debug9"]}
 execute if score $mutation mem matches 9 run summon marker ~ ~ ~ {CustomName:'{"text":"[你说我做]","color":"green"}',Tags:["debug10"]}
 execute unless score $mutation mem matches 9 run summon marker ~ ~ ~ {CustomName:'{"text":"[你说我做]","color":"gray"}',Tags:["debug10"]}
-execute if score $mutation mem matches 10 run summon marker ~ ~ ~ {CustomName:'{"text":"[一击必杀]","color":"green"}',Tags:["debug11"]}
-execute unless score $mutation mem matches 10 run summon marker ~ ~ ~ {CustomName:'{"text":"[一击必杀]","color":"black"}',Tags:["debug11"]}
+execute if score $mutation mem matches 10 run summon marker ~ ~ ~ {CustomName:'{"text":"[天堂制造]","color":"green"}',Tags:["debug11"]}
+execute unless score $mutation mem matches 10 run summon marker ~ ~ ~ {CustomName:'{"text":"[天堂制造]","color":"gray"}',Tags:["debug11"]}
+execute if score $mutation mem matches 11 run summon marker ~ ~ ~ {CustomName:'{"text":"[一击必杀]","color":"green"}',Tags:["debug12"]}
+execute unless score $mutation mem matches 11 run summon marker ~ ~ ~ {CustomName:'{"text":"[一击必杀]","color":"black"}',Tags:["debug12"]}
 
-tellraw @s ["     切换突变  >>   ",{"selector":"@e[tag=debug1]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_0"}},"  ",{"selector":"@e[tag=debug2]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_1"},"hoverEvent":{"action":"show_text","contents":"生命上限降低，但静息治疗会瞬间恢复所有生命"}},"  ",{"selector":"@e[tag=debug3]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_2"},"hoverEvent":{"action":"show_text","contents":"职业仅能随机选择，也会因死亡或时间随机改变"}},"  ",{"selector":"@e[tag=debug4]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_3"},"hoverEvent":{"action":"show_text","contents":"大地的引力几乎消失了，一切都变得诡异而陌生"}},"  ",{"selector":"@e[tag=debug5]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_4"},"hoverEvent":{"action":"show_text","contents":"能力冷却仅在攻击敌人或被攻击时才能恢复"}},"  ",{"selector":"@e[tag=debug6]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_5"},"hoverEvent":{"action":"show_text","contents":"接触水的生物会获得少量护盾，并传送到敌方附近"}},"  ",{"selector":"@e[tag=debug7]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_6"},"hoverEvent":{"action":"show_text","contents":"攻击友方/敌方获得增益，但静息无法治疗"}},"  ",{"selector":"@e[tag=debug8]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_7"},"hoverEvent":{"action":"show_text","contents":"每隔一段时间，所有人就会随机交换位置"}},"  ",{"selector":"@e[tag=debug9]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_8"},"hoverEvent":{"action":"show_text","contents":"获得可静息的隐身，但任何动作都会暴露你"}},"  ",{"selector":"@e[tag=debug10]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_9"},"hoverEvent":{"action":"show_text","contents":"出现随机任务，完成与否奖惩分明"}},"  ",{"selector":"@e[tag=debug11]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_10"},"hoverEvent":{"action":"show_text","contents":"不计摔伤与死亡数，一击必杀你的对手吧！"}}]
+tellraw @s ["     切换突变  >>   ",{"selector":"@e[tag=debug1]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_0"}},"  ",{"selector":"@e[tag=debug2]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_s {\"num\":1}"},"hoverEvent":{"action":"show_text","contents":"生命上限降低，但静息治疗会瞬间恢复所有生命"}},"  ",{"selector":"@e[tag=debug3]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_s {\"num\":2}"},"hoverEvent":{"action":"show_text","contents":"职业仅能随机选择，也会因时间随机改变"}},"  ",{"selector":"@e[tag=debug4]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_s {\"num\":3}"},"hoverEvent":{"action":"show_text","contents":"大地的引力几乎消失了，一切都变得诡异而陌生"}},"  ",{"selector":"@e[tag=debug5]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_s {\"num\":4}"},"hoverEvent":{"action":"show_text","contents":"能力冷却仅在攻击敌人或被攻击时才能恢复"}},"  ",{"selector":"@e[tag=debug6]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_s {\"num\":5}"},"hoverEvent":{"action":"show_text","contents":"接触水的生物会获得少量护盾，并传送到敌方附近"}},"  ",{"selector":"@e[tag=debug7]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_s {\"num\":6}"},"hoverEvent":{"action":"show_text","contents":"攻击友方/敌方获得增益，但静息无法治疗"}},"  ",{"selector":"@e[tag=debug8]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_s {\"num\":7}"},"hoverEvent":{"action":"show_text","contents":"每隔一段时间，所有人就会随机交换位置"}},"  ",{"selector":"@e[tag=debug9]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_s {\"num\":8}"},"hoverEvent":{"action":"show_text","contents":"获得可静息的隐身，但任何动作都会暴露你"}},"  ",{"selector":"@e[tag=debug10]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_s {\"num\":9}"},"hoverEvent":{"action":"show_text","contents":"出现随机任务，完成与否奖惩分明"}},"  ",{"selector":"@e[tag=debug11]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_s {\"num\":10}"},"hoverEvent":{"action":"show_text","contents":"在这个时间x4倍加速的世界生存下去吧"}},"  ",{"selector":"@e[tag=debug12]","clickEvent":{"action":"run_command","value":"/function debug:trigger/mutation_s {\"num\":11}"},"hoverEvent":{"action":"show_text","contents":"不计摔伤与死亡数，一击必杀你的对手吧！"}}]
 
 kill @e[tag=debug1]
 kill @e[tag=debug2]
@@ -183,6 +172,7 @@ kill @e[tag=debug8]
 kill @e[tag=debug9]
 kill @e[tag=debug10]
 kill @e[tag=debug11]
+kill @e[tag=debug12]
 
 tellraw @s "\n"
 execute at @s run playsound minecraft:ui.button.click player @s ~ ~ ~ 0.15 1

@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"text\":\"百变符\",\"italic\": false}',Lore:['[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"},\" 将进行充能，\"]','{\"text\":\"到任意阶段再按一次变为指定武器。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"3 秒\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+}

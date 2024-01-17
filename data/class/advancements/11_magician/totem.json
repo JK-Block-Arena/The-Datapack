@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "totem": {
+            "trigger": "minecraft:used_totem"
+        }
+    },
+    "rewards": {
+        "function": "class:11_magician/totem/used"
+    }
+}

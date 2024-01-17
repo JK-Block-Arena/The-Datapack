@@ -11,31 +11,31 @@ execute if score @s state matches 0..2 if score $mutation mem matches 3 run item
 execute unless score @s state matches 0..2 run item replace entity @s[tag=4_in_water,scores={4_trident_st=1..},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:402}}]}] hotbar.0 with trident{CustomModelData:402,Unbreakable:1b,Enchantments:[{id:"riptide",lvl:3}],AttributeModifiers:[{UUID:[I;4,0,1,51],Amount:8,AttributeName:"generic.attack_damage",Name:"attack",Slot:"mainhand",Operation:0},{Operation: 0, Amount: -2.9, UUID: [I;4,0,1,52], AttributeName: "generic.attack_speed", Name: "generic.attackSpeed",Slot:"mainhand"}]}
 execute unless score $mutation mem matches 3 run item replace entity @s[tag=4_in_water,scores={4_trident_st=1..},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:402}}]}] hotbar.0 with trident{CustomModelData:402,Unbreakable:1b,Enchantments:[{id:"riptide",lvl:3}],AttributeModifiers:[{UUID:[I;4,0,1,51],Amount:8,AttributeName:"generic.attack_damage",Name:"attack",Slot:"mainhand",Operation:0},{Operation: 0, Amount: -2.9, UUID: [I;4,0,1,52], AttributeName: "generic.attack_speed", Name: "generic.attackSpeed",Slot:"mainhand"}]}
 item replace entity @s[scores={4_trident_st=..0},nbt={Inventory:[{Slot:0b}]}] hotbar.0 with air
-scoreboard players set @s count1 -1
+scoreboard players set @s count0 -1
 
 # 深海之心
 item replace entity @s[scores={4_heart_st=1..},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:403}}]}] hotbar.1 with heart_of_the_sea{CustomModelData:403}
-scoreboard players operation @s count2 = @s 4_heart_st
-scoreboard players operation @s cd2 = @s 4_heart_cd
+scoreboard players operation @s count1 = @s 4_heart_st
+scoreboard players operation @s cd1 = @s 4_heart_cd
 
 # 水生
 item replace entity @s[scores={4_water_st=1..},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:408}}]}] hotbar.8 with scute{CustomModelData:408}
-scoreboard players operation @s count9 = @s 4_water_st
-scoreboard players operation @s cd9 = @s 4_water_cd
+scoreboard players operation @s count8 = @s 4_water_st
+scoreboard players operation @s cd8 = @s 4_water_cd
 
 # 空格子
 item replace entity @s hotbar.2 with air
-scoreboard players set @s count3 -1
+scoreboard players set @s count2 -1
 item replace entity @s hotbar.3 with air
-scoreboard players set @s count4 -1
+scoreboard players set @s count3 -1
 item replace entity @s hotbar.4 with air
-scoreboard players set @s count5 -1
+scoreboard players set @s count4 -1
 item replace entity @s hotbar.5 with air
-scoreboard players set @s count6 -1
+scoreboard players set @s count5 -1
 item replace entity @s hotbar.6 with air
-scoreboard players set @s count7 -1
+scoreboard players set @s count6 -1
 item replace entity @s hotbar.7 with air
-scoreboard players set @s count8 -1
+scoreboard players set @s count7 -1
 
 # 护甲
 item replace entity @s[tag=!invisible,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:420}}]}] armor.head with turtle_helmet{CustomModelData:420,display:{Name:'{"text":"技能：海水熟捻","italic": false,"color":"aqua"}',Lore:['{"text":"你在水中也能以正常速度移动。","italic": false,"color":"gray"}']},Enchantments:[{"id":"minecraft:depth_strider","lvl":3}],AttributeModifiers:[],HideFlags:1023,Unbreakable:1b,NeedColor:0b}

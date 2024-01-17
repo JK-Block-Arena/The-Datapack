@@ -1,10 +1,8 @@
 # 数值改变
 execute store result score #mutation mem run bossbar get modules:mutation value
-scoreboard players set #random_min mem -100
-execute if score $mutation_speed debug matches 0 run scoreboard players set #random_max mem 125
-execute if score $mutation_speed debug matches 1 run scoreboard players set #random_max mem 150
-execute if score $mutation_speed debug matches 2 run scoreboard players set #random_max mem 225
-function modules:random
+execute if score $mutation_speed debug matches 0 store result score #random mem run random value -100..125
+execute if score $mutation_speed debug matches 1 store result score #random mem run random value -100..150
+execute if score $mutation_speed debug matches 2 store result score #random mem run random value -100..225
 scoreboard players operation #mutation mem += #random mem
 execute if score #mutation mem matches ..0 run scoreboard players set #mutation mem 0
 execute store result bossbar modules:mutation value run scoreboard players get #mutation mem

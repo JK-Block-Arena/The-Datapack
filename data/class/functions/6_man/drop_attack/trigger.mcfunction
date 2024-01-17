@@ -9,8 +9,10 @@ execute as @s[scores={6_drop_pos=4}] anchored eyes positioned ^ ^ ^5 run functio
 execute as @s[scores={6_drop_pos=5}] anchored eyes positioned ^ ^ ^4 run function class:6_man/drop_attack/pos
 execute as @s[scores={6_drop_pos=6}] anchored eyes positioned ^ ^ ^3 run function class:6_man/drop_attack/pos
 execute as @s[scores={6_drop_pos=7}] anchored eyes positioned ^ ^ ^2 run function class:6_man/drop_attack/pos
-item replace entity @s weapon.mainhand from entity @s weapon.offhand
-item replace entity @s weapon.offhand with air
 execute if score $mutation mem matches 8 run effect give @s[scores={state=2,team=1..4}] glowing 3
 # 夜晚冷却
 execute if score $is_day mem matches 0 run scoreboard players set @s 6_drop_cd 500
+
+# 刷新物品&打断回血
+tag @s add brRegenBreak
+tag @s add refresh_inventory

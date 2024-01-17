@@ -17,8 +17,3 @@ scoreboard objectives remove 1_cd41
 scoreboard objectives add 1_cd41 dummy "游侠 - 冷却 41"
 scoreboard objectives remove 1_st41
 scoreboard objectives add 1_st41 dummy "游侠 - 储存 41"
-
-scoreboard objectives remove 1_cd51
-scoreboard objectives add 1_cd51 dummy "游侠 - 冷却 51"
-scoreboard objectives remove 1_st51
-scoreboard objectives add 1_st51 dummy "游侠 - 储存 51"

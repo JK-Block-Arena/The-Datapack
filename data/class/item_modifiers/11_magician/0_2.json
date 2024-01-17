@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"text\":\"百变符 · 石锄\",\"italic\": false}',Lore:['{\"text\":\"持有时获得速度 1，\",\"color\":\"gray\",\"italic\": false}','[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"},\" 后的充能攻击，\"]','{\"text\":\"将额外携带 5 点伤害。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"6 (+ 5) 点\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 也查看不了详情\"]']},HideFlags:63}"
+}

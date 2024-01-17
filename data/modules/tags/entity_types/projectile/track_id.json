@@ -4,6 +4,7 @@
         "minecraft:arrow",
         "minecraft:trident",
         "minecraft:potion",
-        "minecraft:firework_rocket"
+        "minecraft:firework_rocket",
+        "minecraft:fireball"
     ]
 }

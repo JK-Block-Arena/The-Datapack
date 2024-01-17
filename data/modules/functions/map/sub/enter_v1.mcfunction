@@ -34,5 +34,4 @@ effect clear @a[scores={team=5..6}] mining_fatigue
 effect clear @a[scores={team=5..6}] blindness
 effect give @a[scores={team=5..6}] instant_health 20 2 true
 effect give @a[scores={team=5..6}] absorption infinite 4 true
-#execute as @a[scores={team=5..6}] at @s run function class:events/player_spawn
 scoreboard players set @a[scores={team=5..6}] cd_speed 1000000

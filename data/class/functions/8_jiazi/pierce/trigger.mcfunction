@@ -5,7 +5,7 @@ scoreboard players set @e[tag=new_ray] ray_id 801
 scoreboard players set @e[tag=new_ray] ray_speed 20
 scoreboard players set @e[tag=new_ray] ray_precise 10
 scoreboard players set @e[tag=new_ray] ray_distance 300
-tag @e[tag=new_ray] add 8_fangs_particle
+#tag @e[tag=new_ray] add 8_fangs_particle
 tag @e[tag=new_ray] remove new_ray
 
 function modules:ray/sub/run

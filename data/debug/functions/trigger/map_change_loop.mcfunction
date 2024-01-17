@@ -1,7 +1,5 @@
 #scoreboard players set #people mem 12
-scoreboard players set #random_min mem 1
-scoreboard players set #random_max mem 7
-function modules:random
+execute store result score #random mem run random value 1..7
 scoreboard players operation $map mem = #random mem
 execute if score $map mem = $map_last mem run function debug:trigger/map_change_loop
 execute if score $map mem = $map_last2 mem run function debug:trigger/map_change_loop

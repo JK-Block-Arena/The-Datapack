@@ -23,7 +23,7 @@ stopsound @s * minecraft:block.conduit.ambient
 execute if score $skill_respawn debug matches 0 run scoreboard players set @s respawn_time 23
 execute if score $skill_respawn debug matches 1 run scoreboard players set @s respawn_time 11
 execute if score $skill_respawn debug matches 2 run scoreboard players set @s respawn_time 2
-execute if score $mutation mem matches 10 run scoreboard players set @s respawn_time 11
+execute if score $mutation mem matches 11 run scoreboard players set @s respawn_time 11
 scoreboard players set @s[scores={team=5..6}] respawn_time 11
 execute as @s[scores={team=5}] run scoreboard players add #1v1_blue mem 1
 execute as @s[scores={team=6}] run scoreboard players add #1v1_red mem 1

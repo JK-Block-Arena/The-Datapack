@@ -1,7 +1,5 @@
-scoreboard players set #random_min mem 1
-scoreboard players set #random_max mem 9
-function modules:random
-execute if score $mutation mem matches 10 run scoreboard players operation #random mem = #99 mem
+execute store result score #random mem run random value 1..9
+execute if score $mutation mem matches 11 run scoreboard players operation #random mem = #99 mem
 execute if score #random mem = @s class run function modules:mutation/special/2_random_loop
 execute if score #random mem = #8 mem run function modules:mutation/special/2_random_loop
 

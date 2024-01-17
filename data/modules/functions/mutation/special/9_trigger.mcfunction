@@ -1,7 +1,5 @@
 # 选择题目
-scoreboard players set #random_min mem 3
-scoreboard players set #random_max mem 7
-function modules:random
+execute store result score #random mem run random value 3..7
 scoreboard players operation #9_select mem = #random mem
 tag @a[scores={state=2,team=1..4},gamemode=adventure] add 9_select_player
 execute if score $map mem matches 3 if score #9_select mem matches 7 run function modules:mutation/special/9_trigger

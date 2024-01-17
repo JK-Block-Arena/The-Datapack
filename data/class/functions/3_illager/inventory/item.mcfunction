@@ -10,31 +10,31 @@ item replace entity @s[scores={statPlayerLevel=1,3_axe_st=1},nbt=!{Inventory:[{S
 item replace entity @s[scores={statPlayerLevel=2,3_axe_st=1},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:301}}]}] hotbar.0 with iron_axe{CustomModelData:301,AttributeModifiers:[{UUID:[I;3,0,1,1],Amount:11,AttributeName:"generic.attack_damage",Name:"attack",Slot:"mainhand",Operation:0},{Operation: 0, Amount: -3.17, UUID: [I;3,0,1,2], AttributeName: "generic.attack_speed", Name: "generic.attackSpeed"}],Unbreakable:1b,HideFlags:63,Enchantments:[{id:"minecraft:luck_of_the_sea"}]}
 item replace entity @s[scores={statPlayerLevel=3,3_axe_st=1},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:301}}]}] hotbar.0 with iron_axe{CustomModelData:301,AttributeModifiers:[{UUID:[I;3,0,1,1],Amount:11,AttributeName:"generic.attack_damage",Name:"attack",Slot:"mainhand",Operation:0},{Operation: 0, Amount: -3.23, UUID: [I;3,0,1,2], AttributeName: "generic.attack_speed", Name: "generic.attackSpeed"}],Unbreakable:1b,HideFlags:63,Enchantments:[{id:"minecraft:luck_of_the_sea"}]}
 item replace entity @s[scores={statPlayerLevel=4,3_axe_st=1},nbt=!{Inventory:[{Slot:0b,tag:{CustomModelData:301}}]}] hotbar.0 with iron_axe{CustomModelData:301,AttributeModifiers:[{UUID:[I;3,0,1,1],Amount:11,AttributeName:"generic.attack_damage",Name:"attack",Slot:"mainhand",Operation:0},{Operation: 0, Amount: -3.32, UUID: [I;3,0,1,2], AttributeName: "generic.attack_speed", Name: "generic.attackSpeed"}],Unbreakable:1b,HideFlags:63,Enchantments:[{id:"minecraft:luck_of_the_sea"}]}
-scoreboard players set @s count1 -1
+scoreboard players set @s count0 -1
 
 # 劫掠兽之卵
 item replace entity @s[scores={3_truck_st=1..},nbt=!{Inventory:[{Slot:1b,tag:{CustomModelData:302}}]}] hotbar.1 with pillager_spawn_egg{CustomModelData:302}
-scoreboard players operation @s count2 = @s 3_truck_st
-scoreboard players operation @s cd2 = @s 3_truck_cd
+scoreboard players operation @s count1 = @s 3_truck_st
+scoreboard players operation @s cd1 = @s 3_truck_cd
 
 # 空格子
 item replace entity @s hotbar.2 with air
-scoreboard players set @s count3 -1
+scoreboard players set @s count2 -1
 item replace entity @s hotbar.3 with air
-scoreboard players set @s count4 -1
+scoreboard players set @s count3 -1
 item replace entity @s hotbar.4 with air
-scoreboard players set @s count5 -1
+scoreboard players set @s count4 -1
 item replace entity @s hotbar.5 with air
-scoreboard players set @s count6 -1
+scoreboard players set @s count5 -1
 item replace entity @s hotbar.6 with air
-scoreboard players set @s count7 -1
+scoreboard players set @s count6 -1
 item replace entity @s hotbar.7 with air
-scoreboard players set @s count8 -1
+scoreboard players set @s count7 -1
 
 # 掠夺者飞弹
 item replace entity @s[scores={3_jump_st=1..},nbt=!{Inventory:[{Slot:8b,tag:{CustomModelData:309}}]}] hotbar.8 with fire_charge{CustomModelData:309}
-scoreboard players operation @s count9 = @s 3_jump_st
-scoreboard players operation @s cd9 = @s 3_jump_cd
+scoreboard players operation @s count8 = @s 3_jump_st
+scoreboard players operation @s cd8 = @s 3_jump_cd
 
 # 护甲
 item replace entity @s[tag=!invisible,team=lobby,nbt=!{Inventory:[{Slot:103b,tag:{CustomModelData:320}}]}] armor.head with white_banner{CustomModelData:320,display:{Name:'{"text":"灾厄旗帜","italic": false,"color":"white"}',Lore:['{"text":"可以用于分辨队伍的旗帜。","italic": false,"color":"gray"}','{"text":"其上还残留着些许不祥之力。","italic": false,"color":"gray"}']},BlockEntityTag:{Patterns:[{Pattern:"mr",Color:9},{Pattern:"bs",Color:0},{Pattern:"cs",Color:7},{Pattern:"bo",Color:0},{Pattern:"ms",Color:15},{Pattern:"hh",Color:0},{Pattern:"mc",Color:0},{Pattern:"bo",Color:15}]},AttributeModifiers:[],HideFlags:1023,NeedColor:0b}

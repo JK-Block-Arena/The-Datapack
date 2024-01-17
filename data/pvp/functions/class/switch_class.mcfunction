@@ -12,6 +12,7 @@ execute if score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,tag=!
 execute if score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,tag=!banned_class] run scoreboard players set @s[nbt=!{Inventory:[{Slot:30b}]}] class_type 1
 execute if entity @e[limit=1,tag=class9,tag=!banned_class] run scoreboard players set @s[nbt=!{Inventory:[{Slot:31b}]}] class 9
 execute if entity @e[limit=1,tag=class10,tag=!banned_class] run scoreboard players set @s[nbt=!{Inventory:[{Slot:32b}]}] class 10
+execute if entity @e[limit=1,tag=class11,tag=!banned_class] run scoreboard players set @s[nbt=!{Inventory:[{Slot:19b}]}] class 11
 execute unless score #match_type mem matches 1 run scoreboard players set @s[nbt=!{Inventory:[{Slot:8b}]}] class 10000
 title @s[nbt={Inventory:[{Slot:-106b,tag:{banned_class:1}}]}] actionbar {"text":"有笨蛋想选择被禁用的职业","color":"red","bold":true}
 

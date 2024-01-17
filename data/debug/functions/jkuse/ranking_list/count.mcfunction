@@ -34,7 +34,7 @@ execute if score #r_n mem matches 9 run scoreboard objectives setdisplay sidebar
 execute if score #r_n mem matches 9 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"耀骑士","color":"aqua","bold":true},"击杀数：",{"score":{"name":"@s","objective":"Monthly_statPlayerClassKill5"},"color":"gold"}]
 
 execute if score #r_n mem matches 10 run scoreboard objectives setdisplay sidebar.team.gray Monthly_statPlayerClassKill6
-execute if score #r_n mem matches 10 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"有用","color":"aqua","bold":true},"击杀数：",{"score":{"name":"@s","objective":"Monthly_statPlayerClassKill6"},"color":"gold"}]
+execute if score #r_n mem matches 10 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"有用之人","color":"aqua","bold":true},"击杀数：",{"score":{"name":"@s","objective":"Monthly_statPlayerClassKill6"},"color":"gold"}]
 
 execute if score #r_n mem matches 11 run scoreboard objectives setdisplay sidebar.team.gray Monthly_statPlayerClassKill7
 execute if score #r_n mem matches 11 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"牧师","color":"aqua","bold":true},"击杀数：",{"score":{"name":"@s","objective":"Monthly_statPlayerClassKill7"},"color":"gold"}]
@@ -48,7 +48,7 @@ execute if score #r_n mem matches 13 as @a[team=team_ranking] run tellraw @s [{"
 execute if score #r_n mem matches 14 run scoreboard objectives setdisplay sidebar.team.gray Monthly_statPlayerClassKill10
 execute if score #r_n mem matches 14 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"召唤师","color":"aqua","bold":true},"击杀数：",{"score":{"name":"@s","objective":"Monthly_statPlayerClassKill10"},"color":"gold"}]
 
-#execute if score #r_n mem matches 14 run scoreboard objectives setdisplay sidebar.team.gray Monthly_statPlayerClassKill99
-#execute if score #r_n mem matches 14 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"一击必杀","color":"aqua","bold":true},"击杀数：",{"score":{"name":"@s","objective":"Monthly_statPlayerClassKill99"},"color":"gold"}]
+execute if score #r_n mem matches 15 run scoreboard objectives setdisplay sidebar.team.gray Monthly_statPlayerClassKill11
+execute if score #r_n mem matches 15 as @a[team=team_ranking] run tellraw @s [{"text":"你的","color":"green"},{"text":"本月","color":"red","bold":true},{"text":"魔术师","color":"aqua","bold":true},"击杀数：",{"score":{"name":"@s","objective":"Monthly_statPlayerClassKill11"},"color":"gold"}]
 
-execute if score #r_n mem matches 14.. run scoreboard players set #r_n mem -1
+execute if score #r_n mem matches 15.. run scoreboard players set #r_n mem -1

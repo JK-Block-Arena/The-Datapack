@@ -10,5 +10,6 @@ execute as @s[scores={class=7}] run function class:7_nurse/tip
 execute as @s[scores={class=8}] run function class:8_jiazi/tip
 execute as @s[scores={class=9}] run function class:9_qianji/tip
 execute as @s[scores={class=10}] run function class:10_summoner/tip
+execute as @s[scores={class=11}] run function class:11_magician/tip
 
 execute as @s[scores={class=99}] run function class:99_oneshot/tip

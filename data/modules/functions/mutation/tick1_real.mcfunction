@@ -1,7 +1,5 @@
 # 随机值
-scoreboard players set #random_min mem 1
-scoreboard players set #random_max mem 100
-function modules:random
+execute store result score #random mem run random value 1..100
 
 # 子标题
 execute if score $mutation_anim mem matches 56..140 run title @a[scores={state=0..2,team=0..4}] subtitle {"selector":"@e[tag=mutation_name]"}
@@ -49,9 +47,7 @@ execute if score $mutation_anim mem matches 306..314 if score #random mem matche
 execute if score $mutation_anim mem matches 315.. run title @a[scores={state=0..2,team=0..4}] subtitle ""
 
 # 随机值
-execute if score $mutation_anim mem matches ..300 run scoreboard players set #random_min mem 1
-execute if score $mutation_anim mem matches ..300 run scoreboard players set #random_max mem 100
-execute if score $mutation_anim mem matches ..300 run function modules:random
+execute if score $mutation_anim mem matches ..300 store result score #random mem run random value 1..100
 
 # 主标题
 title @a[scores={state=0..2,team=0..4}] times 0 6 0

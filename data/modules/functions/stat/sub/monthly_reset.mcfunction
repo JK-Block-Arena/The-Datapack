@@ -12,7 +12,7 @@ scoreboard objectives remove Monthly_statPlayerClassKill7
 scoreboard objectives remove Monthly_statPlayerClassKill8
 scoreboard objectives remove Monthly_statPlayerClassKill9
 scoreboard objectives remove Monthly_statPlayerClassKill10
-scoreboard objectives remove Monthly_statPlayerClassKill99
+scoreboard objectives remove Monthly_statPlayerClassKill11
 scoreboard objectives remove play_time_t
 scoreboard objectives remove play_time
 function modules:stat/init

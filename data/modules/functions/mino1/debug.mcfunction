@@ -44,6 +44,12 @@ execute if score @s mino_type_now matches 10020 run tellraw @a ["<伤害来源> 
 execute if score @s mino_type_now matches 10030 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 苦力怕爆炸"}]
 execute if score @s mino_type_now matches 10031 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 闪电苦力怕爆炸"}]
 execute if score @s mino_type_now matches 10040 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 铁傀儡攻击"}]
+execute if score @s mino_type_now matches 11010 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 百变符挠"}]
+execute if score @s mino_type_now matches 11011 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 书本攻击"}]
+execute if score @s mino_type_now matches 11012 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 石锄攻击"}]
+execute if score @s mino_type_now matches 11013 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 石剑攻击"}]
+execute if score @s mino_type_now matches 11014 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 石斧攻击"}]
+execute if score @s mino_type_now matches 11020 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 火球爆炸"}]
 
 execute if score @s mino_type_now matches 99010 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 一击烟花"}]
 execute if score @s mino_type_now matches 99020 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 一击三叉戟"}]

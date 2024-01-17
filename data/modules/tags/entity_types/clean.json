@@ -13,6 +13,8 @@
         "minecraft:iron_golem",
         "minecraft:pig",
         "minecraft:creeper",
-        "minecraft:vex"
+        "minecraft:vex",
+        "minecraft:fireball",
+        "minecraft:rabbit"
     ]
 }

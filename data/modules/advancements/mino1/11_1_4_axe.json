@@ -1,0 +1,49 @@
+{
+    "criteria": {
+        "left": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "equipment": {
+                                "mainhand": {
+                                    "items": [
+                                        "minecraft:stone_axe"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "right": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "equipment": {
+                                "offhand": {
+                                    "items": [
+                                        "minecraft:stone_axe"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "left",
+            "right"
+        ]
+    ],
+    "rewards": {
+        "function": "modules:mino1/sub/11_1_4_axe"
+    }
+}

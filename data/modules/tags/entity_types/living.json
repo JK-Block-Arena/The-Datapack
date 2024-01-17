@@ -1,6 +1,7 @@
 {
     "values": [
-        "#modules:livingnotfang",
+        "#modules:living1",
+        "minecraft:player",
         "minecraft:evoker_fangs"
     ]
 }

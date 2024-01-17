@@ -6,5 +6,8 @@ execute if entity @a[x=-2028,y=42,z=2048,distance=..20] run particle minecraft:f
 # 图书馆粒子
 execute if entity @a[x=-2052,y=39,z=2047,distance=..20] run particle minecraft:enchant -2052 39 2047 3 2.5 3 1 3 normal @a
 # 密室
-execute positioned -2016 36 2043 unless entity @e[distance=..2,tag=lobby_item] run summon minecraft:interaction ~ ~ ~ {Tags:["lobby_item","hidden_room"],width:1.01f,height:1.01f}
-execute as @e[limit=1,tag=hidden_room] run function modules:map/special/6_room
+execute if block -2015 35 2043 stone_button[powered=true] run scoreboard players set #6_room mem 3
+execute if block -2017 37 2043 stone_button[powered=true] run scoreboard players set #6_room mem 3
+execute if score #6_room mem matches 0 run fill -2016 35 2043 -2016 36 2043 minecraft:chiseled_stone_bricks
+execute if score #6_room mem matches 1.. run fill -2016 35 2043 -2016 36 2043 minecraft:air
+execute if score #6_room mem matches 1.. run scoreboard players remove #6_room mem 1

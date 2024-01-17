@@ -7,7 +7,6 @@ playsound minecraft:entity.ender_dragon.shoot player @a ~ ~ ~ 1 2
 scoreboard players set @e[tag=new_ray] ray_id 502
 scoreboard players set @e[tag=new_ray] ray_speed 20
 scoreboard players set @e[tag=new_ray] ray_precise 4
-#execute if score $mutation mem matches 6 as @e[tag=new_ray,scores={ray_id=502}] at @s run tp @s ^ ^ ^2
 # 这个没用 ↓
 scoreboard players set @e[tag=new_ray] ray_distance 2000
 

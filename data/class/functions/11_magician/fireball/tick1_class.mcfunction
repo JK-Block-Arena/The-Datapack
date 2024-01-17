@@ -1,0 +1,1 @@
+execute if entity @s[scores={11_fireball_st=1..},nbt={Inventory:[{Slot:-106b,tag:{CustomModelData:1106}}]}] run function class:11_magician/fireball/trigger

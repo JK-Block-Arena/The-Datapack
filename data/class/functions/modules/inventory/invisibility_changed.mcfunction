@@ -1,6 +1,6 @@
 # 检查新状态
 tag @s remove invisible
-tag @s[nbt={ActiveEffects:[{Id:14}]}] add invisible
+tag @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] add invisible
 
 # 检查状态变更
 tag @s[tag=invisible,tag=!invisible_last] add refresh_inventory

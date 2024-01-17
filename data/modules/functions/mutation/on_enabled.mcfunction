@@ -19,5 +19,9 @@ execute if score $mutation mem matches 6 run scoreboard players set $skill_frien
 execute unless score $mutation mem matches 6 run scoreboard players set $skill_friendly_fire debug 1
 function debug:trigger/skill_friendly_fire
 
+# 天堂制造
+tick rate 20
+execute if score $mutation mem matches 10 run tick rate 80
+
 # 折跃灵泉10s时间循环启动
 execute if score $mutation mem matches 5 run function modules:mutation/special/5_loop

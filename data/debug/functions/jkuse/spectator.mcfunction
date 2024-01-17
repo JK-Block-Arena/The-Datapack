@@ -8,3 +8,5 @@ execute unless score #match_mode mem matches 1 as @s[team=!creator] unless entit
 scoreboard players enable @s switch_bossbar
 execute unless score #match_mode mem matches 1 as @s[scores={switch_bossbar=1..}] run function debug:jkuse/switch_bossbar
 scoreboard players set @s switch_bossbar 0
+# 防止进虚空
+execute unless entity @e[type=minecraft:marker,distance=..100] run tp @s[team=!creator] @p[gamemode=adventure]

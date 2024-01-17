@@ -9,7 +9,7 @@ item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:15b}]}] inventor
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:16b}]}] inventory.7 with air
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:17b}]}] inventory.8 with air
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:18b}]}] inventory.9 with air
-item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:19b}]}] inventory.10 with air
+item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:19b}]},scores={state=2..3}] inventory.10 with air
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:20b}]}] inventory.11 with air
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:21b}]}] inventory.12 with air
 item replace entity @a[gamemode=!creative,nbt={Inventory:[{Slot:22b}]}] inventory.13 with air

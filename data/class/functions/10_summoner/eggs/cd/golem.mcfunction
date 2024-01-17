@@ -6,7 +6,7 @@ scoreboard players operation @s 10_golem_cd -= @s cd_speed
 
 # 冷却完成
 scoreboard players add @s[scores={10_golem_cd=..0}] 10_golem_st 1
-execute if score $is_day mem matches 0 run scoreboard players set @s[scores={10_golem_cd=..0}] 10_golem_cd 35000
+execute if score $is_day mem matches 0 run scoreboard players set @s[scores={10_golem_cd=..0}] 10_golem_cd 30000
 execute if score $is_day mem matches 1 run scoreboard players set @s[scores={10_golem_cd=..0}] 10_golem_cd 25000
 
 # 检测刷新

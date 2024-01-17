@@ -18,6 +18,7 @@ bossbar set sp:white_v1 name ""
 function modules:update_bossbar
 
 # 恢复
+tick rate 20
 execute as @e[type=#modules:projectile/check,tag=!projectile_land] at @s run data modify entity @s NoGravity set value false
 execute as @a[scores={state=2,team=1..4}] run attribute @s minecraft:generic.max_health base set 20
 scoreboard players set @a mino_time_00080 0
@@ -32,7 +33,7 @@ function debug:trigger/skill_friendly_fire
 kill @e[tag=mutation_name]
 kill @e[tag=mutation_desc]
 execute if score $mutation_new mem matches 1 run summon marker 0 0 0 {CustomName:'"瞬息万变"',Tags:["mutation_name"]}
-execute if score $mutation_new mem matches 2 run summon marker 0 0 0 {CustomName:'"混沌灵魂++"',Tags:["mutation_name"]}
+execute if score $mutation_new mem matches 2 run summon marker 0 0 0 {CustomName:'"混沌灵魂+"',Tags:["mutation_name"]}
 execute if score $mutation_new mem matches 3 run summon marker 0 0 0 {CustomName:'"引力失衡"',Tags:["mutation_name"]}
 execute if score $mutation_new mem matches 4 run summon marker 0 0 0 {CustomName:'"厄难之血"',Tags:["mutation_name"]}
 execute if score $mutation_new mem matches 5 run summon marker 0 0 0 {CustomName:'"折跃灵泉"',Tags:["mutation_name"]}
@@ -40,10 +41,11 @@ execute if score $mutation_new mem matches 6 run summon marker 0 0 0 {CustomName
 execute if score $mutation_new mem matches 7 run summon marker 0 0 0 {CustomName:'"连锁换位"',Tags:["mutation_name"]}
 execute if score $mutation_new mem matches 8 run summon marker 0 0 0 {CustomName:'"黑暗森林"',Tags:["mutation_name"]}
 execute if score $mutation_new mem matches 9 run summon marker 0 0 0 {CustomName:'"你说我做"',Tags:["mutation_name"]}
-execute if score $mutation_new mem matches 10 run summon marker 0 0 0 {CustomName:'"一击必杀"',Tags:["mutation_name"]}
+execute if score $mutation_new mem matches 10 run summon marker 0 0 0 {CustomName:'"天堂制造"',Tags:["mutation_name"]}
+execute if score $mutation_new mem matches 11 run summon marker 0 0 0 {CustomName:'"一击必杀"',Tags:["mutation_name"]}
 
 execute if score $mutation_new mem matches 1 run summon marker 0 0 0 {CustomName:'"生命上限降低，但静息治疗会瞬间恢复所有生命"',Tags:["mutation_desc"]}
-execute if score $mutation_new mem matches 2 run summon marker 0 0 0 {CustomName:'"职业仅能随机选择，也会因死亡或时间随机改变"',Tags:["mutation_desc"]}
+execute if score $mutation_new mem matches 2 run summon marker 0 0 0 {CustomName:'"职业仅能随机选择，也会因时间随机改变"',Tags:["mutation_desc"]}
 execute if score $mutation_new mem matches 3 run summon marker 0 0 0 {CustomName:'"大地的引力几乎消失了，一切都变得诡异而陌生"',Tags:["mutation_desc"]}
 execute if score $mutation_new mem matches 4 run summon marker 0 0 0 {CustomName:'"能力冷却仅在攻击敌人或被攻击时才能恢复"',Tags:["mutation_desc"]}
 execute if score $mutation_new mem matches 5 run summon marker 0 0 0 {CustomName:'"接触水的生物会获得少量护盾，并传送到敌方附近"',Tags:["mutation_desc"]}
@@ -51,4 +53,5 @@ execute if score $mutation_new mem matches 6 run summon marker 0 0 0 {CustomName
 execute if score $mutation_new mem matches 7 run summon marker 0 0 0 {CustomName:'"每隔一段时间，所有人就会随机交换位置"',Tags:["mutation_desc"]}
 execute if score $mutation_new mem matches 8 run summon marker 0 0 0 {CustomName:'"获得可静息的隐身，但任何动作都会暴露你"',Tags:["mutation_desc"]}
 execute if score $mutation_new mem matches 9 run summon marker 0 0 0 {CustomName:'"出现随机任务，完成与否奖惩分明"',Tags:["mutation_desc"]}
-execute if score $mutation_new mem matches 10 run summon marker 0 0 0 {CustomName:'"不计摔伤与死亡数，一击必杀你的对手吧！"',Tags:["mutation_desc"]}
+execute if score $mutation_new mem matches 10 run summon marker 0 0 0 {CustomName:'"在这个时间x4倍加速的世界生存下去吧"',Tags:["mutation_desc"]}
+execute if score $mutation_new mem matches 11 run summon marker 0 0 0 {CustomName:'"不计摔伤与死亡数，一击必杀你的对手吧！"',Tags:["mutation_desc"]}

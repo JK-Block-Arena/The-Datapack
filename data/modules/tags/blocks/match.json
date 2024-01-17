@@ -1,8 +1,8 @@
 {
     "values": [
-        "red_concrete",
-        "blue_concrete",
-        "green_concrete",
-        "yellow_concrete"
+        "minecraft:red_concrete",
+        "minecraft:blue_concrete",
+        "minecraft:green_concrete",
+        "minecraft:yellow_concrete"
     ]
 }

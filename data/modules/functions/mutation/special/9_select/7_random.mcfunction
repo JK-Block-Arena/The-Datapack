@@ -1,7 +1,5 @@
 ## 就踩方块
-scoreboard players set #random_min mem 1
-scoreboard players set #random_max mem 4
-function modules:random
+execute store result score #random mem run random value 1..4
 scoreboard players operation #9_select_7 mem = #random mem
 # 村庄
 execute if score $map mem matches 1 if score #9_select_7 mem matches 1 run data merge entity @e[limit=1,tag=mutation_9_block] {CustomName:'{"translate":"block.minecraft.lily_pad","color":"yellow"}'}

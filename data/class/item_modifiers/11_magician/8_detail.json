@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag":"{display:{Name:'{\"text\":\"屹立不倒！\",\"italic\": false}',Lore:['{\"text\":\"图腾分数达到 16 时解锁。\",\"color\":\"gray\",\"italic\": false}','\"\"','{\"text\":\"图腾消耗时，将传送到任意一个复活点上。\",\"color\":\"gray\",\"italic\": false}','\"\"','{\"text\":\"获取图腾分数时，均恢复 2 点生命值。\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"其中，图腾分数获取方式及分数：\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"火球术：2\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"远程折跃传送成功：2\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"百变符 · 武器充能：2\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"百变符 · 书（充能）攻击：6\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\" 40 秒\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
+}

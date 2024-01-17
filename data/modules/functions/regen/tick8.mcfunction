@@ -24,7 +24,7 @@ execute unless score $mutation mem matches 8 run tag @s[tag=brRegenCheck,tag=inv
 
 # 不祥之兆下无法回血
 tag @s remove bad_omen
-tag @s[nbt={ActiveEffects:[{Id:31}]}] add bad_omen
+tag @s[nbt={active_effects:[{id:"minecraft:bad_omen"}]}] add bad_omen
 title @s[tag=brRegenCheck,tag=bad_omen] actionbar [{"color":"red","text":"✖ "},{"text":"不祥之兆下无法静息治疗","bold":true}]
 tag @s[tag=brRegenCheck,tag=bad_omen] remove brRegenCheck
 

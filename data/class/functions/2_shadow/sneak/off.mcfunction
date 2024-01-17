@@ -1,3 +1,5 @@
+title @s actionbar {"color":"gold","text":"⚠ 暗影形态已解除","bold":true}
+
 scoreboard players set @s 2_sneak_state 0
 
 # 刷新 Buff

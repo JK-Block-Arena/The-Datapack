@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"text\":\"百变符 · 石斧\",\"italic\": false}',Lore:['{\"text\":\"持有时获得抗性提升 1，\",\"color\":\"gray\",\"italic\": false}','[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"},\" 后的充能攻击，\"]','{\"text\":\"将给对手施加缓慢和挖掘疲劳 4 秒。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"10 点\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 也查看不了详情\"]']},HideFlags:63}"
+}

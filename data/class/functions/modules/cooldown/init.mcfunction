@@ -2,6 +2,8 @@
 scoreboard objectives remove cd_speed
 scoreboard objectives add cd_speed dummy "冷却速度"
 
+scoreboard objectives remove count0
+scoreboard objectives add count0 dummy "0 号位物品个数"
 scoreboard objectives remove count1
 scoreboard objectives add count1 dummy "1 号位物品个数"
 scoreboard objectives remove count2
@@ -18,9 +20,9 @@ scoreboard objectives remove count7
 scoreboard objectives add count7 dummy "7 号位物品个数"
 scoreboard objectives remove count8
 scoreboard objectives add count8 dummy "8 号位物品个数"
-scoreboard objectives remove count9
-scoreboard objectives add count9 dummy "9 号位物品个数"
 
+scoreboard objectives remove cd0
+scoreboard objectives add cd0 dummy "0 号位冷却"
 scoreboard objectives remove cd1
 scoreboard objectives add cd1 dummy "1 号位冷却"
 scoreboard objectives remove cd2
@@ -37,5 +39,3 @@ scoreboard objectives remove cd7
 scoreboard objectives add cd7 dummy "7 号位冷却"
 scoreboard objectives remove cd8
 scoreboard objectives add cd8 dummy "8 号位冷却"
-scoreboard objectives remove cd9
-scoreboard objectives add cd9 dummy "9 号位冷却"

@@ -1,3 +1,4 @@
+
 # 标记受害者
 execute as @s[tag=level1] as @e[distance=..4.6,type=#modules:living] positioned ~-5 ~ ~-5 as @s[dx=10,dy=0.5,dz=10] run tag @s add poison_victim
 execute as @s[tag=level2] as @e[distance=..4.2,type=#modules:living] positioned ~-5 ~ ~-5 as @s[dx=10,dy=0.5,dz=10] run tag @s add poison_victim

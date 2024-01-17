@@ -8,6 +8,7 @@ execute as @s[scores={class=7}] run function class:7_nurse/tick1_class
 execute as @s[scores={class=8}] run function class:8_jiazi/tick1_class
 execute as @s[scores={class=9}] run function class:9_qianji/tick1_class
 execute as @s[scores={class=10}] run function class:10_summoner/tick1_class
+execute as @s[scores={class=11}] run function class:11_magician/tick1_class
 
 execute as @s[scores={class=99}] run function class:99_oneshot/tick1_class
 

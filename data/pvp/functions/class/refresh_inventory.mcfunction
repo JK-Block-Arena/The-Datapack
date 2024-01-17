@@ -9,6 +9,7 @@ execute unless score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,t
 execute if score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,tag=banned_class] run item replace entity @s container.30 from block 6 245 22 container.25
 execute if entity @e[limit=1,tag=class9,tag=banned_class] run item replace entity @s container.31 from block 7 244 22 container.26
 execute if entity @e[limit=1,tag=class10,tag=banned_class] run item replace entity @s container.32 from block 8 244 22 container.26
+execute if entity @e[limit=1,tag=class11,tag=banned_class] run item replace entity @s container.19 from block 4 243 22 container.26
 
 execute if entity @e[limit=1,tag=class1,tag=banned_class] as @s[scores={class=1}] run function pvp:class/random_class
 execute if entity @e[limit=1,tag=class2,tag=banned_class] as @s[scores={class=2}] run function pvp:class/random_class
@@ -22,6 +23,7 @@ execute unless score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,t
 execute if score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,tag=banned_class] as @s[scores={class=3,class_type=1}] run function pvp:class/random_class
 execute if entity @e[limit=1,tag=class9,tag=banned_class] as @s[scores={class=9}] run function pvp:class/random_class
 execute if entity @e[limit=1,tag=class10,tag=banned_class] as @s[scores={class=10}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class11,tag=banned_class] as @s[scores={class=11}] run function pvp:class/random_class
 
 execute if entity @e[limit=1,tag=class1,tag=!banned_class] unless score @s class matches 1 run item replace entity @s hotbar.1 from block 4 245 22 container.0
 execute if entity @e[limit=1,tag=class1,tag=!banned_class] if score @s class matches 1 run item replace entity @s hotbar.1 from block 4 245 22 container.1
@@ -57,6 +59,9 @@ execute if entity @e[limit=1,tag=class9,tag=!banned_class] if score @s class mat
 
 execute if entity @e[limit=1,tag=class10,tag=!banned_class] unless score @s class matches 10 run item replace entity @s container.32 from block 8 244 22 container.0
 execute if entity @e[limit=1,tag=class10,tag=!banned_class] if score @s class matches 10 run item replace entity @s container.32 from block 8 244 22 container.1
+
+execute if entity @e[limit=1,tag=class11,tag=!banned_class] unless score @s class matches 11 run item replace entity @s container.19 from block 4 243 22 container.0
+execute if entity @e[limit=1,tag=class11,tag=!banned_class] if score @s class matches 11 run item replace entity @s container.19 from block 4 243 22 container.1
 
 execute if score #match_mode mem matches 1 if score #match_type mem matches 1 run function debug:jkuse/match/v1/barrier
 

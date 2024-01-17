@@ -1,9 +1,9 @@
 {
     "values": [
-        "air",
+        "minecraft:air",
         "minecraft:cave_air",
         "minecraft:void_air",
-        "minecraft:grass",
+        "minecraft:short_grass",
         "minecraft:dandelion",
         "minecraft:poppy",
         "minecraft:blue_orchid",

@@ -49,4 +49,6 @@ scoreboard objectives add pck5 dummy "登峰造极计数"
 scoreboard objectives add pck6 dummy "出神入化计数"
 scoreboard objectives add pck_max dummy "返璞归真计数"
 
+scoreboard objectives add particle dummy "粒子效果编号"
 scoreboard objectives add particle_rainbow dummy "彩虹粒子解锁"
+scoreboard objectives add particle_cherry dummy "樱花粒子解锁"

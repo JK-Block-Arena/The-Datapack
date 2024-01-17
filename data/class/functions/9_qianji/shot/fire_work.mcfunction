@@ -1,6 +1,4 @@
-execute as @s[tag=!9_arrow] run scoreboard players set #random_min mem 1
-execute as @s[tag=!9_arrow] run scoreboard players set #random_max mem 7
-execute as @s[tag=!9_arrow] run function modules:random
+execute as @s[tag=!9_arrow] run execute store result score #random mem run random value 1..7
 execute as @s[tag=!9_arrow] run scoreboard players operation @s 9_firework = #random mem
 
 item replace entity @s[team=lobby,scores={9_firework=1},nbt=!{Inventory:[{Slot:-106b,tag:{CustomModelData:113}}]}] weapon.offhand with crossbow{CustomModelData:913,Unbreakable:1b,Enchantments:[{id:"quick_charge",lvl:2}],display:{Name:'{"text":"重弩 [已填充普通款烟花火箭]","italic": false,"color":"white"}',Lore:['[{"text":"箭装载后可以迅速射出","color":"gray","italic": false}]']},Charged:1b,ChargedProjectiles:[{id:"minecraft:firework_rocket",Count:1b,tag:{CustomModelData:904,Fireworks:{Flight:1b,Explosions:[{Type:0b,Colors:[I;16777215]},{Type:0b,Colors:[I;16777215]}]}}}],HideFlags:63}

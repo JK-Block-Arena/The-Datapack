@@ -15,11 +15,11 @@ tellraw @a ["\n🌏  投票结果：\n",{"selector":"@e[tag=match_vote_map1]"},{
 tellraw @a ["\n🌏  最多投票的地图为：",{"selector":"@e[tag=match_vote_max_map]"}]
 scoreboard players reset @a vote_match
 # 应用地图
-execute as @e[tag=match_vote_max_map,tag=match_map1] run function debug:trigger/map_change_1
-execute as @e[tag=match_vote_max_map,tag=match_map2] run function debug:trigger/map_change_2
-execute as @e[tag=match_vote_max_map,tag=match_map3] run function debug:trigger/map_change_3
-execute as @e[tag=match_vote_max_map,tag=match_map4] run function debug:trigger/map_change_4
-execute as @e[tag=match_vote_max_map,tag=match_map5] run function debug:trigger/map_change_5
-execute as @e[tag=match_vote_max_map,tag=match_map6] run function debug:trigger/map_change_6
-execute as @e[tag=match_vote_max_map,tag=match_map7] run function debug:trigger/map_change_7
-execute as @e[tag=match_vote_max_map,tag=match_map8] run function debug:trigger/map_change_8
+execute as @e[tag=match_vote_max_map,tag=match_map1] run function debug:trigger/map_change_s {"num":1}
+execute as @e[tag=match_vote_max_map,tag=match_map2] run function debug:trigger/map_change_s {"num":2}
+execute as @e[tag=match_vote_max_map,tag=match_map3] run function debug:trigger/map_change_s {"num":3}
+execute as @e[tag=match_vote_max_map,tag=match_map4] run function debug:trigger/map_change_s {"num":4}
+execute as @e[tag=match_vote_max_map,tag=match_map5] run function debug:trigger/map_change_s {"num":5}
+execute as @e[tag=match_vote_max_map,tag=match_map6] run function debug:trigger/map_change_s {"num":6}
+execute as @e[tag=match_vote_max_map,tag=match_map7] run function debug:trigger/map_change_s {"num":7}
+execute as @e[tag=match_vote_max_map,tag=match_map8] run function debug:trigger/map_change_s {"num":8}

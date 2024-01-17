@@ -1,4 +1,3 @@
-
 # 尝试传送
 summon marker ~ ~ ~ {Tags:["tp_test"]}
 scoreboard players operation @e[tag=tp_test,limit=1] statPlayerLevel = @s statPlayerLevel

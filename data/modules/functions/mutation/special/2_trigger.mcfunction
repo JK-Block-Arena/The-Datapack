@@ -23,10 +23,10 @@ function class:4_oceancat/trident/clear
 playsound minecraft:block.beacon.power_select player @s 0 1000000 0 1000000 2
 particle witch ~ ~1.3 ~ 0.4 0.4 0.4 0 100
 execute if score $mutation mem matches 2 run tellraw @s ["",{"text":" ⚕ 突变效果触发 ⚕ ","color":"light_purple"}," 你的职业已改变！"]
-execute if score $mutation mem matches 10 run tellraw @s ["",{"text":" ⚕ 突变效果触发 ⚕ ","color":"light_purple"}," 你的职业已替换为",{"text":" 一击必杀 ","color":"aqua","bold":true},"！"]
+execute if score $mutation mem matches 11 run tellraw @s ["",{"text":" ⚕ 突变效果触发 ⚕ ","color":"light_purple"}," 你的职业已替换为",{"text":" 一击必杀 ","color":"aqua","bold":true},"！"]
 
-execute unless score $mutation mem matches 10 run tellraw @s[tag=class99p] ["",{"text":" ⚕ ???效果触发 ⚕ ","color":"light_purple"}," 你的职业，",{"text":"一击必杀 ","color":"aqua","bold":true},"被换掉了！"]
-execute unless score $mutation mem matches 10 run effect give @s[tag=class99p] instant_health 2 4 true
+execute unless score $mutation mem matches 11 run tellraw @s[tag=class99p] ["",{"text":" ⚕ ???效果触发 ⚕ ","color":"light_purple"}," 你的职业，",{"text":"一击必杀 ","color":"aqua","bold":true},"被换掉了！"]
+execute unless score $mutation mem matches 11 run effect give @s[tag=class99p] instant_health 2 4 true
 
 #tag @a remove class2p
 tag @a remove class99p
