@@ -1,5 +1,5 @@
 # 起点特效
-execute as @a[tag=current_ray_owner] at @s run particle minecraft:reverse_portal ~ ~0.8 ~ 0.2 0.6 0.2 0.05 100 normal @a
+execute as @a[tag=current_ray_owner] at @s run particle reverse_portal ~ ~0.8 ~ 0.2 0.6 0.2 0.05 100 normal @a
 execute as @a[tag=current_ray_owner] at @s run playsound entity.enderman.teleport player @a[distance=..8] ~ ~ ~ 0.5 0.7
 
 # 传送

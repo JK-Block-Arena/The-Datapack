@@ -1,4 +1,4 @@
-particle minecraft:poof ~ ~ ~ 0.3 0.8 0.3 0 40
+particle poof ~ ~ ~ 0.3 0.8 0.3 0 40
 playsound entity.enderman.teleport player @a
 # 开始传送
 tag @s add 11_tp_now

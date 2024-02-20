@@ -33,8 +33,8 @@ scoreboard players operation @s count2 = @s 11_tp_st
 scoreboard players operation @s cd2 = @s 11_tp_cd
 
 # 图腾
-item replace entity @s[scores={11_totem_st=1..,11_totem_score1=..15},nbt=!{Inventory:[{Slot:2b,tag:{CustomModelData:11081}}]}] hotbar.8 with structure_void{CustomModelData:11081}
-item replace entity @s[scores={11_totem_st=1..,11_totem_score1=16..},nbt=!{Inventory:[{Slot:2b,tag:{CustomModelData:11082}}]}] hotbar.8 with barrier{CustomModelData:11082}
+item replace entity @s[scores={11_totem_st=1..,11_totem_score=..19},nbt=!{Inventory:[{Slot:2b,tag:{CustomModelData:11081}}]}] hotbar.8 with structure_void{CustomModelData:11081}
+item replace entity @s[scores={11_totem_st=1..,11_totem_score=20..},nbt=!{Inventory:[{Slot:2b,tag:{CustomModelData:11082}}]}] hotbar.8 with barrier{CustomModelData:11082}
 
 scoreboard players operation @s count8 = @s 11_totem_st
 scoreboard players set @s[scores={11_totem_st=1..}] cd8 -1
@@ -42,8 +42,8 @@ scoreboard players operation @s[scores={11_totem_st=..0}] cd8 = @s 11_totem_cd
 
 # 副手
 item replace entity @s[scores={11_totem_st=..0}] weapon.offhand with air
-item replace entity @s[scores={11_totem_st=1..,11_totem_score1=..15}] weapon.offhand with air
-item replace entity @s[scores={11_totem_st=1..,11_totem_score1=16..},nbt=!{Inventory:[{Slot:-106b,tag:{CustomModelData:11083}}]}] weapon.offhand with totem_of_undying{CustomModelData:11083}
+item replace entity @s[scores={11_totem_st=1..,11_totem_score=..19}] weapon.offhand with air
+item replace entity @s[scores={11_totem_st=1..,11_totem_score=20..},nbt=!{Inventory:[{Slot:-106b,tag:{CustomModelData:11083}}]}] weapon.offhand with totem_of_undying{CustomModelData:11083}
 
 # 空格子
 item replace entity @s hotbar.3 with air

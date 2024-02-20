@@ -1,5 +1,5 @@
 # 特效
-playsound minecraft:entity.firework_rocket.launch player @a ~ ~ ~ 1.6 0.8
+playsound entity.firework_rocket.launch player @a ~ ~ ~ 1.6 0.8
 particle firework ~ ~1.2 ~ 0.1 0 0.1 0.03 8 normal @a
 title @s actionbar [{"color":"aqua","text":"成功起飞，请注意展开翅膀！","bold":true}]
 

@@ -1,5 +1,5 @@
 function modules:ray/sub/run
-playsound minecraft:entity.ender_dragon.shoot player @a ~ ~ ~ 1 0.6
+playsound entity.ender_dragon.shoot player @a ~ ~ ~ 1 0.6
 
 # 设置tag
 tag @e[tag=new_ray] add hit_block

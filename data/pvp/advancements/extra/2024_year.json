@@ -1,0 +1,44 @@
+{
+  "parent": "pvp:extra/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:cherry_leaves"
+    },
+    "title": {
+      "text": "新年快乐！"
+    },
+    "description": [
+      {
+        "text": "2024年春节。\n",
+        "color": "white"
+      },
+      {
+        "text": "解锁樱花粒子。",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "particle_cherry": {
+                "min": 1
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

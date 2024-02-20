@@ -4,60 +4,60 @@ execute as @a if score @s player_id = @e[tag=self,limit=1] player_id run tag @s 
 tag @s remove self
 
 # 烟雾
-execute if entity @a[tag=owner,team=lobby] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[tag=!owner]
-execute if entity @a[tag=owner,team=red] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!red]
-execute if entity @a[tag=owner,team=blue] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!blue]
-execute if entity @a[tag=owner,team=green] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!green]
-execute if entity @a[tag=owner,team=yellow] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!yellow]
-execute if entity @a[tag=owner,team=red_v1] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!red_v1]
-execute if entity @a[tag=owner,team=blue_v1] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!blue_v1]
+execute if entity @a[tag=owner,team=lobby] run particle campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[tag=!owner]
+execute if entity @a[tag=owner,team=red] run particle campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!red]
+execute if entity @a[tag=owner,team=blue] run particle campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!blue]
+execute if entity @a[tag=owner,team=green] run particle campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!green]
+execute if entity @a[tag=owner,team=yellow] run particle campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!yellow]
+execute if entity @a[tag=owner,team=red_v1] run particle campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!red_v1]
+execute if entity @a[tag=owner,team=blue_v1] run particle campfire_signal_smoke ~ ~ ~ 1 1 1 0.005 30 force @a[team=!blue_v1]
 
-execute if entity @a[tag=owner,team=lobby] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[tag=owner]
-execute if entity @a[tag=owner,team=red] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=red]
-execute if entity @a[tag=owner,team=blue] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=blue]
-execute if entity @a[tag=owner,team=green] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=green]
-execute if entity @a[tag=owner,team=yellow] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=yellow]
-execute if entity @a[tag=owner,team=red_v1] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=red_v1]
-execute if entity @a[tag=owner,team=blue_v1] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=blue_v1]
+execute if entity @a[tag=owner,team=lobby] run particle campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[tag=owner]
+execute if entity @a[tag=owner,team=red] run particle campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=red]
+execute if entity @a[tag=owner,team=blue] run particle campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=blue]
+execute if entity @a[tag=owner,team=green] run particle campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=green]
+execute if entity @a[tag=owner,team=yellow] run particle campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=yellow]
+execute if entity @a[tag=owner,team=red_v1] run particle campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=red_v1]
+execute if entity @a[tag=owner,team=blue_v1] run particle campfire_cosy_smoke ~ ~ ~ 1 1 1 0.005 20 normal @a[team=blue_v1]
 
-execute if entity @a[tag=owner,team=lobby] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[tag=!owner]
-execute if entity @a[tag=owner,team=red] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!red]
-execute if entity @a[tag=owner,team=blue] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!blue]
-execute if entity @a[tag=owner,team=green] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!green]
-execute if entity @a[tag=owner,team=yellow] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!yellow]
-execute if entity @a[tag=owner,team=red_v1] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!red_v1]
-execute if entity @a[tag=owner,team=blue_v1] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!blue_v1]
+execute if entity @a[tag=owner,team=lobby] run particle campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[tag=!owner]
+execute if entity @a[tag=owner,team=red] run particle campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!red]
+execute if entity @a[tag=owner,team=blue] run particle campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!blue]
+execute if entity @a[tag=owner,team=green] run particle campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!green]
+execute if entity @a[tag=owner,team=yellow] run particle campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!yellow]
+execute if entity @a[tag=owner,team=red_v1] run particle campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!red_v1]
+execute if entity @a[tag=owner,team=blue_v1] run particle campfire_signal_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 60 normal @a[team=!blue_v1]
 
-execute if entity @a[tag=owner,team=lobby] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[tag=owner]
-execute if entity @a[tag=owner,team=red] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=red]
-execute if entity @a[tag=owner,team=blue] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=blue]
-execute if entity @a[tag=owner,team=green] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=green]
-execute if entity @a[tag=owner,team=yellow] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=yellow]
-execute if entity @a[tag=owner,team=red_v1] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=red_v1]
-execute if entity @a[tag=owner,team=blue_v1] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=blue_v1]
+execute if entity @a[tag=owner,team=lobby] run particle campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[tag=owner]
+execute if entity @a[tag=owner,team=red] run particle campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=red]
+execute if entity @a[tag=owner,team=blue] run particle campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=blue]
+execute if entity @a[tag=owner,team=green] run particle campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=green]
+execute if entity @a[tag=owner,team=yellow] run particle campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=yellow]
+execute if entity @a[tag=owner,team=red_v1] run particle campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=red_v1]
+execute if entity @a[tag=owner,team=blue_v1] run particle campfire_cosy_smoke ~ ~ ~ 1.3 1.3 1.3 0.005 40 normal @a[team=blue_v1]
 
-execute if entity @a[tag=owner,team=lobby] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[tag=!owner]
-execute if entity @a[tag=owner,team=red] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!red]
-execute if entity @a[tag=owner,team=blue] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!blue]
-execute if entity @a[tag=owner,team=green] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!green]
-execute if entity @a[tag=owner,team=yellow] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!yellow]
-execute if entity @a[tag=owner,team=red_v1] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!red_v1]
-execute if entity @a[tag=owner,team=blue_v1] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!blue_v1]
+execute if entity @a[tag=owner,team=lobby] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[tag=!owner]
+execute if entity @a[tag=owner,team=red] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!red]
+execute if entity @a[tag=owner,team=blue] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!blue]
+execute if entity @a[tag=owner,team=green] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!green]
+execute if entity @a[tag=owner,team=yellow] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!yellow]
+execute if entity @a[tag=owner,team=red_v1] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!red_v1]
+execute if entity @a[tag=owner,team=blue_v1] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 90 force @a[team=!blue_v1]
 
-execute if entity @a[tag=owner,team=lobby] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[tag=owner]
-execute if entity @a[tag=owner,team=red] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=red]
-execute if entity @a[tag=owner,team=blue] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=blue]
-execute if entity @a[tag=owner,team=green] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=green]
-execute if entity @a[tag=owner,team=yellow] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=yellow]
-execute if entity @a[tag=owner,team=red_v1] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=red_v1]
-execute if entity @a[tag=owner,team=blue_v1] run particle minecraft:campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=blue_v1]
+execute if entity @a[tag=owner,team=lobby] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[tag=owner]
+execute if entity @a[tag=owner,team=red] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=red]
+execute if entity @a[tag=owner,team=blue] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=blue]
+execute if entity @a[tag=owner,team=green] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=green]
+execute if entity @a[tag=owner,team=yellow] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=yellow]
+execute if entity @a[tag=owner,team=red_v1] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=red_v1]
+execute if entity @a[tag=owner,team=blue_v1] run particle campfire_signal_smoke ~ ~ ~ 1.6 1.6 1.6 0.005 60 force @a[team=blue_v1]
 
-particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.01 9 normal
-particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.02 6 normal
-particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.03 3 normal
-particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.05 12 normal
-particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.07 8 normal
-particle minecraft:campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.1 4 normal
+particle campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.01 9 normal
+particle campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.02 6 normal
+particle campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.03 3 normal
+particle campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.05 12 normal
+particle campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.07 8 normal
+particle campfire_cosy_smoke ~ ~ ~ 1.6 1.6 1.6 0.1 4 normal
 
 # 致盲
 execute if entity @a[tag=owner,team=lobby] run effect give @e[type=vindicator,distance=..5] slowness 6 100

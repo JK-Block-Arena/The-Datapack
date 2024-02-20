@@ -1,4 +1,5 @@
-item modify entity @s[tag=!detail] hotbar.0 class:7_nurse/0
+item modify entity @s[advancements={pvp:extra/believer=false},tag=!detail] hotbar.0 class:7_nurse/0
+item modify entity @s[advancements={pvp:extra/believer=true},tag=!detail] hotbar.0 class:7_nurse/0_
 item modify entity @s[tag=detail] hotbar.0 class:7_nurse/0_detail
 
 execute if score $is_day mem matches 0 run item modify entity @s[tag=!detail] hotbar.1 class:7_nurse/1_night

@@ -1,6 +1,6 @@
 # 召唤
-summon minecraft:creeper ~ ~1 ~ {PersistenceRequired:true,CustomName:'"卡哇伊苦力怕"',Health:20f,CustomNameVisible:true,Tags:["new_minion"],ExplosionRadius:3,Fuse:20,ignited:1b}
-playsound minecraft:entity.firework_rocket.launch player @a ~ ~ ~ 1.5 1.8
+summon creeper ~ ~1 ~ {PersistenceRequired:true,CustomName:'"卡哇伊苦力怕"',Health:20f,CustomNameVisible:true,Tags:["new_minion"],ExplosionRadius:3,Fuse:20,ignited:1b}
+playsound entity.firework_rocket.launch player @a ~ ~ ~ 1.5 1.8
 
 # 记录角度
 data modify entity @e[tag=new_minion,limit=1] Rotation set from entity @s Rotation

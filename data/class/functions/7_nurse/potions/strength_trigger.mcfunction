@@ -11,7 +11,7 @@ execute as @s[team=lobby] run effect give @a[tag=!7_healer,distance=..8,team=lob
 effect give @s strength 6 0
 effect give @s speed 6 1
 # 特效
-playsound minecraft:entity.splash_potion.break player @a ~ ~ ~ 1 0.6
+playsound entity.splash_potion.break player @a ~ ~ ~ 1 0.6
 
 # 减少存储
 scoreboard players remove @s 7_strength_st 1

@@ -90,11 +90,11 @@ execute if score $mutation_anim mem matches 306..314 if score #random mem matche
 execute if score $mutation_anim mem matches 315.. run title @a[scores={state=0..2,team=0..4}] title ""
 
 # 音效
-execute if score $mutation_anim mem matches 11 run playsound minecraft:block.respawn_anchor.ambient player @a[scores={state=0..2,team=0..4}] 0 1000000 0 1000000 0.5
-execute if score $mutation_anim mem matches 12 run playsound minecraft:block.respawn_anchor.ambient player @a[scores={state=0..2,team=0..4}] 0 1000000 0 1000000 0.5
-execute if score $mutation_anim mem matches 102 run playsound minecraft:entity.zombie_villager.converted player @a[scores={state=0..2,team=0..4}] 0 1000000 0 1000000 0.5
-execute if score $mutation_anim mem matches 103 run playsound minecraft:entity.zombie_villager.converted player @a[scores={state=0..2,team=0..4}] 0 1000000 0 1000000 0.5
-execute if score $mutation_anim mem matches 134 run playsound minecraft:block.end_portal.spawn player @a[scores={state=0..2,team=0..4}] 0 1000000 0 1 0.5 0.6
+execute if score $mutation_anim mem matches 11 run playsound block.respawn_anchor.ambient player @a[scores={state=0..2,team=0..4}] 0 1000000 0 1000000 0.5
+execute if score $mutation_anim mem matches 12 run playsound block.respawn_anchor.ambient player @a[scores={state=0..2,team=0..4}] 0 1000000 0 1000000 0.5
+execute if score $mutation_anim mem matches 102 run playsound entity.zombie_villager.converted player @a[scores={state=0..2,team=0..4}] 0 1000000 0 1000000 0.5
+execute if score $mutation_anim mem matches 103 run playsound entity.zombie_villager.converted player @a[scores={state=0..2,team=0..4}] 0 1000000 0 1000000 0.5
+execute if score $mutation_anim mem matches 134 run playsound block.end_portal.spawn player @a[scores={state=0..2,team=0..4}] 0 1000000 0 1 0.5 0.6
 
 # 正式启用
 execute if score $mutation_anim mem matches 151 run function modules:mutation/on_enabled

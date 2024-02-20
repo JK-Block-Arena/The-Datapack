@@ -5,7 +5,7 @@ execute as @s[team=green] run summon item ~ ~2 ~ {id:"item",Item:{id:"green_bann
 execute as @s[team=yellow] run summon item ~ ~2 ~ {id:"item",Item:{id:"yellow_banner",Count:1,tag:{BlockEntityTag:{Patterns:[{Pattern:"cre",Color:15}]}}},Age:-32768,PickupDelay:32767,Invulnerable:1b,NoGravity:1b,Glowing:1b,Tags:["new_minion","10_flag","10_flag_4"]}
 execute as @s[team=red_v1] run summon item ~ ~2 ~ {id:"item",Item:{id:"red_banner",Count:1,tag:{BlockEntityTag:{Patterns:[{Pattern:"cre",Color:15}]}}},Age:-32768,PickupDelay:32767,Invulnerable:1b,NoGravity:1b,Glowing:1b,Tags:["new_minion","10_flag","10_flag_5"]}
 execute as @s[team=blue_v1] run summon item ~ ~2 ~ {id:"item",Item:{id:"blue_banner",Count:1,tag:{BlockEntityTag:{Patterns:[{Pattern:"cre",Color:15}]}}},Age:-32768,PickupDelay:32767,Invulnerable:1b,NoGravity:1b,Glowing:1b,Tags:["new_minion","10_flag","10_flag_6"]}
-playsound minecraft:entity.elder_guardian.hurt player @a ~ ~ ~ 1.5 1.2
+playsound entity.elder_guardian.hurt player @a ~ ~ ~ 1.5 1.2
 # 设置玩家信息
 scoreboard players operation @e[tag=new_minion] player_id = @s player_id
 scoreboard players operation @e[tag=new_minion] team = @s team

@@ -5,6 +5,7 @@ execute if score @s mino_type_now matches 00030 run tellraw @a ["<伤害来源> 
 execute if score @s mino_type_now matches 00040 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 中毒"}]
 execute if score @s mino_type_now matches 00050 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 入水"}]
 execute if score @s mino_type_now matches 00060 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 窒息"}]
+execute if score @s mino_type_now matches 00061 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 溺水"}]
 execute if score @s mino_type_now matches 00070 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 自杀"}]
 execute if score @s mino_type_now matches 00080 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 换位"}]
 execute if score @s mino_type_now matches 01010 run tellraw @a ["<伤害来源> ",{"selector":"@s"}," : ",{"selector":"@a[tag=mino_murder]"},{"text":" 强击箭命中"}]

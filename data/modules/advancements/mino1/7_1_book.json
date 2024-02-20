@@ -8,9 +8,7 @@
                         "direct_entity": {
                             "equipment": {
                                 "mainhand": {
-                                    "items": [
-                                        "minecraft:written_book"
-                                    ]
+                                    "nbt": "{CustomModelData:700}"
                                 }
                             }
                         }
@@ -26,9 +24,7 @@
                         "direct_entity": {
                             "equipment": {
                                 "offhand": {
-                                    "items": [
-                                        "minecraft:written_book"
-                                    ]
+                                    "nbt": "{CustomModelData:700}"
                                 }
                             }
                         }

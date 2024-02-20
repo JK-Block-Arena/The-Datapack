@@ -53,8 +53,8 @@ execute if score $map_v1 mem matches 1 run forceload add 20014 20095 20098 20011
 execute if score $map_v1 mem matches 2 run forceload add 100031 100036 100107 100112
 
 # 刷新方块
-execute if score $map mem matches 1 run setblock -1959 47 -1987 minecraft:spruce_trapdoor[open=true,half=top]
-execute if score $map mem matches 3 run setblock 4031 39 4077 minecraft:spruce_trapdoor[open=false,half=top,waterlogged=true]
+execute if score $map mem matches 1 run setblock -1959 47 -1987 spruce_trapdoor[open=true,half=top]
+execute if score $map mem matches 3 run setblock 4031 39 4077 spruce_trapdoor[open=false,half=top,waterlogged=true]
 execute if score $map mem matches 5 run fill 8024 57 8025 8025 35 8027 air
 execute if score $map mem matches 5 run setblock 8024 35 8025 structure_block{mode:"LOAD",sizeX:2,sizeY:4,sizeZ:3,name:"lift:5"}
 execute if score $map mem matches 5 run setblock 8024 36 8025 redstone_block

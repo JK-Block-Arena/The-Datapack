@@ -23,6 +23,9 @@ execute if score #9_time mem matches 1 if score #9_select mem matches 6 run func
 execute if score #9_time mem matches 1.. if score #9_select mem matches 7 as @a[tag=9_select_player] at @s run function modules:mutation/special/9_select/7_check
 execute if score #9_time mem matches 1 if score #9_select mem matches 7 run function modules:mutation/special/9_select/7_end
 
+execute if score #9_time mem matches 1.. if score #9_select mem matches 8 run function modules:mutation/special/9_select/8_check
+execute if score #9_time mem matches 1 if score #9_select mem matches 8 run function modules:mutation/special/9_select/8_end
+
 bossbar set modules:mutation_9 name ["",{"text":"剩余时间：","color":"gold"},"[",{"score":{"name":"#9_time","objective":"mem"},"color":"yellow"},"]"]
 execute store result bossbar modules:mutation_9 value run scoreboard players get #9_time mem
 execute if score #9_time mem matches 1.. run bossbar set modules:mutation_9 visible true

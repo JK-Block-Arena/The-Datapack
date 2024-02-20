@@ -1,4 +1,4 @@
 {
     "function": "set_nbt",
-    "tag": "{display:{Name:'{\"text\":\"屹立不倒！\",\"italic\": false}',Lore:['{\"text\":\"技能使用到一定程度时解锁不死图腾，\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\" 40 秒\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
+    "tag": "{display:{Name:'{\"text\":\"屹立不倒！\",\"italic\": false}',Lore:['{\"text\":\"技能使用到一定程度时解锁不死图腾，\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"物品栏选中此格时显示图腾分数。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\" 60 秒\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
 }

@@ -7,8 +7,8 @@ function class:2_shadow/sneak/buff_clear
 
 # 特效
 effect give @s blindness 1 0 true
-playsound minecraft:entity.ender_dragon.flap player @s 0 1000000 0 1000000 1
-playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 0.4 1
+playsound entity.ender_dragon.flap player @s 0 1000000 0 1000000 1
+playsound entity.ender_dragon.flap player @a ~ ~ ~ 0.4 1
 
 # 刷新冷却
 scoreboard players remove @s 2_sneak_st 1

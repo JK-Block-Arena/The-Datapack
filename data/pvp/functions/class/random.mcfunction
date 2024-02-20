@@ -6,19 +6,19 @@ execute if score #match_mode mem matches 1 as @s[scores={class=3}] run scoreboar
 execute if score #match_mode mem matches 1 as @s[scores={class=8}] run scoreboard players set @s class_type 1
 execute if score #match_mode mem matches 1 as @s[scores={class=8}] run scoreboard players set @s class 3
 
-execute if entity @e[limit=1,tag=class1,tag=banned_class] as @s[scores={class=1}] run function pvp:class/random_class
-execute if entity @e[limit=1,tag=class2,tag=banned_class] as @s[scores={class=2}] run function pvp:class/random_class
-execute unless score #match_mode mem matches 1 if entity @e[limit=1,tag=class3,tag=banned_class] as @s[scores={class=3}] run function pvp:class/random_class
-execute if score #match_mode mem matches 1 if entity @e[limit=1,tag=class3,tag=banned_class] as @s[scores={class=3,class_type=0}] run function pvp:class/random_class
-execute if entity @e[limit=1,tag=class4,tag=banned_class] as @s[scores={class=4}] run function pvp:class/random_class
-execute if entity @e[limit=1,tag=class5,tag=banned_class] as @s[scores={class=5}] run function pvp:class/random_class
-execute if entity @e[limit=1,tag=class6,tag=banned_class] as @s[scores={class=6}] run function pvp:class/random_class
-execute if entity @e[limit=1,tag=class7,tag=banned_class] as @s[scores={class=7}] run function pvp:class/random_class
-execute unless score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,tag=banned_class] as @s[scores={class=8}] run function pvp:class/random_class
-execute if score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,tag=banned_class] as @s[scores={class=3,class_type=1}] run function pvp:class/random_class
-execute if entity @e[limit=1,tag=class9,tag=banned_class] as @s[scores={class=9}] run function pvp:class/random_class
-execute if entity @e[limit=1,tag=class10,tag=banned_class] as @s[scores={class=10}] run function pvp:class/random_class
-execute if entity @e[limit=1,tag=class11,tag=banned_class] as @s[scores={class=11}] run function pvp:class/random_class
+execute if entity @e[limit=1,tag=class1,tag=banned_class] as @s[scores={class=1}] run function pvp:class/random
+execute if entity @e[limit=1,tag=class2,tag=banned_class] as @s[scores={class=2}] run function pvp:class/random
+execute unless score #match_mode mem matches 1 if entity @e[limit=1,tag=class3,tag=banned_class] as @s[scores={class=3}] run function pvp:class/random
+execute if score #match_mode mem matches 1 if entity @e[limit=1,tag=class3,tag=banned_class] as @s[scores={class=3,class_type=0}] run function pvp:class/random
+execute if entity @e[limit=1,tag=class4,tag=banned_class] as @s[scores={class=4}] run function pvp:class/random
+execute if entity @e[limit=1,tag=class5,tag=banned_class] as @s[scores={class=5}] run function pvp:class/random
+execute if entity @e[limit=1,tag=class6,tag=banned_class] as @s[scores={class=6}] run function pvp:class/random
+execute if entity @e[limit=1,tag=class7,tag=banned_class] as @s[scores={class=7}] run function pvp:class/random
+execute unless score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,tag=banned_class] as @s[scores={class=8}] run function pvp:class/random
+execute if score #match_mode mem matches 1 if entity @e[limit=1,tag=class8,tag=banned_class] as @s[scores={class=3,class_type=1}] run function pvp:class/random
+execute if entity @e[limit=1,tag=class9,tag=banned_class] as @s[scores={class=9}] run function pvp:class/random
+execute if entity @e[limit=1,tag=class10,tag=banned_class] as @s[scores={class=10}] run function pvp:class/random
+execute if entity @e[limit=1,tag=class11,tag=banned_class] as @s[scores={class=11}] run function pvp:class/random
 
 execute if score #match_mode mem matches 1 if score #match_type mem matches 1 run function debug:jkuse/match/v1/random_class
 

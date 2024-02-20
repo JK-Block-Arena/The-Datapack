@@ -15,7 +15,8 @@ tag @a remove 11_target
 scoreboard players set @s[scores={statPlayerLevel=1}] 11_tp_wait 10
 scoreboard players set @s[scores={statPlayerLevel=2..3}] 11_tp_wait 15
 scoreboard players set @s[scores={statPlayerLevel=4}] 11_tp_wait 20
-scoreboard players add @s 11_totem_score 2
+scoreboard players add @s[scores={11_totem_st=1..,11_totem_score=0..19}] 11_totem_score 2
+effect give @s regeneration 3 1 true
 
 title @s actionbar {"color":"aqua","text":"⚜  已经锁定，即将传送..."}
-playsound minecraft:block.beacon.activate ambient @s ~ ~ ~ 0.8 1.3
+playsound block.beacon.activate ambient @s ~ ~ ~ 0.8 1.3

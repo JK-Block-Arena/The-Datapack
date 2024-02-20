@@ -4,10 +4,10 @@ execute if score #match_mode mem matches 2.. run scoreboard players reset #match
 execute if score #match_mode mem matches 1 run tellraw @a {"text": "\n友谊赛模式已开启！\n","color": "green","bold":true}
 execute if score #match_mode mem matches 1 as @a[distance=1..] run function debug:jkuse/1_back_spawn
 execute if score #match_mode mem matches 1 run tag @e[tag=enable_class] remove banned_class
-execute if score #match_mode mem matches 1 run fill 9 236 19 7 238 19 minecraft:white_stained_glass
-execute if score #match_mode mem matches 1 run fill -2 235 9 -2 237 7 minecraft:white_stained_glass
-execute if score #match_mode mem matches 1 run fill 7 236 -5 9 238 -5 minecraft:white_stained_glass
-execute if score #match_mode mem matches 1 run fill 15 235 1 17 236 -1 minecraft:white_stained_glass replace air
+execute if score #match_mode mem matches 1 run fill 9 236 19 7 238 19 white_stained_glass
+execute if score #match_mode mem matches 1 run fill -2 235 9 -2 237 7 white_stained_glass
+execute if score #match_mode mem matches 1 run fill 7 236 -5 9 238 -5 white_stained_glass
+execute if score #match_mode mem matches 1 run fill 15 235 1 17 236 -1 white_stained_glass replace air
 execute if score #match_mode mem matches 1 run scoreboard objectives setdisplay sidebar.team.white teamKill
 execute if score #match_mode mem matches 1 run scoreboard players set $balance_team debug 1
 

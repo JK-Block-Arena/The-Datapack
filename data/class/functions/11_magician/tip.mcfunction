@@ -9,4 +9,4 @@ tellraw @s[scores={11_tip=3}] ["",{"text":"\n ⚜  小知识： ","color":"light
 tellraw @s[scores={11_tip=4}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"魔术师似乎是竞技场现在衣服穿的最多的角色了。\n"]
 tellraw @s[scores={11_tip=5}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"百变符的不同武器有不同的充能效果，尽管只能用一次。\n"]
 tellraw @s[scores={11_tip=6}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"本职业灵感来源于《诡秘之主》。\n"]
-tellraw @s[scores={11_tip=7}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"\n"]
+tellraw @s[scores={11_tip=12}] ["",{"text":"\n ⚜  小知识： ","color":"light_purple"},"\n"]

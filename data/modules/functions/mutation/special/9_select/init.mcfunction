@@ -4,7 +4,7 @@ scoreboard players reset @a select_gain_9
 scoreboard players reset #select_gain_9 mem
 scoreboard players reset #9_time mem
 # 特有计分板
-scoreboard objectives remove answer
+#scoreboard players reset * answer
 scoreboard objectives remove select_run
 scoreboard objectives remove select_jump
 scoreboard objectives remove select_jump_real

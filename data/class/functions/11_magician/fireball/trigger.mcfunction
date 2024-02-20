@@ -1,9 +1,9 @@
 # 确定召唤位置
-execute at @s anchored eyes run summon minecraft:marker ^ ^ ^1 {Tags:["new_minion_pos"]}
+execute at @s anchored eyes run summon marker ^ ^ ^1 {Tags:["new_minion_pos"]}
 
 # 召唤
-execute at @e[tag=new_minion_pos] run summon minecraft:fireball ~ ~ ~ {Tags:["new_minion","11_fireball"],ExplosionPower:1b}
-playsound minecraft:entity.ghast.shoot player @a ~ ~ ~ 1 1
+execute at @e[tag=new_minion_pos] run summon fireball ~ ~ ~ {Tags:["new_minion","11_fireball"],ExplosionPower:1b}
+playsound entity.ghast.shoot player @a ~ ~ ~ 1 1
 scoreboard players set @e[tag=new_minion,type=fireball] 11_fireball_last 2
 
 # 记录角度
@@ -41,7 +41,8 @@ kill @e[tag=mark]
 
 # 减少存储
 scoreboard players remove @s 11_fireball_st 1
-scoreboard players add @s 11_totem_score 2
+scoreboard players add @s[scores={11_totem_st=1..,11_totem_score=0..19}] 11_totem_score 2
+effect give @s regeneration 3 1 true
 
 # 刷新物品&打断回血
 tag @s add brRegenBreak

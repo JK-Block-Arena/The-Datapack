@@ -2,7 +2,7 @@
 
 # 对齐坐标
 execute at @s align xyz run tp @s ~ ~ ~
-execute if score $track_ray_tp debug matches 1 at @s run particle minecraft:block_marker chorus_plant ~ ~0.4 ~
+execute if score $track_ray_tp debug matches 1 at @s run particle block_marker chorus_plant ~ ~0.4 ~
 
 # 不被卡方块
 execute at @s if block ~ ~1 ~ #modules:air if block ~-1 ~1 ~ #modules:air if block ~ ~1 ~-1 #modules:air if block ~-1 ~1 ~-1 #modules:air run tag @s add safe

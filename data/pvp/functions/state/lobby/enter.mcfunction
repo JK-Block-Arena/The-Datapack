@@ -3,7 +3,7 @@ scoreboard players set @s state 0
 # 重置位置与状态
 tp @s[x=18,y=235,z=-2,distance=..5] 14 235 2
 tp @s[scores={tip_0_tutorial=7..},x=8,y=237,z=8,distance=40..] 3 235 8 -90 2
-attribute @s minecraft:generic.max_health base set 20
+attribute @s generic.max_health base set 20
 effect clear @s
 title @s clear
 execute unless score #match_mode mem matches 1 run gamemode adventure @s
@@ -19,8 +19,8 @@ function modules:mino2/sub/forgive
 scoreboard players operation @s statPlayerKD = @s statPlayerKill
 scoreboard players operation @s statPlayerKD *= #1000 mem
 scoreboard players operation @s statPlayerKD /= @s statPlayerDeath
-execute unless score @s Monthly_statPlayerKill matches 1.. run scoreboard players set @s Monthly_statPlayerKill 0
-execute as @s[scores={Monthly_statPlayerKill=60..}] run function pvp:state/lobby/monthly_kd
+execute unless score @s MstatPlayerKill matches 1.. run scoreboard players set @s MstatPlayerKill 0
+execute as @s[scores={MstatPlayerKill=100..}] run function pvp:state/lobby/kd_m
 
 # 重置物品栏与队伍
 team join lobby @s

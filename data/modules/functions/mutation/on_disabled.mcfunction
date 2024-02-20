@@ -18,9 +18,9 @@ bossbar set sp:white_v1 name ""
 function modules:update_bossbar
 
 # 恢复
-tick rate 20
+execute unless score #command_lvl3 mem matches 1 run function modules:mutation/special/10_off
 execute as @e[type=#modules:projectile/check,tag=!projectile_land] at @s run data modify entity @s NoGravity set value false
-execute as @a[scores={state=2,team=1..4}] run attribute @s minecraft:generic.max_health base set 20
+execute as @a[scores={state=2,team=1..4}] run attribute @s generic.max_health base set 20
 scoreboard players set @a mino_time_00080 0
 effect clear @a absorption
 function modules:mutation/special/9_select/init
@@ -51,7 +51,7 @@ execute if score $mutation_new mem matches 4 run summon marker 0 0 0 {CustomName
 execute if score $mutation_new mem matches 5 run summon marker 0 0 0 {CustomName:'"接触水的生物会获得少量护盾，并传送到敌方附近"',Tags:["mutation_desc"]}
 execute if score $mutation_new mem matches 6 run summon marker 0 0 0 {CustomName:'"攻击友方/敌方获得增益，但静息无法治疗"',Tags:["mutation_desc"]}
 execute if score $mutation_new mem matches 7 run summon marker 0 0 0 {CustomName:'"每隔一段时间，所有人就会随机交换位置"',Tags:["mutation_desc"]}
-execute if score $mutation_new mem matches 8 run summon marker 0 0 0 {CustomName:'"获得可静息的隐身，但任何动作都会暴露你"',Tags:["mutation_desc"]}
+execute if score $mutation_new mem matches 8 run summon marker 0 0 0 {CustomName:'"获得可静息的隐身，但除潜行外任何动作都会暴露你"',Tags:["mutation_desc"]}
 execute if score $mutation_new mem matches 9 run summon marker 0 0 0 {CustomName:'"出现随机任务，完成与否奖惩分明"',Tags:["mutation_desc"]}
 execute if score $mutation_new mem matches 10 run summon marker 0 0 0 {CustomName:'"在这个时间x4倍加速的世界生存下去吧"',Tags:["mutation_desc"]}
 execute if score $mutation_new mem matches 11 run summon marker 0 0 0 {CustomName:'"不计摔伤与死亡数，一击必杀你的对手吧！"',Tags:["mutation_desc"]}

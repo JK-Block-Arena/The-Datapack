@@ -10,10 +10,10 @@ execute as @s[advancements={pvp:rickroll/rick5=false},x=8,y=318,z=8,distance=..2
 execute as @s[advancements={pvp:rickroll/rick5=true}] run function debug:jkuse/rickroll/check
 
 # 状态效果
-effect give @s weakness infinite 0 true
+effect give @s[team=!creator] weakness infinite 0 true
 effect give @s speed infinite 0 true
 execute unless entity @p[distance=..200,scores={state=2}] unless block ~ ~-.1 ~ #modules:harmful run effect give @s[scores={hp=..19}] instant_health 1 9 true
-execute if block ~ ~-1 ~ diamond_block run effect give @s[gamemode=adventure] minecraft:speed 1 4 true
+execute if block ~ ~-1 ~ diamond_block run effect give @s[gamemode=adventure] speed 1 4 true
 
 # 检查、刷新物品栏
 execute as @s[gamemode=adventure] run function pvp:state/lobby/tick1

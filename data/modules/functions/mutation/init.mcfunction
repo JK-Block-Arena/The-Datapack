@@ -4,6 +4,9 @@ scoreboard objectives add jump minecraft.custom:minecraft.jump "跳跃触发"
 scoreboard objectives remove heartbeat
 scoreboard objectives add heartbeat dummy "心跳触发"
 
+scoreboard objectives remove answer
+scoreboard objectives add answer trigger "答案"
+
 function modules:mutation/sub/off
 
 bossbar add modules:mutation ""

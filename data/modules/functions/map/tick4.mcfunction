@@ -1,7 +1,7 @@
 # 主大厅粒子
 particle end_rod 8.5 243 8.5 1.2 2.1 1.2 0 6 normal @a
 # 村庄图夜晚粒子
-execute if score $is_day mem matches 0 as @a[x=-1950,y=50,z=-1950,distance=..150] at @s anchored eyes positioned ^ ^ ^3 run particle minecraft:warped_spore ~ ~ ~ 2.5 2.5 2.5 0 6 normal @s
+execute if score $is_day mem matches 0 as @a[x=-1950,y=50,z=-1950,distance=..150] at @s anchored eyes positioned ^ ^ ^3 run particle warped_spore ~ ~ ~ 2.5 2.5 2.5 0 6 normal @s
 # 冰树
 execute if score $map mem matches 2 run function modules:map/special/2
 # 瀑布

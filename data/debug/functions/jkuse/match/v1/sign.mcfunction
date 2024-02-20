@@ -1,5 +1,5 @@
-setblock 0 12 -23 minecraft:birch_wall_sign[facing=south]{front_text:{messages:['{"text":""}','{"text":"我准备好了","color":"aqua","bold":true,"clickEvent": {"action":"run_command","value": "/function debug:jkuse/match/v1/ready"}}','{"text":""}','{"text":""}']}} destroy
-setblock 4 12 -23 minecraft:birch_wall_sign[facing=south]{front_text:{messages:['{"text":""}','{"text":"我准备好了","color":"aqua","bold":true,"clickEvent": {"action":"run_command","value": "/function debug:jkuse/match/v1/ready"}}','{"text":""}','{"text":""}']}} destroy
+setblock 0 12 -23 birch_wall_sign[facing=south]{front_text:{messages:['{"text":""}','{"text":"我准备好了","color":"aqua","bold":true,"clickEvent": {"action":"run_command","value": "/function debug:jkuse/match/v1/ready"}}','{"text":""}','{"text":""}']}} destroy
+setblock 4 12 -23 birch_wall_sign[facing=south]{front_text:{messages:['{"text":""}','{"text":"我准备好了","color":"aqua","bold":true,"clickEvent": {"action":"run_command","value": "/function debug:jkuse/match/v1/ready"}}','{"text":""}','{"text":""}']}} destroy
 tellraw @a {"text": "\n※  选好职业后右键告示牌准备新一轮！\n","color": "aqua","bold": true}
 scoreboard players reset #match_time_can mem
 # 时间确认

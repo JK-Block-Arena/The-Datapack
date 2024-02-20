@@ -1,5 +1,5 @@
 # 效果
-playsound minecraft:entity.elder_guardian.curse player @s ~ ~ ~ 0.6 0.6
+playsound entity.elder_guardian.curse player @s ~ ~ ~ 0.6 0.6
 scoreboard players add @s 2_attack_stack 1
 scoreboard players set @s[scores={statPlayerLevel=1}] 2_attack_time 4000
 scoreboard players set @s[scores={statPlayerLevel=2}] 2_attack_time 3500

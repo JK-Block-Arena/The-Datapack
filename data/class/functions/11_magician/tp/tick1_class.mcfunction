@@ -13,6 +13,7 @@ execute as @s[scores={11_tp_last_wait=0}] run function class:11_magician/tp/allo
 # 传送返回
 scoreboard players remove @s[scores={11_tp_last=1..}] 11_tp_last 1
 execute as @s[scores={11_tp_last=1..},nbt={Inventory:[{Slot:-106b,tag:{CustomModelData:11071}}]}] run function class:11_magician/tp/trigger_back
+
 ## 未使用二次传送
 scoreboard players remove @s[scores={11_tp_last=1,11_tp_st=1..}] 11_tp_st 1
 

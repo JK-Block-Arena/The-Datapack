@@ -1,12 +1,12 @@
 # 效果
 title @s actionbar ""
-execute if score @s statPlayerLevel matches 1 run playsound minecraft:item.trident.thunder player @a[distance=..6] ~ ~ ~ 0.7
-execute if score @s statPlayerLevel matches 2 run playsound minecraft:item.trident.thunder player @a[distance=..7] ~ ~ ~ 0.7
-execute if score @s statPlayerLevel matches 3 run playsound minecraft:item.trident.thunder player @a[distance=..8] ~ ~ ~ 0.7
-execute if score @s statPlayerLevel matches 4 run playsound minecraft:item.trident.thunder player @a[distance=..10] ~ ~ ~ 0.7
+execute if score @s statPlayerLevel matches 1 run playsound item.trident.thunder player @a[distance=..6] ~ ~ ~ 0.7
+execute if score @s statPlayerLevel matches 2 run playsound item.trident.thunder player @a[distance=..7] ~ ~ ~ 0.7
+execute if score @s statPlayerLevel matches 3 run playsound item.trident.thunder player @a[distance=..8] ~ ~ ~ 0.7
+execute if score @s statPlayerLevel matches 4 run playsound item.trident.thunder player @a[distance=..10] ~ ~ ~ 0.7
 
 # 召唤
-execute align xyz run summon minecraft:guardian ~0.5 ~1.1 ~0.5 {PersistenceRequired:true,CustomName:'"辉煌裂片"',Health:0.1f,CustomNameVisible:true,Tags:["new_minion"],NoAI:1b,Silent:1b,NoGravity:1b}
+execute align xyz run summon guardian ~0.5 ~1.1 ~0.5 {PersistenceRequired:true,CustomName:'"辉煌裂片"',Health:0.1f,CustomNameVisible:true,Tags:["new_minion"],NoAI:1b,Silent:1b,NoGravity:1b}
 effect give @e[tag=new_minion] invisibility infinite 0 true
 execute if score @s statPlayerLevel matches 1 run effect give @e[tag=new_minion] resistance 3 5 true
 execute if score @s statPlayerLevel matches 2..3 run effect give @e[tag=new_minion] resistance 2 5 true

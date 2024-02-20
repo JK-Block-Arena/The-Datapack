@@ -17,7 +17,7 @@ tag @s remove tip_1_regen
 function pvp:state/respawn/refresh_inventory
 
 # 停止心跳音效
-stopsound @s * minecraft:block.conduit.ambient
+stopsound @s * block.conduit.ambient
 
 # 开始重生
 execute if score $skill_respawn debug matches 0 run scoreboard players set @s respawn_time 23

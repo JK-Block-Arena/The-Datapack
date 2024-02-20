@@ -10,6 +10,9 @@ scoreboard objectives add team_prefer dummy "队伍意向"
 scoreboard objectives remove lobby
 scoreboard objectives add lobby trigger "返回大厅"
 
+scoreboard objectives remove ignore_tips
+scoreboard objectives add ignore_tips trigger "小知识开关"
+
 scoreboard objectives remove suicide
 scoreboard objectives add suicide trigger "自杀"
 scoreboard objectives remove suicide_time

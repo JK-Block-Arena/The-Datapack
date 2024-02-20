@@ -1,5 +1,5 @@
 function modules:ray/sub/run
-playsound minecraft:entity.ender_dragon.shoot player @a ~ ~ ~ 1 2
+playsound entity.ender_dragon.shoot player @a ~ ~ ~ 1 2
 
 # 设置tag
 # 无

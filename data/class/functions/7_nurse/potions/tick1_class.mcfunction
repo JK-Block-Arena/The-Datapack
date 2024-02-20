@@ -7,6 +7,7 @@ execute as @s[nbt={SelectedItem:{tag:{CustomModelData:703}}}] run function class
 execute as @s[nbt={SelectedItem:{tag:{CustomModelData:704}}}] as @a[tag=!7_healer,tag=!invisible,scores={state=2},distance=..8,gamemode=adventure] at @s run particle dust 1 1 1 1 ~ ~3.1 ~ 0 0 0 1 1 normal
 
 # 判断药水格子减少储存
+tag @s[scores={potion_throw=1..},nbt={SelectedItemSlot:1}] add refresh_inventory
 execute as @s[scores={potion_throw=1..},nbt={SelectedItemSlot:1}] run scoreboard players remove @s 7_damage_st 1
 execute as @s[scores={potion_use=1},nbt={SelectedItemSlot:2}] run scoreboard players remove @s 7_heal_st 1
 execute as @s[scores={potion_use=1},nbt={SelectedItemSlot:3}] run scoreboard players remove @s 7_strength_st 1

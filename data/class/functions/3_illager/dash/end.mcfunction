@@ -1,2 +1,2 @@
-effect clear @s minecraft:speed
-effect clear @s minecraft:resistance
+effect clear @s speed
+effect clear @s resistance

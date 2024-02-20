@@ -1,0 +1,1 @@
+title @s[nbt={SelectedItemSlot:8}] actionbar [{"text": "图腾分数：","color": "aqua"},{"score":{"name": "@s","objective": "11_totem_score"},"color": "gold"}]

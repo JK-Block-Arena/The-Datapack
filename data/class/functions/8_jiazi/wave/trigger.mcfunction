@@ -2,7 +2,7 @@ summon marker ~ ~2 ~ {Tags:["8_fangs_center"]}
 effect give @s slow_falling 1 0
 
 # 特效
-playsound minecraft:entity.evoker.prepare_summon player @a[distance=..8] ~ ~ ~ 0.5 1 0.8
+playsound entity.evoker.prepare_summon player @a[distance=..8] ~ ~ ~ 0.5 1 0.8
 particle witch ~ ~1 ~ 0.1 0.3 0.1 0.01 10 normal @a[distance=.1..]
 
 # 计时

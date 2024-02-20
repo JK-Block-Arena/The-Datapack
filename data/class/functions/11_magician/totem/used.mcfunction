@@ -8,7 +8,6 @@ execute as @s[scores={team=1..}] run tellraw @a[tag=pass] ["",{"text":"逃脱 �
 # 刷新物品&打断回血
 tag @s add brRegenBreak
 tag @s add refresh_inventory
-scoreboard players set @s 11_totem_score1 0
 scoreboard players set @s 11_totem_st 0
 
 tp @s[scores={team=0}] 1043.5 92 1079.5 180 0

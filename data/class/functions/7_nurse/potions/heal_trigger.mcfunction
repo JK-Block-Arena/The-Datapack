@@ -12,7 +12,7 @@ effect give @s regeneration 3 2
 effect clear @s[scores={hp=..24}] absorption
 effect give @s[scores={hp=..24}] absorption 5 0
 # 特效
-playsound minecraft:entity.splash_potion.break player @a ~ ~ ~ 1 0.6
+playsound entity.splash_potion.break player @a ~ ~ ~ 1 0.6
 
 # 减少存储
 scoreboard players remove @s 7_heal_st 1

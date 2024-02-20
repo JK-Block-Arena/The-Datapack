@@ -1,6 +1,5 @@
 ## 算数能手
-scoreboard objectives add answer trigger "答案"
-scoreboard players enable @a answer
+scoreboard players enable @a[scores={team=1..4}] answer
 # 第一个数字
 execute store result score #random mem run random value 1..20
 scoreboard players operation #9_x mem = #random mem

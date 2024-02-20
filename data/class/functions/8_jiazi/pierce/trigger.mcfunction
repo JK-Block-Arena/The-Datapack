@@ -28,7 +28,7 @@ tag @e[tag=new_ray] remove new_ray
 execute as @s[scores={8_pierce_tp=1}] run function class:8_jiazi/pierce/tp_user
 
 # 特效
-playsound minecraft:entity.evoker.prepare_summon player @a[distance=..8] ~ ~ ~ 0.5 0.8 0.8
+playsound entity.evoker.prepare_summon player @a[distance=..8] ~ ~ ~ 0.5 0.8 0.8
 particle witch ~ ~1 ~ 0.1 0.3 0.1 0.01 10 normal @a[distance=.1..]
 
 # 计时

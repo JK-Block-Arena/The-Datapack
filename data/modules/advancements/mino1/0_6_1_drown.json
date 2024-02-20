@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "any": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "minecraft:is_drowning"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "modules:mino1/sub/0_6_1_drown"
+    }
+}

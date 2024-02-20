@@ -1,6 +1,6 @@
 # 传送回选职业位
 scoreboard players set @a[scores={team=5..6}] state 0
-execute as @a[scores={team=5..6}] run attribute @s minecraft:generic.max_health base set 20
+execute as @a[scores={team=5..6}] run attribute @s generic.max_health base set 20
 clear @a[scores={team=5..6}]
 effect clear @a[scores={team=5..6}]
 effect give @a[scores={team=5..6}] instant_health 1 9 true

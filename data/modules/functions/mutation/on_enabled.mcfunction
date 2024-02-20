@@ -1,10 +1,10 @@
 scoreboard players operation $mutation mem = $mutation_new mem
 
 # 设置血量
-execute if score $mutation mem matches 1 as @a[scores={state=2,team=1..4}] run attribute @s minecraft:generic.max_health base set 12
-execute if score $mutation mem matches 1 as @a[scores={state=2,team=1..4,hp=20..}] if score @s class matches 3 run effect give @s minecraft:instant_health 2 0 true
-execute if score $mutation mem matches 1 as @a[scores={state=2,team=1..4,hp=12..}] unless score @s class matches 3 run effect give @s minecraft:instant_health 2 0 true
-execute if score $mutation mem matches 6 as @a[scores={state=2,team=1..4}] run attribute @s minecraft:generic.max_health base set 30
+execute if score $mutation mem matches 1 as @a[scores={state=2,team=1..4}] run attribute @s generic.max_health base set 12
+execute if score $mutation mem matches 1 as @a[scores={state=2,team=1..4,hp=20..}] if score @s class matches 3 run effect give @s instant_health 2 0 true
+execute if score $mutation mem matches 1 as @a[scores={state=2,team=1..4,hp=12..}] unless score @s class matches 3 run effect give @s instant_health 2 0 true
+execute if score $mutation mem matches 6 as @a[scores={state=2,team=1..4}] run attribute @s generic.max_health base set 30
 
 # 设置 bossbar
 scoreboard players set $mutation_bossbar mem 0
@@ -20,8 +20,7 @@ execute unless score $mutation mem matches 6 run scoreboard players set $skill_f
 function debug:trigger/skill_friendly_fire
 
 # 天堂制造
-tick rate 20
-execute if score $mutation mem matches 10 run tick rate 80
+execute unless score #command_lvl3 mem matches 1 run function modules:mutation/special/10_on
 
 # 折跃灵泉10s时间循环启动
 execute if score $mutation mem matches 5 run function modules:mutation/special/5_loop

@@ -1,6 +1,5 @@
 # 全局初始化
 
-#datapack disable "vanilla"
 tellraw @a[tag=pass] [{"text":" ❇ ","color":"aqua"}," 管理员已手动重置游戏！"]
 
 # ---------------------------------------------
@@ -205,7 +204,7 @@ scoreboard players set $system_f3 debug 0
 scoreboard players set $balance_team debug 0
 scoreboard players set $balance_dynamic debug 0
 scoreboard players set $mutation_count debug 0
-scoreboard players set $mutation_speed debug 0
+scoreboard players set $mutation_speed debug 1
 
 # JK
 schedule function debug:jkuse/jk_init 1s replace

@@ -18,6 +18,3 @@ execute as @s[nbt={Inventory:[{Slot:-106b,tag:{CustomModelData:11014}}]},scores=
 execute as @s[scores={11_charm_mode=1}] run function class:11_magician/charm/clear_debuff
 effect give @s[scores={11_charm_mode=2}] speed 1 0
 effect give @s[scores={11_charm_mode=4}] resistance 1 0
-
-# 图腾
-execute as @s[scores={11_totem_score=1..}] run function class:11_magician/totem/heal

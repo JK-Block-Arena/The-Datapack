@@ -7,7 +7,7 @@ execute as @s[team=green] run tag @p[distance=..3,gamemode=adventure,team=!green
 execute as @s[team=yellow] run tag @p[distance=..3,gamemode=adventure,team=!yellow] add 11_target
 execute as @s[team=red_v1] run tag @p[distance=..3,gamemode=adventure,team=!red_v1] add 11_target
 execute as @s[team=blue_v1] run tag @p[distance=..3,gamemode=adventure,team=!blue_v1] add 11_target
-execute as @s[team=lobby] run tag @e[sort=nearest,limit=1,distance=..3,type=minecraft:vindicator] add 11_target
+execute as @s[team=lobby] run tag @e[sort=nearest,limit=1,distance=..3,type=vindicator] add 11_target
 
 # 循环
 scoreboard players remove @s 11_tp_distance 1

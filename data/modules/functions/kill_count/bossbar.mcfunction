@@ -52,5 +52,5 @@ execute if score #before mem matches ..2999 if score #after mem matches 3000.. r
 execute if score #before mem matches ..4999 if score #after mem matches 5000.. run tag @a[scores={tip_2_reset=..2,state=0..2,tip_0_tutorial=7..}] add tip_2_reset
 
 # 人数过多换地图 3沙滩 7商店
-execute if score $map mem matches 3 if score #people mem matches 9.. run function debug:trigger/map_change_
+#execute if score $map mem matches 3 if score #people mem matches 9.. run function debug:trigger/map_change_
 execute if score $map mem matches 7 if score #people mem matches 11.. run function debug:trigger/map_change_

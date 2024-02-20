@@ -13,14 +13,14 @@ effect clear @s invisibility
 scoreboard players set #xp mem 0
 scoreboard players set #level mem 0
 function class:modules/reset_modifiers
-attribute @s minecraft:generic.attack_damage base set 1
+attribute @s generic.attack_damage base set 1
 function modules:set_xp
 function class:events/player_spawn
 function class:modules/inventory/run
 function class:4_oceancat/trident/clear
 
 # 特效
-playsound minecraft:block.beacon.power_select player @s 0 1000000 0 1000000 2
+playsound block.beacon.power_select player @s 0 1000000 0 1000000 2
 particle witch ~ ~1.3 ~ 0.4 0.4 0.4 0 100
 execute if score $mutation mem matches 2 run tellraw @s ["",{"text":" ⚕ 突变效果触发 ⚕ ","color":"light_purple"}," 你的职业已改变！"]
 execute if score $mutation mem matches 11 run tellraw @s ["",{"text":" ⚕ 突变效果触发 ⚕ ","color":"light_purple"}," 你的职业已替换为",{"text":" 一击必杀 ","color":"aqua","bold":true},"！"]
@@ -32,4 +32,4 @@ execute unless score $mutation mem matches 11 run effect give @s[tag=class99p] i
 tag @a remove class99p
 
 # 刷新多余血量
-execute unless score @s class matches 3 run effect give @s[scores={state=2,team=1..4,hp=21..}] minecraft:instant_health 2 0 true
+execute unless score @s class matches 3 run effect give @s[scores={state=2,team=1..4,hp=21..}] instant_health 2 0 true

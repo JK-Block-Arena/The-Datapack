@@ -44,6 +44,10 @@ execute if score @s mino_type_last matches 00060 if score #death_type mem matche
 execute if score @s mino_type_last matches 00060 if score #death_type mem matches 1.. unless score @s mino_type_real matches 00080 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 为了躲开 ",{"selector":"@p[tag=murder]"},"，不惜将自己塞入方块里"]
 execute if score @s mino_type_last matches 00060 if score #death_type mem matches 1.. if score @s mino_type_real matches 00080 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 在与 ",{"selector":"@p[tag=murder]"}," 换位后，被塞进了方块里"]
 
+execute if score @s mino_type_last matches 00061 if score #death_type mem matches 0 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 溺水了"]
+execute if score @s mino_type_last matches 00061 if score #death_type mem matches 1.. unless score @s mino_type_real matches 00080 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 为了躲避 ",{"selector":"@p[tag=murder]"},"，忘记了换气"]
+execute if score @s mino_type_last matches 00061 if score #death_type mem matches 1.. if score @s mino_type_real matches 00080 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 在与 ",{"selector":"@p[tag=murder]"}," 换位后，不慎变成了溺尸"]
+
 execute if score @s mino_type_last matches 00070 if score #death_type mem matches 0 run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 自杀了"]
 execute if score @s mino_type_last matches 00070 if score #death_type mem matches 1.. run tellraw @a[tag=pass] ["",{"selector":"@e[tag=death_info]"},{"selector":"@s"}," 不愿意和 ",{"selector":"@p[tag=murder]"}," 活在同一世界"]
 

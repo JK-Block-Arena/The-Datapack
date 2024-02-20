@@ -1,5 +1,5 @@
 # 召唤
-summon minecraft:iron_golem ^ ^ ^-0.6 {PersistenceRequired:true,CustomName:'"铁哥"',Health:40f,CustomNameVisible:true,Tags:["new_minion"]}
+summon iron_golem ^ ^ ^-0.6 {PersistenceRequired:true,CustomName:'"铁哥"',Health:40f,CustomNameVisible:true,Tags:["new_minion"]}
 # 设置玩家信息
 scoreboard players operation @e[tag=new_minion] player_id = @s player_id
 scoreboard players operation @e[tag=new_minion] team = @s team

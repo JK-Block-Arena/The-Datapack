@@ -1,16 +1,16 @@
 # 确定召唤位置
-execute at @s anchored eyes run summon minecraft:marker ^ ^ ^1 {Tags:["new_minion_pos"]}
+execute at @s anchored eyes run summon marker ^ ^ ^1 {Tags:["new_minion_pos"]}
 execute as @e[tag=new_minion_pos] at @s run function modules:anti_stuck/sub/ravager
 
 # 召唤
-execute at @e[tag=new_minion_pos] run summon minecraft:ravager ~ ~ ~ {PersistenceRequired:true,CustomName:'"泥头车"',Health:32f,CustomNameVisible:true,Tags:["new_minion","fall_immune"]}
-execute if score @s statPlayerLevel matches 1 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.86
-execute if score @s statPlayerLevel matches 2 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.82
-execute if score @s statPlayerLevel matches 3 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.78
-execute if score @s statPlayerLevel matches 4 run attribute @e[tag=new_minion,limit=1] minecraft:generic.movement_speed base set 0.74
+execute at @e[tag=new_minion_pos] run summon ravager ~ ~ ~ {PersistenceRequired:true,CustomName:'"泥头车"',Health:32f,CustomNameVisible:true,Tags:["new_minion","fall_immune"]}
+execute if score @s statPlayerLevel matches 1 run attribute @e[tag=new_minion,limit=1] generic.movement_speed base set 0.86
+execute if score @s statPlayerLevel matches 2 run attribute @e[tag=new_minion,limit=1] generic.movement_speed base set 0.82
+execute if score @s statPlayerLevel matches 3 run attribute @e[tag=new_minion,limit=1] generic.movement_speed base set 0.78
+execute if score @s statPlayerLevel matches 4 run attribute @e[tag=new_minion,limit=1] generic.movement_speed base set 0.74
 effect give @e[tag=new_minion,limit=1] weakness infinite 1 true
-playsound minecraft:entity.ender_dragon.shoot player @a ~ ~ ~ 1.5 0.5
-playsound minecraft:entity.ravager.attack player @a ~ ~ ~ 1 1
+playsound entity.ender_dragon.shoot player @a ~ ~ ~ 1.5 0.5
+playsound entity.ravager.attack player @a ~ ~ ~ 1 1
 
 # 记录角度
 data modify entity @e[tag=new_minion,limit=1] Rotation set from entity @s Rotation

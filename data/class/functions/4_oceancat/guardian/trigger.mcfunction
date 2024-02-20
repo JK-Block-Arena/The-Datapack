@@ -1,10 +1,10 @@
 # 特效
 particle instant_effect ~ ~-0.5 ~ 3 3 3 0 1000
 particle explosion_emitter ~ ~ ~ 0 0 0 0 1
-playsound minecraft:entity.dragon_fireball.explode hostile @a ~ ~ ~ 1 1.2
+playsound entity.dragon_fireball.explode hostile @a ~ ~ ~ 1 1.2
 
 # 召唤
-summon minecraft:marker ~ ~ ~ {Tags:["4_guardian_triggered","new_minion"]}
+summon marker ~ ~ ~ {Tags:["4_guardian_triggered","new_minion"]}
 scoreboard players set @e[tag=new_minion] 4_guardian_life 6
 
 # 设置玩家信息

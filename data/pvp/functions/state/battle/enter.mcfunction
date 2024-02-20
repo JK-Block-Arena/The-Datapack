@@ -23,7 +23,7 @@ effect give @s instant_health 20 5 true
 effect give @s blindness 1 0 true
 effect give @s resistance 2 5 true
 effect give @s invisibility 1 5 true
-attribute @s minecraft:generic.attack_damage base set 1
+attribute @s generic.attack_damage base set 1
 execute if score #match_mode mem matches 1 run scoreboard players set @s[scores={class=4..}] statPlayerLevel 3
 execute if score #match_mode mem matches 1 run scoreboard players set @s[scores={class=1..3}] statPlayerLevel 4
 scoreboard players set @s suicide_time 0
@@ -31,7 +31,7 @@ scoreboard players set @s suicide_time 0
 # 重置位置
 execute as @s[scores={team=1..4}] run function modules:map/sub/enter
 execute as @s[scores={team=5..6}] run function modules:map/sub/enter_v1
-attribute @s minecraft:generic.max_health base set 20
+attribute @s generic.max_health base set 20
 function class:modules/reset_modifiers
 title @s clear
 

@@ -33,8 +33,6 @@ scoreboard objectives add 11_tp_last dummy "二次传送时长"
 
 scoreboard objectives remove 11_totem_score
 scoreboard objectives add 11_totem_score dummy "图腾分数"
-scoreboard objectives remove 11_totem_score1
-scoreboard objectives add 11_totem_score1 dummy "图腾分数1"
 scoreboard objectives remove 11_totem_st
 scoreboard objectives add 11_totem_st dummy "图腾存储"
 

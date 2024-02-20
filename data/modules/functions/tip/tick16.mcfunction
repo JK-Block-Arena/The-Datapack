@@ -12,8 +12,13 @@ execute as @a[scores={tip_0_tutorial=..8,tip_cd=11..}] as @s[tag=!tip_1_respawn_
 # 延迟显示的提示
 execute as @a[scores={tip_cd=60..}] unless entity @s[tag=!tip_2_killregen,tag=!tip_2_reset,tag=!tip_2_run,tag=!tip_2_mutation] run function modules:tip/2_delayed
 # 循环显示的提示
-execute as @a[scores={tip_cd=150..,tip_cycle_times=0}] run function modules:tip/3_cycle/trigger
-execute as @a[scores={tip_cd=250..,tip_cycle_times=1}] run function modules:tip/3_cycle/trigger
+execute as @a[tag=!ignore_tips,scores={tip_cd=150..,tip_cycle_times=0}] run function modules:tip/3_cycle/trigger
+execute as @a[tag=!ignore_tips,scores={tip_cd=250..,tip_cycle_times=1}] run function modules:tip/3_cycle/trigger
 # 次要提示
-execute as @a[scores={tip_cd=350..,tip_cycle_times=2}] run function modules:tip/4_minor/trigger
-execute as @a[scores={tip_cd=450..}] run function modules:tip/4_minor/trigger
+execute as @a[tag=!ignore_tips,scores={tip_cd=350..,tip_cycle_times=2}] run function modules:tip/4_minor/trigger
+execute as @a[tag=!ignore_tips,scores={tip_cd=450..}] run function modules:tip/4_minor/trigger
+
+# 提示开关
+scoreboard players enable @a[tag=pass,scores={tip_0_tutorial=7..}] ignore_tips
+execute as @a[scores={ignore_tips=1..},tag=!ignore_tips] run function modules:tip/sub/off
+execute as @a[scores={ignore_tips=1..},tag=ignore_tips] run function modules:tip/sub/on

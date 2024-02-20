@@ -19,7 +19,7 @@ title @s[nbt={Inventory:[{Slot:-106b,tag:{banned_class:1}}]}] actionbar {"text":
 execute if score #match_mode mem matches 1 if score #match_type mem matches 1 run function debug:jkuse/match/v1/class_ban_self
 
 # 播放音效
-playsound minecraft:block.stone_button.click_on player @s 0 1000000 0 1000000
+playsound block.stone_button.click_on player @s 0 1000000 0 1000000
 # 刷新物品
 execute as @s[scores={state=0}] run function pvp:state/lobby/refresh_inventory
 execute as @s[scores={state=1}] run function pvp:state/respawn/refresh_inventory

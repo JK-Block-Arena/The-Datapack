@@ -1,4 +1,4 @@
-playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.3
+playsound block.fire.extinguish player @a ~ ~ ~ 0.3
 
 tag @s add self
 execute as @a if score @s player_id = @e[tag=self,limit=1] player_id run tag @s add projectile_owner

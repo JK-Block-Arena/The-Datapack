@@ -23,25 +23,25 @@ execute unless score #match_mode mem matches 1 run scoreboard players remove @s 
 execute if score #match_mode mem matches 1 run function debug:jkuse/match/class/diff
 
 # 设置生命值
-attribute @s[scores={respawn_time=22}] minecraft:generic.max_health base set 01
-attribute @s[scores={respawn_time=18}] minecraft:generic.max_health base set 02
-attribute @s[scores={respawn_time=17}] minecraft:generic.max_health base set 03
-attribute @s[scores={respawn_time=16}] minecraft:generic.max_health base set 04
-attribute @s[scores={respawn_time=15}] minecraft:generic.max_health base set 05
-attribute @s[scores={respawn_time=14}] minecraft:generic.max_health base set 06
-attribute @s[scores={respawn_time=13}] minecraft:generic.max_health base set 07
-attribute @s[scores={respawn_time=12}] minecraft:generic.max_health base set 08
-attribute @s[scores={respawn_time=11}] minecraft:generic.max_health base set 09
-attribute @s[scores={respawn_time=10}] minecraft:generic.max_health base set 10
-attribute @s[scores={respawn_time=09}] minecraft:generic.max_health base set 11
-attribute @s[scores={respawn_time=08}] minecraft:generic.max_health base set 12
-attribute @s[scores={respawn_time=07}] minecraft:generic.max_health base set 13
-attribute @s[scores={respawn_time=06}] minecraft:generic.max_health base set 14
-attribute @s[scores={respawn_time=05}] minecraft:generic.max_health base set 15
-attribute @s[scores={respawn_time=04}] minecraft:generic.max_health base set 16
-attribute @s[scores={respawn_time=03}] minecraft:generic.max_health base set 17
-attribute @s[scores={respawn_time=02}] minecraft:generic.max_health base set 18
-attribute @s[scores={respawn_time=01}] minecraft:generic.max_health base set 19
+attribute @s[scores={respawn_time=22}] generic.max_health base set 01
+attribute @s[scores={respawn_time=18}] generic.max_health base set 02
+attribute @s[scores={respawn_time=17}] generic.max_health base set 03
+attribute @s[scores={respawn_time=16}] generic.max_health base set 04
+attribute @s[scores={respawn_time=15}] generic.max_health base set 05
+attribute @s[scores={respawn_time=14}] generic.max_health base set 06
+attribute @s[scores={respawn_time=13}] generic.max_health base set 07
+attribute @s[scores={respawn_time=12}] generic.max_health base set 08
+attribute @s[scores={respawn_time=11}] generic.max_health base set 09
+attribute @s[scores={respawn_time=10}] generic.max_health base set 10
+attribute @s[scores={respawn_time=09}] generic.max_health base set 11
+attribute @s[scores={respawn_time=08}] generic.max_health base set 12
+attribute @s[scores={respawn_time=07}] generic.max_health base set 13
+attribute @s[scores={respawn_time=06}] generic.max_health base set 14
+attribute @s[scores={respawn_time=05}] generic.max_health base set 15
+attribute @s[scores={respawn_time=04}] generic.max_health base set 16
+attribute @s[scores={respawn_time=03}] generic.max_health base set 17
+attribute @s[scores={respawn_time=02}] generic.max_health base set 18
+attribute @s[scores={respawn_time=01}] generic.max_health base set 19
 
 # 显示 Title
 execute if score $mutation_anim mem matches 0 run title @s times 0 10 4
@@ -53,13 +53,13 @@ execute as @s[team=lobby] run function pvp:state/lobby/enter
 execute if score #match_mode mem matches 1 if score #match_type mem matches 1 run schedule function debug:jkuse/match/v1/back 4t append
 
 # 特效
-execute at @s run playsound minecraft:block.note_block.hat player @s[scores={respawn_time=..21}] ~ ~ ~ 0.2 0
-playsound minecraft:block.beacon.power_select player @s[scores={respawn_time=21}] 0 1000000 0 1000000 0
-playsound minecraft:block.beacon.power_select player @s[scores={respawn_time=21}] 0 1000000 0 1000000 0
-playsound minecraft:block.portal.ambient player @s[scores={respawn_time=20}] ~ ~-20 ~ 1.8 0.55
-playsound minecraft:block.portal.trigger player @s[scores={respawn_time=14}] 0 1000000 0 1 0.7 0.3
-effect give @s[scores={respawn_time=9}] minecraft:nausea 7 0 true
-execute at @s run playsound minecraft:entity.enderman.teleport player @s[scores={respawn_time=0}] 0 1000000 0 1000000 0.8
+execute at @s run playsound block.note_block.hat player @s[scores={respawn_time=..21}] ~ ~ ~ 0.2 0
+playsound block.beacon.power_select player @s[scores={respawn_time=21}] 0 1000000 0 1000000 0
+playsound block.beacon.power_select player @s[scores={respawn_time=21}] 0 1000000 0 1000000 0
+playsound block.portal.ambient player @s[scores={respawn_time=20}] ~ ~-20 ~ 1.8 0.55
+playsound block.portal.trigger player @s[scores={respawn_time=14}] 0 1000000 0 1 0.7 0.3
+effect give @s[scores={respawn_time=9}] nausea 7 0 true
+execute at @s run playsound entity.enderman.teleport player @s[scores={respawn_time=0}] 0 1000000 0 1000000 0.8
 
 # 检查、刷新物品栏
 execute as @s[scores={state=1}] run function pvp:state/respawn/tick1

@@ -1,13 +1,8 @@
 # 每 2 Tick 执行一次
-item replace entity @a[gamemode=creative,team=!creator] armor.chest with air
-item replace entity @a[gamemode=creative,team=!creator] armor.feet with air
-item replace entity @a[gamemode=creative,team=!creator] armor.head with air
-item replace entity @a[gamemode=creative,team=!creator] armor.feet with air
 clear @a[gamemode=creative,team=!creator]
-execute as @a[gamemode=creative,team=!creator] at @s run function debug:jkuse/2_book
-scoreboard players set @a[gamemode=creative,team=!creator] state 0
-scoreboard players set @a[gamemode=creative,team=!creator] team 0
-team join creator @a[gamemode=creative,team=!creator]
-effect give @a[team=creator] invisibility infinite 0 true
+execute as @a[gamemode=creative,team=!creator] run function debug:jkuse/2_book
 effect clear @a[team=creator] glowing
 effect clear @a[team=creator] blindness
+effect clear @a[team=creator] weakness
+execute as @a[team=creator,gamemode=adventure] run function debug:jkuse/1_back_spawn
+execute as @a[team=creator,nbt={SelectedItem:{tag:{stand_pose:["012"]}}}] at @s run function debug:jkuse/stand_pose/0
