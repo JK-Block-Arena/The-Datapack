@@ -1,1 +1,0 @@
-effect give @e[scores={state=2,team=1..4}] speed 3 0 true

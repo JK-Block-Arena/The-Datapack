@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"技能：水生\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"text\":\"入水时会自动发动，使你在 3 秒内免疫水的伤害。\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"如果技能结束后仍在水中，技能会再次自动发动，\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"直至次数耗尽。\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"技能的剩余时间会显示在经验槽。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"20 秒\",\"italic\": false,\"color\":\"white\"},{\"text\":\"      ⚜ 储存  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"2 次\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
-}

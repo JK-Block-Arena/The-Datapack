@@ -1,1 +1,0 @@
-$execute if score @p[tag=projectile_owner] player_id = @s player_id run scoreboard players set @s particle $(particle_num)

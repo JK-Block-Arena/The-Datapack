@@ -1,1 +1,0 @@
-scoreboard players set @s 4_guardian_cast -1

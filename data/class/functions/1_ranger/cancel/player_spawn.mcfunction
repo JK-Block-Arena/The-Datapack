@@ -1,1 +1,0 @@
-scoreboard players set @s 1_cancel 1

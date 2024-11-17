@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"鞘翅\",\"italic\": false}',Lore:['[{\"text\":\"使用后迅速漂浮到最高 30 格的位置。\",\"color\":\"gray\",\"italic\": false}]','[{\"text\":\"起飞后落地/空中持续 8 秒后鞘翅将消失。\",\"color\":\"gray\",\"italic\": false}]','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"30 秒\",\"italic\": false,\"color\":\"white\"},{\"text\":\"      ⚜ 储存  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"1 个\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
-}

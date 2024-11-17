@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"死神之镰\",\"italic\": false,\"color\":\"white\"}',Lore:['[{\"text\":\"按 \",\"italic\": false,\"color\":\"gray\"},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"},\" 使用一颗暗影精髓进行暗影灌注，\"]','{\"text\":\"大幅提高下一次攻击造成的伤害。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"6.5 点\",\"italic\": false,\"color\":\"white\"},{\"text\":\"     ❇ 攻速  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"中等\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
-}

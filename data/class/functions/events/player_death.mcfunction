@@ -1,1 +1,0 @@
-execute as @s[scores={class=4}] run function class:4_oceancat/player_death

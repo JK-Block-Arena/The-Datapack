@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"必杀三叉戟\",\"italic\": false}',Lore:['[{\"text\":\"我tm戳爆！\",\"color\":\"gray\",\"italic\": false}]','{\"text\":\"投掷必杀，可近战，但没有闪电附加。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"⚜ 储存  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"1 把\",\"italic\": false,\"color\":\"white\"},{\"text\":\"      ❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"∞\",\"italic\": false,\"color\":\"white\"}]']},HideFlags:63}"
-}

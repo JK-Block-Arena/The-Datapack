@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"烟花火箭\",\"italic\": false}',Lore:['[{\"text\":\"填充一个随机样式的烟花，\",\"color\":\"gray\",\"italic\": false}]','[{\"text\":\"射出后最远 40 格或触碰到方块/实体后爆炸。\",\"color\":\"gray\",\"italic\": false}]','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"15 秒\",\"italic\": false,\"color\":\"white\"},{\"text\":\"      ⚜ 储存  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"1 支\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"命中 8 - 16 点\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
-}

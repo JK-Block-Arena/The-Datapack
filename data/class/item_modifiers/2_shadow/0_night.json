@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"暗影精髓\",\"italic\": false}',Lore:['[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.use\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"}, \" 即可将你传送到准心位置。\"]','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"18 秒 (白昼) / \",\"italic\": false,\"color\":\"dark_gray\"},{\"text\":\"12 秒 (夜晚)\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
-}

@@ -1,1 +1,0 @@
-execute as @e[tag=ray] at @s run function modules:ray/tick2_real

@@ -1,4 +1,0 @@
-# 检测触水
-execute as @a[scores={state=2,team=1..4}] at @s if block ~ ~.3 ~ #modules:harmful run function modules:mutation/special/5_trigger
-execute as @e[x=1050,y=90,z=1050,distance=500..,type=#modules:livingnotplayer,scores={team=1..4}] at @s if block ~ ~.3 ~ #modules:harmful run function modules:mutation/special/5_trigger
-#execute as @e[type=#modules:living,x=1050,y=90,z=1050,distance=500..] at @s if block ~ ~.3 ~ #modules:harmful unless entity @s[type=player,gamemode=!adventure] unless entity @s[type=!player,gamemode=!adventure,scores={state=1..2,team=1..4}] run function modules:mutation/special/5_trigger

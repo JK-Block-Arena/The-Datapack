@@ -1,1 +1,0 @@
-function class:modules/cooldown/events/reset

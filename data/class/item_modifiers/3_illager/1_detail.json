@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"劫掠兽之卵\",\"italic\": false,\"color\":\"white\"}',Lore:['[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"}, \" 向准心方向投掷一头劫掠兽。\"]','{\"text\":\"劫掠兽攻击力为 6 点，移动速度比玩家略慢，\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"生命值为 32 点（每秒自然流失 4 点）。\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"劫掠兽可以触发辉煌裂片。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"30 秒\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
-}

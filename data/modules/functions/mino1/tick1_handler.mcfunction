@@ -1,2 +1,0 @@
-execute as @a[tag=mino_hurt,tag=!mino_immune,tag=pass,scores={state=2..3}] at @s run function modules:mino1/tick1_real
-execute as @a unless entity @s[tag=!mino_hurt,scores={mino_type_now=0}] at @s run function modules:mino1/reset_now

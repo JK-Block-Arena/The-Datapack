@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag": "{display:{Name:'{\"text\":\"圣书\",\"italic\": false,\"color\":\"white\"}',Lore:['{\"text\":\"我要用书本砸你啦( •̀ ω •́ )y\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"最好看一看细节，这里有很多需要了解的东西。\",\"color\":\"dark_gray\",\"italic\": false}','\"\"','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"3 点\",\"italic\": false,\"color\":\"white\"},{\"text\":\"      ❇ 攻速  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"快\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
-}

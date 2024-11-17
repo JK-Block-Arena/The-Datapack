@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag": "{display:{Name:'{\"text\":\"百变符 · 石剑\",\"italic\": false}',Lore:['[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"},\" 后的充能攻击，\"]','{\"text\":\"将给予一定时间的急迫并附带火焰附加 1，\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"这时攻击将使你获得3秒生命恢复 I 的效果。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"8 (+ 3) 点\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 也查看不了详情\"]']},HideFlags:63}"
-}

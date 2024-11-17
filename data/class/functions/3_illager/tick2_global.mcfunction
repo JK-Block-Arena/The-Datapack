@@ -1,1 +1,0 @@
-function class:3_illager/magic/tick2_global

@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"强击箭\",\"italic\": false}',Lore:['[{\"text\":\"为弓附加高等级\",\"color\":\"gray\",\"italic\": false},{\"text\":\"冲击\",\"underlined\": true},\"。\",{\"text\":\"（大幅提高击退距离）\",\"color\":\"dark_gray\"}]','{\"text\":\"相比其他箭矢，它的伤害要高出一些。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"3 秒\",\"italic\": false,\"color\":\"white\"},{\"text\":\"      ⚜ 储存  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"5 支\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"10.5 - 19.25（满弦）\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
-}

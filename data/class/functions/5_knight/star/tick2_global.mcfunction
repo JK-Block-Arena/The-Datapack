@@ -1,1 +1,0 @@
-execute as @e[scores={ray_id=502}] at @s run function class:5_knight/star/tick2_ray

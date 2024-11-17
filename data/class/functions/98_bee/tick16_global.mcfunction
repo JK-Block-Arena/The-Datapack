@@ -1,1 +1,0 @@
-function class:98_bee/bee/tick16_global

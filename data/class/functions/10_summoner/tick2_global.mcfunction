@@ -1,1 +1,0 @@
-execute as @e[type=pig] at @s run function class:10_summoner/eggs/clear/pig

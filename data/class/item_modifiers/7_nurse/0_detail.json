@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag": "{display:{Name:'{\"text\":\"圣书\",\"italic\": false,\"color\":\"white\"}',Lore:['{\"text\":\"牧师特性：\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"静息成为了加速冷却而不是恢复生命。\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"一般情况是冷却2.5x，瞬息万变中是5x。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"ᛥ 附魔  \",\"italic\": false,\"color\":\"blue\"},{\"text\":\"击退 II\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"3 点\",\"italic\": false,\"color\":\"white\"},{\"text\":\"      ❇ 攻速  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"每秒 1.2 次\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
-}

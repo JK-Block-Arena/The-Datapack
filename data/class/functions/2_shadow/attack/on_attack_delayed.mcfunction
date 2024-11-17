@@ -1,1 +1,0 @@
-execute as @a[advancements={class:2_shadow/attack/on_attack=true}] at @s run function class:2_shadow/attack/on_attack_real

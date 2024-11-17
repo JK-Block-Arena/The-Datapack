@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"海神戟\",\"italic\": false,\"color\":\"white\"}',Lore:['[{\"text\":\"长按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.use\",\"color\":\"white\"},{\"text\":\"] \",\"color\":\"white\"},\"以将它掷出。\"]','{\"text\":\"当站在水中投掷，你会跟随它一并飞出。\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"当在陆地上投掷，它会在落点引来闪电。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"❤ 伤害  \",\"italic\": false,\"color\":\"red\"},{\"text\":\"10 点\",\"italic\": false,\"color\":\"white\"},{\"text\":\"      ❇ 攻速  \",\"italic\": false,\"color\":\"gold\"},{\"text\":\"较慢\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
-}

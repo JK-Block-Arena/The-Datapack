@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"光焰箭\",\"italic\": false}',Lore:['{\"text\":\"照亮附近的敌人与其召唤物，\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"使其显形并虚弱。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"15 秒 (白昼)\",\"italic\": false,\"color\":\"white\"},{\"text\":\" / 25 秒 (夜晚)\",\"italic\": false,\"color\":\"dark_gray\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 查看详情\"]']},HideFlags:63}"
-}

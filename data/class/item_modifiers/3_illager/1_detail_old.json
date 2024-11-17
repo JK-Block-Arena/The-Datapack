@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag":"{display:{Name:'{\"text\":\"幻术师之杖\",\"italic\": false,\"color\":\"white\"}',Lore:['[{\"text\":\"按 \",\"color\":\"gray\",\"italic\": false},{\"text\":\"[\",\"color\":\"white\"},{\"keybind\":\"key.swapOffhand\",\"color\":\"white\"},{\"text\":\"]\",\"color\":\"white\"}, \" 发射一颗射程 40 米、弹速 30m/s 的烟雾魔弹，\"]','{\"text\":\"它会在命中或到达最大射程后触发，散布一片 5 米\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"半径的烟尘，并在触发时使其中的敌人失明 5 秒。\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"烟尘会持续遮蔽视线，并在 15 秒后消散。在友方视角\",\"color\":\"gray\",\"italic\": false}','{\"text\":\"中，烟尘的视线遮蔽程度相对较轻。\",\"color\":\"gray\",\"italic\": false}','\"\"','[{\"text\":\"✳ 冷却  \",\"italic\": false,\"color\":\"aqua\"},{\"text\":\"20 秒\",\"italic\": false,\"color\":\"white\"}]','[{\"text\":\"✏ 细节  按 [\",\"color\":\"dark_gray\",\"italic\": false},{\"keybind\":\"key.drop\"}, \"] 收起详情\"]']},HideFlags:63}"
-}

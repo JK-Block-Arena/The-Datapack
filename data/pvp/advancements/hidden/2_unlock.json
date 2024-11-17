@@ -1,8 +1,0 @@
-{
-    "parent": "pvp:hidden/treasure_room",
-    "criteria": {
-        "command": {
-            "trigger": "minecraft:location"
-        }
-    }
-}

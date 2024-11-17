@@ -1,1 +1,0 @@
-function class:4_oceancat/guardian/tick8_global

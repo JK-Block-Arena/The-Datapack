@@ -1,1 +1,0 @@
-execute as @a[tag=pass,scores={tip_0_tutorial=..8}] at @s run function modules:tip/0_tutorial/tick4

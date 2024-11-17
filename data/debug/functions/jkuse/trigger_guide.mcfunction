@@ -1,1 +1,0 @@
-tellraw @s ["",{"text": "\n ※  以下为JK服特有的玩家命令，用法：/trigger xxx。","color": "green"},{"text": "\n ※  lobby","color": "gold"},"  返回大厅",{"text": "\n ※  suicide","color": "red"},"  战场中自杀",{"text": "\n ※  play_time_show","color": "yellow"},"  显示本月游玩时长",{"text": "\n ※  switch_bossbar","color": "aqua"},"  旁观切换进度条",{"text": "\n ※  ignore_tips","color": "light_purple"},"  关闭/开启小知识\n"]
